@@ -98,7 +98,7 @@
 
 <label for="country"></label>
     <select id="search_box" name="school" onchange="showUser(this.value)">
-  <option value="">School list:</option>
+  <option value="">School list (Display only):</option>
   <option value="1">University of Houston-Downtown</option>
   <option value="2">University of Houston-Main Campus</option>
   <option value="3">Texas A&M University</option>
@@ -109,116 +109,100 @@
 <script>
 function myFunction() {
   // Declare variables 
-  var input, filter, table, tr, td, i;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
+  var input1,input2,input3,input4,input5,input6,input7, filter, table, tr, td0, td1, td2, td3, td4, td5, td6, i;
+  input1 = document.getElementById("myInput1");
+  input2 = document.getElementById("myInput2");
+  input3 = document.getElementById("myInput3");
+  input4 = document.getElementById("myInput4");
+  input5 = document.getElementById("myInput5");
+  input6 = document.getElementById("myInput6");
+  input7 = document.getElementById("myInput7");
+  filter1 = input1.value.toUpperCase();
+  filter2 = input2.value.toUpperCase();
+  filter3 = input3.value.toUpperCase();
+  filter4 = input4.value.toUpperCase();
+  filter5 = input5.value.toUpperCase();
+  filter6 = input6.value.toUpperCase();
+  filter7 = input7.value.toUpperCase();
   table = document.getElementById("myTable");
   tr = table.getElementsByTagName("tr");
 
   // Loop through all table rows, and hide those who don't match the search query
   for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[1];
-    if (td) {
-      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+    td0 = tr[i].getElementsByTagName("td")[0];
+    td1 = tr[i].getElementsByTagName("td")[1];
+    td2 = tr[i].getElementsByTagName("td")[2];    
+    td3 = tr[i].getElementsByTagName("td")[3];
+    td4 = tr[i].getElementsByTagName("td")[4];
+    td5 = tr[i].getElementsByTagName("td")[5];
+    td6 = tr[i].getElementsByTagName("td")[6];
+    if (td0 && td1 && td2 && td3 && td4 && td5 && td6) {
+      if (td0.innerHTML.toUpperCase().indexOf(filter1) > -1 &&
+      	  td1.innerHTML.toUpperCase().indexOf(filter2) > -1 &&
+      	  td2.innerHTML.toUpperCase().indexOf(filter3) > -1 &&
+      	  td3.innerHTML.toUpperCase().indexOf(filter4) > -1 &&
+      	  td4.innerHTML.toUpperCase().indexOf(filter5) > -1 &&
+      	  td5.innerHTML.toUpperCase().indexOf(filter6) > -1 &&
+      	  td6.innerHTML.toUpperCase().indexOf(filter7) > -1) {
         tr[i].style.display = "";
       } else {
         tr[i].style.display = "none";
       }
     } 
-  }
+     
+  }  
 }
 </script>
 
-<script>
-function myFunction2() {
-  // Declare variables 
-  var input, filter, table, tr, td, i;
-  input = document.getElementById("myInput2");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
-
-  // Loop through all table rows, and hide those who don't match the search query
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[1];
-    if (td) {
-      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    } 
-  }
-}
-</script>
-	
-<script>
-function myFunction3() {
-  // Declare variables 
-  var input, filter, table, tr, td, i;
-  input = document.getElementById("myInput3");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
-
-  // Loop through all table rows, and hide those who don't match the search query
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[2];
-    if (td) {
-      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    } 
-  }
-}
-</script>	
-	
-
-<script>
-function myFunction4() {
-  // Declare variables 
-  var input, filter, table, tr, td, i;
-  input = document.getElementById("myInput4");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
-
-  // Loop through all table rows, and hide those who don't match the search query
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[3];
-    if (td) {
-      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    } 
-  }
-}
-</script>	
 
 <div id = searches_box">	
 <div id = "search_box">	
 <form id = "search_boundary" action = "gethint.php">
-Filter by school name: <input type="text" id="myInput" onkeyup="myFunction()" placeholder="School name">
+Filter by school name: <input type="text" id="myInput1" onkeyup="myFunction()" placeholder="School name">
 </form>
+</div>
 
 <div id = "search_box">	
 <form id = "search_boundary">
-Filter by category: <input type="text" id="myInput2" onkeyup="myFunction2()" placeholder="Category">
+Filter by category: <input type="text" id="myInput2" onkeyup="myFunction()" placeholder="Category">
 </form>
+</div>
 
 <div id = "search_box">	
 <form id = "search_boundary">
-Filter by subject: <input type="text" id="myInput3" onkeyup="myFunction3()" placeholder="Subject name">
+Filter by subject: <input type="text" id="myInput3" onkeyup="myFunction()" placeholder="Subject name">
 </form>
+</div>
 
 <div id = "search_box">	
 <form id = "search_boundary">
-Filter by class: <input type="text" id="myInput4" onkeyup="myFunction4()" placeholder="Class name">
+Filter by class: <input type="text" id="myInput4" onkeyup="myFunction()" placeholder="Class name">
 </form>
+</div>
+  	<br />
+  	  	<br />
+  	  	  	<br />
+  	  	  	  	<br />
+  	  	  	  	  	<br />
+
+<div id = "search_box">	
+<form id = "search_boundary">
+Filter by ISBN: <input type="text" id="myInput5" onkeyup="myFunction()" placeholder="ISBN">
+</form>
+</div>
+
+<div id = "search_box">	
+<form id = "search_boundary">
+Filter by book name: <input type="text" id="myInput6" onkeyup="myFunction()" placeholder="Book name">
+</form>
+</div>
+
+<div id = "search_box">	
+<form id = "search_boundary">
+Filter by book author: <input type="text" id="myInput7" onkeyup="myFunction()" placeholder="Book author">
+</form>
+</div>
+
 </div>
 
 <p> <span id="txtHint"></span></p>

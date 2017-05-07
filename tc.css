@@ -165,19 +165,16 @@ text-decoration: none;
 }
 
 #tab_image_one {
-	height: 25rem;
-	width: 36.25rem;
+	max-width: 100%;
+	max-height: 100%;
 }
 #tab_image_two {
   	height: 25rem;
 	width: 28.75rem;
 }
-#tab_image_three {
-	position: inline-block;
-	display: inline-block;
-	
-	height: 25rem;
-	width: 36.25rem;
+#tab_image_three {	
+	max-width: 100%;
+	max-height: 100%;
 }
 
 

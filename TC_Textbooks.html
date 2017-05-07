@@ -117,7 +117,30 @@ function myFunction() {
 
   // Loop through all table rows, and hide those who don't match the search query
   for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    } 
+  }
+}
+</script>
+
+<script>
+function myFunction2() {
+  // Declare variables 
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput2");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
     if (td) {
       if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
         tr[i].style.display = "";
@@ -129,11 +152,74 @@ function myFunction() {
 }
 </script>
 	
+<script>
+function myFunction3() {
+  // Declare variables 
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput3");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[2];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    } 
+  }
+}
+</script>	
 	
+
+<script>
+function myFunction4() {
+  // Declare variables 
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput4");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[3];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    } 
+  }
+}
+</script>	
+
+<div id = searches_box">	
 <div id = "search_box">	
 <form id = "search_boundary" action = "gethint.php">
 Filter by school name: <input type="text" id="myInput" onkeyup="myFunction()" placeholder="School name">
 </form>
+
+<div id = "search_box">	
+<form id = "search_boundary">
+Filter by category: <input type="text" id="myInput2" onkeyup="myFunction2()" placeholder="Category">
+</form>
+
+<div id = "search_box">	
+<form id = "search_boundary">
+Filter by subject: <input type="text" id="myInput3" onkeyup="myFunction3()" placeholder="Subject name">
+</form>
+
+<div id = "search_box">	
+<form id = "search_boundary">
+Filter by class: <input type="text" id="myInput4" onkeyup="myFunction4()" placeholder="Class name">
+</form>
+</div>
 
 <p> <span id="txtHint"></span></p>
 
@@ -153,7 +239,7 @@ Filter by school name: <input type="text" id="myInput" onkeyup="myFunction()" pl
 		#font-size: 12px;
 		border: 1px solid #CCC; 
 		font-family: 'Raleway', sans-serif;
-
+   	    background-color: rgba(38,85,255,.03);
 	} 
 	.tableizer-table td {
 		#padding: 4px;
@@ -164,6 +250,7 @@ Filter by school name: <input type="text" id="myInput" onkeyup="myFunction()" pl
 		background-color: #104E8B; 
 		color: #FFF;
 		font-weight: bold;
+		
 	}
 </style>
 <table id="myTable" class="tableizer-table">	

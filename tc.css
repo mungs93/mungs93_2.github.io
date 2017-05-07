@@ -439,4 +439,7 @@ input[type=submit]:hover {
     text-align: center;
 }
 
-
+#searches_box {
+	display: inline-block;
+	position: inline-block;
+}

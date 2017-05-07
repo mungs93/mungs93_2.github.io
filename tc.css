@@ -16,10 +16,15 @@ body {
 }
 
 #logo {
-  padding: .9375rem 0rem .9375rem 0rem;
+  padding: 1.25rem 0rem;
   float: left;
   clear: float;
 }
+#header_logo {
+	width:27.5rem;
+	height:5.5rem;
+}
+
 
 .pull-me{
   cursor:pointer;

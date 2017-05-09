@@ -1,6 +1,6 @@
 <?php
 //if "email" variable is filled out, send email
-  if (isset($_REQUEST['email']))  {
+  if (isset($_REQUEST['firstname']))  {
   
   //Email information
   $admin_email = "textbookconsultants@gmail.com";

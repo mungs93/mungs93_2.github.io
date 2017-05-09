@@ -169,6 +169,29 @@ text-decoration: none;
     background-color: rgba(38,85,255,.03);	
 }
 
+.about_border {
+	border-style: outset;
+	margin: auto;
+	width: 100%;
+    opacity: 0.15;	
+    position: absolute;
+    z-index: -5;
+    left: 0;
+    height: 138%;
+}
+
+.textbook_border {
+	border-style: outset;
+	margin: auto;
+	width: 100%;
+    opacity: 0.15;	
+    position: absolute;
+    z-index: -5;
+    left: 0;
+    height: 87%;
+}
+
+
 #tab_image_one {
 	max-width: 100%;
 	max-height: 100%;
@@ -256,7 +279,9 @@ text-decoration: none;
   margin: .625rem 1rem;
   padding: 1.25rem 1rem;
   font-size: 1.25rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif, bold;
+  color: black;
+  z-index: 1;
 }
 
 	

@@ -10,16 +10,33 @@
   $subject = $_REQUEST['subject'];
   $comment = $_REQUEST['comment'];
   
+  $message = "Hello!
+
+Your contact form has been submitted by:
+
+First Name: $firstname
+Last Name: $lastname
+E-mail: $email
+
+Comments:
+$comment
+
+End of message
+";  
+
   //send email
-  mail($admin_email, $firstname, $lastname, "From:" . $email, "$subject", $comment);
+  mail($admin_email, $subject, $message);
   
-  //Email response
-  echo "Thank you for contacting us!";
-  }
+  header('Location: thanks.html');
+  exit();
   
   //if "email" variable is not filled out, display the form
   else  {
 ?>
 
 
+<?php
+exit();
+}
+?>
 

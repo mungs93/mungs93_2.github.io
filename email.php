@@ -3,12 +3,12 @@
 	
 	if (isset($_REQUEST['firstname']))  {
   
+  	$admil_email = textbookconsultants@gmail.com;
 	$firstname = $_REQUEST['firstname'];
 	$lastname = $_REQUEST['lastname'];
 	$email = $_REQUEST['email'];
 	$subject = $_REQUEST['subject'];
 	$comment = $_REQUEST['comment'];
-	
 	
 	$mail = new PHPMailer();
 	$mail -> IsSMTP();
@@ -30,22 +30,8 @@
 	$mail -> AddReplyTo($email, $firstname);
 	$mail -> IsHTML(true);
 	
-	}
-	if(!$mail->Send()) {
-  echo "The mail could not be sent: " . $mail->ErrorInfo;
-  exit;
-} 
-
-else {
-  echo "Message has been sent";
-}
-?>
-
 	
-//if "email" variable is filled out, send email
-
-  
-  $message = "Hello!
+	  $message = "Hello!
 
 Your contact form has been submitted by:
 
@@ -59,19 +45,18 @@ $comment
 End of message
 ";  
 
-  //send email
   mail($admin_email, $subject, $message);
-  
+
+	
+	}
+	if(!$mail->Send()) {
+  echo "The mail could not be sent: " . $mail->ErrorInfo;
   header('Location: www.textbookconsultants.com/thanks.html');
-  exit();
-  
-  //if "email" variable is not filled out, display the form
-  else  {
-?>
+  exit;
+} 
 
-
-<?php
-exit();
+else {
+  echo "Message has been sent";
+  header('Location: www.textbookconsultants.com/thanks.html');
 }
 ?>
-

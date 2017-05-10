@@ -3,7 +3,7 @@
   if (isset($_REQUEST['firstname']))  {
   
   //Email information
-  $admin_email = "textbookconsultants@gmail.com";
+  $admin_email = "admin@textbookconsultants.com";
   $firstname = $_REQUEST['firstname'];
   $lastname = $_REQUEST['lastname'];
   $email = $_REQUEST['email'];
@@ -27,7 +27,7 @@ End of message
   //send email
   mail($admin_email, $subject, $message);
   
-  header('Location: thanks.html');
+  header('Location: www.textbookconsultants.com/thanks.html');
   exit();
   
   //if "email" variable is not filled out, display the form

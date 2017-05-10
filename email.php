@@ -1,14 +1,49 @@
 <?php
-//if "email" variable is filled out, send email
-  if (isset($_REQUEST['firstname']))  {
+	require("class.phpmailer.php");
+	
+	if (isset($_REQUEST['firstname']))  {
   
-  //Email information
-  $admin_email = "admin@textbookconsultants.com";
-  $firstname = $_REQUEST['firstname'];
-  $lastname = $_REQUEST['lastname'];
-  $email = $_REQUEST['email'];
-  $subject = $_REQUEST['subject'];
-  $comment = $_REQUEST['comment'];
+	$firstname = $_REQUEST['firstname'];
+	$lastname = $_REQUEST['lastname'];
+	$email = $_REQUEST['email'];
+	$subject = $_REQUEST['subject'];
+	$comment = $_REQUEST['comment'];
+	
+	
+	$mail = new PHPMailer();
+	$mail -> IsSMTP();
+	$mail -> SMTP Auth = true;
+	$mail -> SMTP Secure = "ssl";
+	$mail -> Host = "smtp.gmail.com";
+	$mail -> Port = 465;
+	
+	$mail -> Username = "textbookconsultants@gmail.com";
+	$mail -> Password = "Seller732";
+	
+	$mail -> From = $email;
+	$mail -> FromName = $firstname;
+	$mail -> Subject = $subject;
+	$mail -> AltBody = $comment
+	
+	$mail -> WordWrap = 50;
+	$mail -> MsgHTML($body);
+	$mail -> AddReplyTo($email, $firstname);
+	$mail -> IsHTML(true);
+	
+	}
+	if(!$mail->Send()) {
+  echo "The mail could not be sent: " . $mail->ErrorInfo;
+  exit;
+} 
+
+else {
+  echo "Message has been sent";
+}
+?>
+
+	
+//if "email" variable is filled out, send email
+
   
   $message = "Hello!
 

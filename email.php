@@ -1,5 +1,5 @@
 <?php
-	require("class.phpmailer.php");
+	require("phpmailer/class.phpmailer.php");	
 	
 	if (isset($_REQUEST['firstname']))  {
   
@@ -45,7 +45,7 @@ $comment
 End of message
 ";  
 
-  mail($admin_email, $subject, $message);
+  fsockopen($admin_email, $subject, $message);
 
 	
 	}

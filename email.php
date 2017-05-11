@@ -1,7 +1,5 @@
 <?php
 	require("phpmailer/class.phpmailer.php");	
-	
-	if (isset($_REQUEST['firstname']))  {
   
   	$admil_email = textbookconsultants@gmail.com;
 	$firstname = $_REQUEST['firstname'];
@@ -9,6 +7,7 @@
 	$email = $_REQUEST['email'];
 	$subject = $_REQUEST['subject'];
 	$comment = $_REQUEST['comment'];
+	$upload = $_REQUEST['attachedfile'];
 	
 	$mail = new PHPMailer();
 	$mail -> IsSMTP();
@@ -23,7 +22,8 @@
 	$mail -> From = $email;
 	$mail -> FromName = $firstname;
 	$mail -> Subject = $subject;
-	$mail -> AltBody = $comment
+	$mail -> AltBody = $comment;
+	$mail -> Flie = $upload;
 	
 	$mail -> WordWrap = 50;
 	$mail -> MsgHTML($body);
@@ -47,8 +47,7 @@ End of message
 
   fsockopen($admin_email, $subject, $message);
 
-	
-	}
+
 	if(!$mail->Send()) {
   echo "The mail could not be sent: " . $mail->ErrorInfo;
   header('Location: www.textbookconsultants.com/thanks.html');

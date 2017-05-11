@@ -77,9 +77,70 @@
     
     <div class="container_box">
 
+<?php
+	require("phpmailer/class.phpmailer.php");	
+	
+	if (isset($_REQUEST['firstname']))  {
+  
+  	$admil_email = textbookconsultants@gmail.com;
+	$firstname = $_REQUEST['firstname'];
+	$lastname = $_REQUEST['lastname'];
+	$email = $_REQUEST['email'];
+	$subject = $_REQUEST['subject'];
+	$comment = $_REQUEST['comment'];
+	
+	$mail = new PHPMailer();
+	$mail -> IsSMTP();
+	$mail -> SMTP Auth = true;
+	$mail -> SMTP Secure = "ssl";
+	$mail -> Host = "smtp.gmail.com";
+	$mail -> Port = 465;
+	
+	$mail -> Username = "textbookconsultants@gmail.com";
+	$mail -> Password = "Seller732";
+	
+	$mail -> From = $email;
+	$mail -> FromName = $firstname;
+	$mail -> Subject = $subject;
+	$mail -> AltBody = $comment
+	
+	$mail -> WordWrap = 50;
+	$mail -> MsgHTML($body);
+	$mail -> AddReplyTo($email, $firstname);
+	$mail -> IsHTML(true);
+	
+	
+	  $message = "Hello!
 
+Your contact form has been submitted by:
 
-<form action="email.php" method = "post">
+First Name: $firstname
+Last Name: $lastname
+E-mail: $email
+
+Comments:
+$comment
+
+End of message
+";  
+
+  fsockopen($admin_email, $subject, $message);
+
+	
+	}
+	if(!$mail->Send()) {
+  echo "The mail could not be sent: " . $mail->ErrorInfo;
+  header('Location: www.textbookconsultants.com/thanks.html');
+  exit;
+} 
+
+else {
+  echo "Message has been sent";
+  header('Location: www.textbookconsultants.com/thanks.html');
+}
+?>
+
+<form action="email.php" action = "mailto: textbookconsultants@gmail.com" enctype = "multipart/form-data" method = "post">
 
     <label for="fname">First Name (required):</label>
     <input type="text" id="fname" name="firstname" placeholder="Your first name..">
@@ -95,7 +156,9 @@
 
     <label for="subject">Comment (optional):</label>
     <textarea id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
-
+	
+	Attachment: <INPUT TYPE = "file" NAME = "attachedfile" MAXLENGTH = 50 ALLOW = "text/*">
+	
     <input type="submit" value="Submit">
 
   </form>

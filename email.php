@@ -1,5 +1,5 @@
 <?php
-	require("phpmailer/class.phpmailer.php");	
+	include("class.phpmailer.php");	
   
   	$admil_email = textbookconsultants@gmail.com;
 	$firstname = $_REQUEST['firstname'];
@@ -11,14 +11,15 @@
 	
 	$mail = new PHPMailer();
 	$mail -> IsSMTP();
-	$mail -> SMTP Auth = true;
-	$mail -> SMTP Secure = "ssl";
-	$mail -> Host = "smtp.gmail.com";
-	$mail -> Port = 465;
+	//$mail -> SMTP Auth = true;
+	//$mail -> SMTP Secure = "ssl";
+	//$mail -> Host = "smtp.gmail.com";
+	//$mail -> Port = 465;
 	
-	$mail -> Username = "textbookconsultants@gmail.com";
-	$mail -> Password = "Seller732";
+	//$mail -> Username = "textbookconsultants@gmail.com";
+	//$mail -> Password = "Seller732";
 	
+	$mail -> SetFrom = ('admin@textbookconsultants.com', 'admin');
 	$mail -> From = $email;
 	$mail -> FromName = $firstname;
 	$mail -> Subject = $subject;
@@ -27,6 +28,7 @@
 	
 	$mail -> WordWrap = 50;
 	$mail -> MsgHTML($body);
+	$mail -> AddAddress($email, $firstname);
 	$mail -> AddReplyTo($email, $firstname);
 	$mail -> IsHTML(true);
 	
@@ -44,8 +46,6 @@ $comment
 
 End of message
 ";  
-
-  fsockopen($admin_email, $subject, $message);
 
 
 	if(!$mail->Send()) {

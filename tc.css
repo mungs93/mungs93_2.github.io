@@ -10,7 +10,7 @@ body {
   padding: 0rem .625rem .625rem .625rem;
   position: absolute;
   top: 0;
-  max-width: 100%;
+  width: 100%;
   z-index: 999;
   text-align: center;
 }
@@ -165,14 +165,14 @@ text-decoration: none;
 .home_border {
 	border-style: outset;
 	margin: 0 auto;
-	max-width: 81.25rem;
+	width: 81.25rem;
     background-color: rgba(38,85,255,.03);	
 }
 
 .about_border {
 	border-style: outset;
 	margin: auto;
-	max-width: 100%;
+	width: 100%;
     opacity: 0.15;	
     position: absolute;
     z-index: -5;
@@ -183,7 +183,7 @@ text-decoration: none;
 .textbook_border {
 	border-style: outset;
 	margin: auto;
-	max-width: 100%;
+	width: 100%;
     opacity: 0.15;	
     position: absolute;
     z-index: -5;
@@ -230,7 +230,7 @@ text-decoration: none;
     cursor: pointer;
     padding: .875rem 1rem;
     font-size: 1.25rem;
-    max-width: 30%;
+    width: 30%;
     display: inline-block;
     opacity: 0.5;
 }
@@ -247,7 +247,7 @@ text-decoration: none;
     padding: 3.125rem;
     text-align: center;
     height: 23.75rem;
-    max-width: 90%;
+    width: 90%;
     margin: 0rem 0rem 0rem 1.25rem;
 }
 
@@ -346,7 +346,7 @@ form {
 .thumbnail img {
    margin-top: .625rem;
    margin-bottom: 1.875rem;
-   max-max-width: 100%;
+   max-width: 100%;
    max-width: 30%;
    height: 30%;
 }
@@ -435,7 +435,7 @@ position: inline-block;
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-    max-width: 100%; /* Full max-width */
+    width: 100%; /* Full max-width */
     padding: 12px; /* Some padding */  
     border: 1px solid black; /* Gray border */
     border-radius: 4px; /* Rounded borders */
@@ -475,14 +475,58 @@ input[type=submit]:hover {
 }
 
 @media only screen and (max-width: 1000px) {
+	.box {
+	  max-width: 100%;	
+	}
+	
+	#header_logo {
+		max-width:27.5rem;
+	}
+	
 	ul.menu li{
-		max-width: 6rem;
+		max-width: 8rem;
 	}
+	
+	#logo {
+		float: none;
+	}
+	
+	.home_border {
+		max-width: 81.25rem;
+	}
+	
+	.about_border {
+		max-width: 100%;
+	}
+	
+	.textbook_border {
+		max-width: 100%;
+	}
+	
+	.tablink {
+	    max-width: 30%;
+	}
+	
+	.tabcontent {
+	    max-width: 90%;
+	}
+		
+
 	* {
-          font-size: 0.4rem;
+          font-size: 1rem;
 	}
-	#paragraph_1, #paragraph_2, #paragraph_3, #paragraph_4, #img_home_one, #img_home_two, #img_home_three, #img_home_four{
-          margin: 0.5rem 0;
-          padding: 0.5rem 0;
+	
+	#paragraph_1, #paragraph_2, #paragraph_3, #paragraph_4{
+          margin: 0.5rem 0.5rem;
+          padding: 0.5rem 0 0 2rem;
 	}
+	
+	 #img_home_one, #img_home_two, #img_home_three, #img_home_four {
+	      margin: 1rem 0;
+          padding: 1rem 0;
+	 }
+	
+	  #tab_image_one,  #tab_image_two, #tab_image_three {	
+	 	  display: none;
+	 }
 }

@@ -61,10 +61,6 @@ ul.menu li{
   clear: float;
 }
 
-.menu{
-	position: static;
-	padding: 0 0 0 27rem;
-}
 
 .pull-me a {
   color: inherit;

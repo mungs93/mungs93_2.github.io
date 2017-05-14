@@ -474,7 +474,7 @@ input[type=submit]:hover {
 	position: inline-block;
 }
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-device-width: 1000px) {
 *{
           font-size: 0.4rem;
           margin: 0.5rem 0;

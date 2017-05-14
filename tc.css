@@ -58,6 +58,13 @@ ul.menu li{
   clear: float;
 }
 
+ul.menu {
+	white-space: nowrap;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
 .pull-me a {
   color: inherit;
   font-family: inherit;

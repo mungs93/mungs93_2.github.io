@@ -477,6 +477,7 @@ input[type=submit]:hover {
 @media only screen and (max-width: 1000px) {
 	.box {
 	  max-width: 100%;	
+	  padding: 0 0 30rem 0;
 	}
 	
 	#header_logo {
@@ -492,7 +493,7 @@ input[type=submit]:hover {
 	}
 	
 	.home_border {
-		max-width: 81.25rem;
+		max-width: 100%;
 	}
 	
 	.about_border {

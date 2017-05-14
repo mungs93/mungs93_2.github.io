@@ -13,6 +13,11 @@ body {
   width: 100%;
   z-index: 999;
   text-align: center;
+  
+    	white-space: nowrap;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 
 #logo {
@@ -30,6 +35,10 @@ body {
   cursor:pointer;
   position: static;
   border-right: .125rem solid #00009B;
+    	white-space: nowrap;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 
 .panel {
@@ -52,21 +61,10 @@ ul.menu li{
   width: 10.625rem;
   float: left;
   color: #00009B;
-  	white-space: nowrap;
-	overflow-y: hidden;
-	overflow-x: scroll;
-	-webkit-overflow-scrolling: touch;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.25rem;
   text-transform: uppercase;
   clear: float;
-}
-
-ul.menu {
-	white-space: nowrap;
-	overflow-y: hidden;
-	overflow-x: scroll;
-	-webkit-overflow-scrolling: touch;
 }
 
 .pull-me a {

@@ -10,7 +10,7 @@ body {
   padding: 0rem .625rem .625rem .625rem;
   position: absolute;
   top: 0;
-  max-width: 100%;
+  width: 100%;
   z-index: 999;
   text-align: center;
 
@@ -22,7 +22,7 @@ body {
   clear: float;
 }
 #header_logo {
-	max-width:27.5rem;
+	width:27.5rem;
 	height:5.5rem;
 }
 
@@ -52,7 +52,7 @@ body {
 ul.menu li{
   display: inline-block;
   margin: 2.5rem 0rem 1.25rem 0rem;
-  max-width: 10.625rem;
+  width: 10.625rem;
   float: left;
   color: #00009B;
   font-family: 'Open Sans', sans-serif;
@@ -60,7 +60,6 @@ ul.menu li{
   text-transform: uppercase;
   clear: float;
 }
-
 
 .pull-me a {
   color: inherit;
@@ -139,22 +138,22 @@ footer.container p {
 
 #img_home_one {
   height: 3.0625rem;
-  max-width: 3.0625rem;
+  width: 3.0625rem;
   margin: 0rem 0rem 2.5rem 16.25rem;
 }
 #img_home_two {
   height: 3.75rem;
-  max-width: 4.1875rem;
+  width: 4.1875rem;
   margin: 2.5rem 0rem 2.5rem 15.625rem;
 }
 #img_home_three {
   height: 2.875rem;
-  max-width: 3.25rem;
+  width: 3.25rem;
   margin: 2.5rem 0rem 2.5rem 15.9375rem;
 }
 #img_home_four {
   height: 5.3125rem;
-  max-width: 6.125;
+  width: 6.125;
   margin: 2.5rem 0rem 2.5rem 14.375rem;
 }
 
@@ -169,14 +168,14 @@ text-decoration: none;
 .home_border {
 	border-style: outset;
 	margin: 0 auto;
-	max-width: 81.25rem;
+	width: 81.25rem;
     background-color: rgba(38,85,255,.03);	
 }
 
 .about_border {
 	border-style: outset;
 	margin: auto;
-	max-width: 100%;
+	width: 100%;
     opacity: 0.15;	
     position: absolute;
     z-index: -5;
@@ -187,7 +186,7 @@ text-decoration: none;
 .textbook_border {
 	border-style: outset;
 	margin: auto;
-	max-width: 100%;
+	width: 100%;
     opacity: 0.15;	
     position: absolute;
     z-index: -5;
@@ -202,7 +201,7 @@ text-decoration: none;
 }
 #tab_image_two {
   	height: 25rem;
-	max-width: 28.75rem;
+	width: 28.75rem;
 }
 #tab_image_three {	
 	max-width: 100%;
@@ -234,7 +233,7 @@ text-decoration: none;
     cursor: pointer;
     padding: .875rem 1rem;
     font-size: 1.25rem;
-    max-width: 30%;
+    width: 30%;
     display: inline-block;
     opacity: 0.5;
 }
@@ -251,7 +250,7 @@ text-decoration: none;
     padding: 3.125rem;
     text-align: center;
     height: 23.75rem;
-    max-width: 90%;
+    width: 90%;
     margin: 0rem 0rem 0rem 1.25rem;
 }
 
@@ -351,7 +350,7 @@ form {
    margin-top: .625rem;
    margin-bottom: 1.875rem;
    max-width: 100%;
-   max-width: 30%;
+   width: 30%;
    height: 30%;
 }
 
@@ -378,7 +377,7 @@ form {
    height: 5rem;
    line-height: 5rem;
    text-align: center;
-   max-width: 5rem;
+   width: 5rem;
  position: absolute;
  top: -2.5rem;
  right: 4.5rem;
@@ -439,11 +438,11 @@ position: inline-block;
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-    max-width: 100%; /* Full max-width */
+    width: 100%; /* Full width */
     padding: 12px; /* Some padding */  
     border: 1px solid black; /* Gray border */
     border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and max-width stays in place */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
@@ -480,5 +479,9 @@ input[type=submit]:hover {
 
 
 @media screen and (max-device-width: 480px) {
+*{
           font-size: 0.4rem;
+          margin: 0.5rem 0;
+          padding: 0.5rem 0;
+}
 }

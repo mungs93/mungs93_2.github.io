@@ -10,7 +10,7 @@ body {
   padding: 0rem .625rem .625rem .625rem;
   position: absolute;
   top: 0;
-  max-max-width: 100%;
+  max-width: 100%;
   z-index: 999;
   text-align: center;
 
@@ -22,7 +22,7 @@ body {
   clear: float;
 }
 #header_logo {
-	max-max-width:27.5rem;
+	max-width:27.5rem;
 	height:5.5rem;
 }
 
@@ -52,7 +52,7 @@ body {
 ul.menu li{
   display: inline-block;
   margin: 2.5rem 0rem 1.25rem 0rem;
-  max-max-width: 10.625rem;
+  max-width: 10.625rem;
   float: left;
   color: #00009B;
   font-family: 'Open Sans', sans-serif;
@@ -480,5 +480,5 @@ input[type=submit]:hover {
 
 
 @media screen and (max-device-width: 480px) {
-          font-size: 0.8rem;
+          font-size: 0.5rem;
 }

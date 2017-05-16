@@ -98,13 +98,14 @@
   				<div class="thumbnail"> 
     				<img ng-src="{{ product.cover }}"> 
     				<p class="title">{{ product.name }}</p> 
-				    <p class="price">{{ '$' + product.price }}</p> 
+
 				    <p class="date">{{ product.pubdate | date }}</p> 
+<!--				    <p class="price">{{ '$' + product.price }}</p> 
 				    <div class="rating">
 				    	<p class="likes" ng-click="plusOne($index)">+ {{ product.likes }} </p>
 				    	  	<hr style = "border-top: 1px double;
 							border-bottom: 1px double;" />
-				    </div>
+				    </div> -->
   				</div> 
 				</div>
       </div>

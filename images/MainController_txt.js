@@ -12,28 +12,22 @@ app.controller('MainController', ['$scope', function($scope) {
   	
   	
   	{ 
-    	name: 'Saving Our Companion Animals', 
+    	name: 'A Place for Peanuts', 
     	price: 12, 
     	pubdate: new Date('2017', '05', '01'), 
-    	cover: 'images/SOCA.png',
+    	cover: 'images/peanut.png',
     	likes: 0,
   	}, 
-  	{ 
-    	name: 'Restoration of natural habitat & creation of eco-friendly site of natural exploration along the San Marcos River', 
-    	price: 12,
-    	pubdate: new Date('2017', '05', '01'), 
-    	cover: 'images/San_Marcos_mod.png',
-    	likes: 0,
-  	}, 
+
   	  	{ 
-    	name: 'Fort Bend Apartment Locators service for residents of the great community', 
+    	name: 'Fort Bend Apartment Locators', 
     	price: 12,
     	pubdate: new Date('2017', '05', '01'), 
     	cover: 'images/image_1.png',
     	likes: 0,
   	}, 
   	{ 
-    	name: 'Continued TextbookConsultants service for future semesters and students', 
+    	name: 'Continued TextbookConsultants service', 
     	price: 5,
     	pubdate: new Date('2017', '05', '01'), 
     	cover: 'images/TB_logo.jpg',

@@ -346,9 +346,8 @@ form {
 .thumbnail img {
    margin-top: .625rem;
    margin-bottom: 1.875rem;
-   max-width: 100%;
    max-width: 30%;
-   height: 30%;
+   max-height: 30%;
 }
 
 .date {

@@ -73,46 +73,41 @@
  	  
    	<div class = "home_border">
 
-  <body ng-app="myApp">
-    <div class="header">
-      <div class="container">
+        <p id = "sub_head">Our Community Projects</p>
+        
+      <p class = "About_content"> </p> 
+
+  <div ng-app="AppMarketApp">
+    <div class="header2">
+      <div class="container2">
       </div>
     </div>
 
-    <div class="main" ng-controller="MainController">
-      <div class="container">
-
-        <h1 id = "sub_head">Our Community Project</h1>
-        
-      <p class = "About_content"> If you are doing meaningful works and want to raise its
-  	  awareness, please let us know in the 'Partnership' section. <br /> <br /> Except when reports from partners are unavailable, the reports of our work will be available
-  	  in the 'Transparency' section.</p>
-        
-  	<hr style = "border-top: 1px double black;
-	border-bottom: 1px double black;" />
-	<br />
-	<br />
-
-        <div ng-repeat="product in products" class="col-md-6"> 
-  				<div class="thumbnail"> 
-    				<img ng-src="{{ product.cover }}"> 
-    				<p class="title">{{ product.name }}</p> 
-
-				    <p class="date">{{ product.pubdate | date }}</p> 
-<!--				    <p class="price">{{ '$' + product.price }}</p> 
-				    <div class="rating">
-				    	<p class="likes" ng-click="plusOne($index)">+ {{ product.likes }} </p>
-				    	  	<hr style = "border-top: 1px double;
-							border-bottom: 1px double;" />
-				    </div> -->
-  				</div> 
-				</div>
+   <div class="main" ng-controller="MainController">
+      <div class="container2">
+         <div class="card2" ng-repeat="app in apps">
+          <app-info info="app"></app-info>
+           <install-app>
+        </div>
       </div>
     </div>
+
+    <!-- Modules -->
     <script src="images/app.js"></script>
-    <script src="images/MainController_txt.js"></script>
-  </body>
-     	</div>
+
+    <!-- Controllers -->
+    <script src="images/MainController.js"></script>
+
+    <!-- Directives -->
+    <script src="images/appInfo.js"></script>
+    <script src="images/installApp.js"></script>
+    
+    
+    </div>
+    </div>
+    </div>
+  </div>
+     	
   
   	<br />
   	<br />

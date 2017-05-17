@@ -114,15 +114,19 @@ footer.container p {
 #paragraph_1{
   padding: .9375rem 0rem 0rem 0rem;
   margin: 4.375rem 0rem 0rem 21.875rem;
+  font-weight: bold;
 }
 #paragraph_2{
   margin: 5.625rem 0rem 0rem 21.875rem;
+  font-weight: bold;
 }
 #paragraph_3{
   margin: 5.9375rem 0rem 0rem 21.875rem;
+  font-weight: bold;
 }
 #paragraph_4{
   margin: 5.625rem 0rem 0rem 21.875rem;
+  font-weight: bold;
 }
 
 .home_texts p{
@@ -167,6 +171,17 @@ text-decoration: none;
 	margin: 0 auto;
 	width: 81.25rem;
     background-color: rgba(38,85,255,.03);	
+}
+
+.home_border2 {
+	border-style: outset; 
+	margin: 0 auto;
+	width: 81.25rem;
+	height: 48rem;
+    background-image: url("images/classroom.jpg");	
+    background-size: 81.25rem 48rem;
+	background-repeat: no-repeat;
+	
 }
 
 .about_border {
@@ -350,68 +365,6 @@ form {
    max-height: 30%;
 }
 
-.date {
-   color: #a3a3a3 ;
-   font-size: .875rem;
-   font-weight: 200;
-}
-
-.title{
-  margin: .625rem 1rem;
-  padding: 1.25rem 1rem;
-  font-size: 1.25rem;
-  font-family: 'Raleway', sans-serif;
-}
-
-.price {
- background-color: #39D1B4 ;
- color: #fff;
- font-size: 1.125rem;
-   border-radius: 50%;
-   box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.2);
-   font-weight: 200;
-   height: 5rem;
-   line-height: 5rem;
-   text-align: center;
-   max-width: 5rem;
- position: absolute;
- top: -2.5rem;
- right: 4.5rem;
-}
-
-.rating {
- text-align: right;
- -webkit-user-select: none;
-    -moz-user-select: none;
-     -ms-user-select: none;
- margin: 1.875rem 0 -1.875rem 1.25rem;
-}
-
-.likes,
-.dislikes {
-   background: #F65A5B ;
- color: #fff;
- cursor: pointer;
- display: inline-block;
- font-size: .9375rem;
-   line-height: 2.5rem;
-   min-width: 2.5rem;
-   height: 5rem;
-   border-radius: 50%;
- margin: 0 2rem 3rem 5rem;
-   text-align: center;
-   font-weight: 200;
-   box-shadow: 0 .125rem .3125rem rgba(0,0,0,0.2);
-   transition: background 500ms;
-}
-
-.likes:hover,
-.dislikes:hover {
- color: #F65A5B ;
-   background: rgba(246, 90, 91, 0.25);
-   transition: background 500ms;
-}
-
 .footer_end {
 	text-align: right;
 	color: white;
@@ -472,6 +425,95 @@ input[type=submit]:hover {
 	display: inline-block;
 	position: inline-block;
 }
+
+
+
+.container2 {
+   margin-bottom: 30px;
+}
+
+.header2 h1 {
+   color: #000;
+   font-size: 30px;
+   font-weight: bold;
+   text-transform: lowercase;
+}
+
+.card2 {
+   overflow: hidden;
+   position: relative;
+   vertical-align: top;
+   width: 23%;
+   display: inline-block;
+   margin: 0 2px;
+}
+
+.title2 {
+   font-family: 'Open Sans', sans-serif;
+   background-color: #ebebfa;
+   color: #00009B;
+   font-size: 24px;
+   text-align: center;
+   font-weight: bold;
+   margin-bottom: 1px;
+}
+
+.title2 p{
+
+}
+
+.developer {
+   font-family: 'Raleway', sans-serif;  
+   color: #00009B;
+   font-size: 14px;
+}
+
+.price2 {
+   color: #000;
+   font-size: 14px;
+   font-weight: 700;
+   bottom: 130px;
+   right: 0px;
+   line-height: 60px;
+   width: 60px;
+   height: 60px;
+   position: static;
+   background: #fff;
+   border-bottom:3px solid #00009B;
+   text-align: center;
+}
+
+.icon {
+	height: 20rem;
+	width: 18.5rem;
+}
+
+.btn {
+   background: transparent;
+   color: #000;
+   border: 1px solid #000;
+   font-size: 14px;
+   font-weight: 200;
+   padding:2px 10px;
+   border-radius: 2px;
+}
+
+.btn:hover {
+   color: rgb(255,80,80);
+   background: rgba(255,80,80,0.25);
+   transition: background 500ms;
+   border: 1px solid rgb(255,80,80);
+}
+
+.btn-downloaded {
+ background-color: #ababab ;
+ color: #3f3f3f ;
+}
+
+
+
+
+
 
 @media only screen and (max-width: 1000px) {
 	.box {

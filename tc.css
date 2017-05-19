@@ -348,6 +348,7 @@ form {
  text-align: center;
 }
 
+
 .thumbnail {
  border: 0rem;
  position: relative;
@@ -446,6 +447,7 @@ input[type=submit]:hover {
    width: 23%;
    display: inline-block;
    margin: 0 2px;
+   height: 45rem;
 }
 
 .title2 {

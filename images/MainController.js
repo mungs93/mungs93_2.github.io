@@ -1,6 +1,6 @@
 app.controller('MainController', ['$scope', function($scope) {
   $scope.apps = [ 
-	  { 
+/*	  { 
 	    "icon": 'images/FBPA.jpg', 
 	    "title": 'Fort Bend Pets Alive', 
 	    "developer": 'FORT BEND PETS ALIVE! is a non-profit, 501(C)3 organization, dedicated to helping make Fort Bend a no-kill community through programs such as adoptions, education and community outreach, low cost spay and neuter surgeries, fostering, Positive Alternatives to Shelter Surrender (PASS), and rescuing from euthanasia lists.', 
@@ -26,7 +26,7 @@ app.controller('MainController', ['$scope', function($scope) {
 	    "url2": "https://www.facebook.com/aplaceforpeanut/",
 	    "url3": "https://www.paypal.me/APFP",
 	    "price": "Learn More" 
-	  },
+	  }, */
 	  {
 	    "icon": 'images/image_1_logo.png',
 	    "title": 'Fort Bend Apartment Locators',

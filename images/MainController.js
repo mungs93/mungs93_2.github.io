@@ -27,15 +27,7 @@ app.controller('MainController', ['$scope', function($scope) {
 	    "url3": "https://www.paypal.me/APFP",
 	    "price": "Learn More" 
 	  }, */
-	  {
-	    "icon": 'images/image_1_logo.png',
-	    "title": 'Fort Bend Apartment Locators',
-	    "developer": 'FBAL, headquartered out of Fort Bend County, offers apartment locating in Houston metro areas, as well as many primo locations in the State of Texas.',
-	    "url": "https://www.fortbendapartmentlocators.com",
-		"url2": "https://www.facebook.com/Fort-Bend-Apartment-Locators-170813793441790",
-		"url3": "https://www.fortbendapartmentlocators.com",
-	    "price": "Learn More" 
-	  },
+
 	  {
 	    "icon": 'images/TB_logo.png',
 	    "title": 'Textbook Consultants',

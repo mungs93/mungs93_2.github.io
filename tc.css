@@ -520,7 +520,7 @@ input[type=submit]:hover {
 @media only screen and (max-width: 1000px) {
 	.box {
 	  max-width: 100%;	
-	  padding:  0 0 30rem 0;
+	  padding: 0;
 	}
 	
 	#header_logo {
@@ -531,15 +531,11 @@ input[type=submit]:hover {
 	.pull-me{
 		border-right: 0;
   		border-bottom: 1.5px solid #00009B;
+  		position: relative;
 	}
-
-	ul.menu{
-	  margin: 0 0 30rem 0;
-	  padding:  0 0 30rem 0;
-	}
-		
+	
 	ul.menu li{
-		max-width: 10m;
+		max-width: 5rem;
 		color: #00009B;
 		text-align: center;
 		margin: 0.5rem 0 0 2rem;
@@ -603,6 +599,7 @@ input[type=submit]:hover {
 	
 	.about_border {
 		max-height: 100%;
+		position: relative;
 	}	
 
 	* {

@@ -521,7 +521,6 @@ input[type=submit]:hover {
 	.box {
 	  max-width: 100%;	
 	  padding: 0;
-	  margin: 0 0 30rem 0;
 	}
 	
 	#header_logo {
@@ -531,9 +530,13 @@ input[type=submit]:hover {
 	
 	.pull-me{
 		border-right: 0;
-  		border-bottom: 1.5rem solid #00009B;
+  		border-bottom: 1.5px solid #00009B;
 	}
-	
+
+	ul.menu{
+	  margin: 0 0 30rem 0;
+	}
+		
 	ul.menu li{
 		max-width: 10m;
 		color: #00009B;

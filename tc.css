@@ -72,6 +72,7 @@ p.drop-down a {
   font-size: 16px;
   text-transform: none;
   text-decoration: none;
+  border-bottom: 1px double black;
 }
 
 .active {
@@ -534,12 +535,13 @@ input[type=submit]:hover {
 	}
 	
 	.drop-down {
-
+		
 	}
 	
 	ul.menu li{
 		max-width: 14rem;
-		margin: 6px 10rem 0 0;
+		margin: 6px 0 0 0;
+		padding: 0 5rem 0 0;
 		color: #00009B;
 		text-align: center;
 	}
@@ -554,7 +556,7 @@ input[type=submit]:hover {
 	}
 	
 	.horiz_line {
-		margin: 0 0 25rem 0;
+		margin: 0 0 28rem 0;
 	}
 	
 	.home_border {

@@ -547,9 +547,13 @@ input[type=submit]:hover {
 		
 	}
 	
+	.horiz_line {
+		margin: 0 0 30rem 0;
+	
+	}
+	
 	.home_border {
 		max-width: 100%;
-		margin: 30rem 0 0 0;
 	}
 		
 	.textbook_border {
@@ -594,8 +598,6 @@ input[type=submit]:hover {
 	
 	.about_border {
 		max-height: 100%;
-		margin: 30rem 0 0 0;
-	
 	}	
 
 	* {

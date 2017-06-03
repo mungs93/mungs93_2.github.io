@@ -521,6 +521,7 @@ input[type=submit]:hover {
 	.box {
 	  max-width: 100%;	
 	  padding: 0;
+	  margin: 0 0 30rem 0;
 	}
 	
 	#header_logo {
@@ -528,11 +529,14 @@ input[type=submit]:hover {
 		padding: 0;
 	}
 	
+	.pull-me{
+		border-right: 0;
+  		border-bottom: 1.5rem solid #00009B;
+	}
+	
 	ul.menu li{
 		max-width: 10m;
 		color: #00009B;
-		border-right: 0;
-		border-bottom: 2px solid #00009B;
 		text-align: center;
 		margin: 0.5rem 0 0 2rem;
 	}
@@ -546,7 +550,7 @@ input[type=submit]:hover {
 	}
 	
 	.horiz_line {
-		margin: 0 0 30rem 0;
+
 	}
 	
 	.home_border {

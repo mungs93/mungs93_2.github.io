@@ -547,16 +547,16 @@ input[type=submit]:hover {
 
 	.home_border2 {
 		max-width: 100%;		
-		margin: 10rem 0 0 0;
+		margin: 0;
 	}
 	
 	.horiz_line {
-
+		margin: 0 0 20rem 0;
 	}
 	
 	.home_border {
 		max-width: 100%;
-		margin: 10rem 0 0 0;
+		margin: 0;
 	}
 		
 	.textbook_border {

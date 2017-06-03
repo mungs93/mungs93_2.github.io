@@ -521,14 +521,20 @@ input[type=submit]:hover {
 	.box {
 	  max-width: 100%;	
 	  padding: 0 0 30rem 0;
+	  margin: 0 0 30rem 0;
 	}
 	
 	#header_logo {
 		max-width:27.5rem;
+		padding: 0;
 	}
 	
 	ul.menu li{
-		max-width: 8rem;
+		max-width: 10m;
+		color: #215E21;
+		border-bottom: 1px solid blue;
+		text-align: center;
+		margin: 0.5rem 0 0 2rem;
 	}
 	
 	#logo {
@@ -551,8 +557,36 @@ input[type=submit]:hover {
 	    max-width: 30%;
 	}
 	
+	.tablink {
+	    max-width: 30%;
+	    padding: 0;
+	}
+	#defaultOpen {
+		margin: 0;
+	}
+	#tablink_2 {
+	margin: 0;
+	}
+	#tablink_3 {
+	margin: 0;
+	}
+
+	.Student_content{
+       margin: 0;
+  	 padding: 0;
+	}
+
+	.Student_content_2 {
+	       margin: 0;
+  	 padding: 0;
+
+	}
+
 	.tabcontent {
-	    max-width: 90%;
+	    max-width: 100%;
+	    padding: 0rem;
+	    margin: 0;
+
 	}
 		
 

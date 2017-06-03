@@ -542,7 +542,7 @@ input[type=submit]:hover {
 
 	.home_border2 {
 		max-width: 100%;
-		padding: 30rem 0 0 0;
+		margin: 30rem 0 0 0;
 		
 	}
 	
@@ -593,7 +593,12 @@ input[type=submit]:hover {
 	    margin: 0;
 
 	}
-		
+	
+	.about_border {
+		max-height: 100%;
+		margin: 30rem 0 0 0;
+	
+	}	
 
 	* {
           font-size: 1rem;
@@ -605,8 +610,7 @@ input[type=submit]:hover {
 	}
 	
 	 #img_home_one, #img_home_two, #img_home_three, #img_home_four {
-	      margin: .1rem 0;
-          padding: .1rem 0;
+	     display: none;
 	 }
 	
 	  #tab_image_one,  #tab_image_two, #tab_image_three {	

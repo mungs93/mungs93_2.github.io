@@ -535,8 +535,8 @@ input[type=submit]:hover {
 	}
 	
 	ul.menu li{
-		max-width: 6rem;
-		margin: 0;
+		max-width: 14rem;
+		margin: 1px 0 0 0;
 		color: #00009B;
 		text-align: center;
 	}
@@ -547,7 +547,7 @@ input[type=submit]:hover {
 
 	.home_border2 {
 		max-width: 100%;		
-		margin: 0;
+		margin: 20rem 0 0 0;
 	}
 	
 	.horiz_line {

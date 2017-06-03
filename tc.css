@@ -531,7 +531,8 @@ input[type=submit]:hover {
 	ul.menu li{
 		max-width: 10m;
 		color: #00009B;
-		border-bottom: 1px solid #00009B;
+		border-right: none;
+		border-bottom: 2px solid #00009B;
 		text-align: center;
 		margin: 0.5rem 0 0 2rem;
 	}
@@ -548,12 +549,9 @@ input[type=submit]:hover {
 	
 	.home_border {
 		max-width: 100%;
+		margin: 30rem 0 0 0;
 	}
-	
-	.about_border {
-		max-width: 100%;
-	}
-	
+		
 	.textbook_border {
 		max-width: 100%;
 	}

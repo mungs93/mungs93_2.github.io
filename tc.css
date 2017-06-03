@@ -535,10 +535,10 @@ input[type=submit]:hover {
 	}
 	
 	ul.menu li{
-		max-width: 5rem;
+		max-width: 6rem;
+		margin: 0;
 		color: #00009B;
 		text-align: center;
-		margin: 0.5rem 0 0 2rem;
 	}
 	
 	#logo {
@@ -547,6 +547,7 @@ input[type=submit]:hover {
 
 	.home_border2 {
 		max-width: 100%;		
+		margin: 10rem 0 0 0;
 	}
 	
 	.horiz_line {
@@ -555,6 +556,7 @@ input[type=submit]:hover {
 	
 	.home_border {
 		max-width: 100%;
+		margin: 10rem 0 0 0;
 	}
 		
 	.textbook_border {

@@ -534,9 +534,13 @@ input[type=submit]:hover {
   		position: relative;
 	}
 	
+	.drop-down {
+		margin: 0;
+	}
+	
 	ul.menu li{
 		max-width: 14rem;
-		margin: 3px 5px 0 0;
+		margin: 6px 5rem 0 0;
 		color: #00009B;
 		text-align: center;
 	}

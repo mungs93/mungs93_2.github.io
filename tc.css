@@ -520,8 +520,7 @@ input[type=submit]:hover {
 @media only screen and (max-width: 1000px) {
 	.box {
 	  max-width: 100%;	
-	  padding: 0 0 30rem 0;
-	  margin: 0 0 30rem 0;
+	  padding: 0;
 	}
 	
 	#header_logo {
@@ -531,14 +530,20 @@ input[type=submit]:hover {
 	
 	ul.menu li{
 		max-width: 10m;
-		color: #215E21;
-		border-bottom: 1px solid blue;
+		color: #00009B;
+		border-bottom: 1px solid #00009B;
 		text-align: center;
 		margin: 0.5rem 0 0 2rem;
 	}
 	
 	#logo {
 		float: none;
+	}
+
+	.home_border2 {
+		max-width: 100%;
+		padding: 30rem 0 0 0;
+		
 	}
 	
 	.home_border {
@@ -600,8 +605,8 @@ input[type=submit]:hover {
 	}
 	
 	 #img_home_one, #img_home_two, #img_home_three, #img_home_four {
-	      margin: 1rem 0;
-          padding: 1rem 0;
+	      margin: .1rem 0;
+          padding: .1rem 0;
 	 }
 	
 	  #tab_image_one,  #tab_image_two, #tab_image_three {	

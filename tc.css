@@ -531,16 +531,15 @@ input[type=submit]:hover {
 	.pull-me{
 		border-right: 0;
   		border-bottom: 1.5px solid #00009B;
-  		position: relative;
 	}
 	
 	.drop-down {
-		margin: 0;
+
 	}
 	
 	ul.menu li{
 		max-width: 14rem;
-		margin: 6px 5rem 0 0;
+		margin: 6px 10rem 0 0;
 		color: #00009B;
 		text-align: center;
 	}
@@ -555,7 +554,7 @@ input[type=submit]:hover {
 	}
 	
 	.horiz_line {
-		margin: 0 0 20rem 0;
+		margin: 0 0 25rem 0;
 	}
 	
 	.home_border {

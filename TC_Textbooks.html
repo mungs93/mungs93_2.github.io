@@ -103,16 +103,24 @@
              <a href = "TC_Textbooks.html" class = "home_search_tag"> </a> "         " <a href = "TC_Textbooks.html" class = "home_search_tag"> Exclude classes with pending textbook selection </a> 
     </p>  
 
-        <div class="container">
-  <form action="getuser.php"   style = "padding: 1rem 36rem;">
-
+        <div id = "search_box">
+  <form action="getuser.php">
 <label for="country"></label>
-    <select id="search_box" name="school" onchange="showUser(this.value)">
-  <option value="">School list (Display only):</option>
-  <option value="1">University of Houston-Downtown</option>
-  <option value="2">University of Houston-Main Campus</option>
-  <option value="3">University of Pennsylvania</option>
-  <option value="4">Texas A&M University</option>
+    <select id="myInput1" name="school" onchange="myFunction()" placeholder="School name">
+  <option value="">School list:</option>
+  <option value="University of Houston-Downtown">University of Houston-Downtown</option>
+  <option value="University of Houston-Main Campus">University of Houston-Main Campus</option>
+  <option value="University of Pennsylvania">University of Pennsylvania</option>
+  <option value="Texas A&M University">Texas A&M University</option>
+    </select>
+  	  </form>
+</div>
+
+        <div id = "search_box">
+  <form action="getuser.php">
+<label for="country"></label>
+    <select id="myInput2" name="school" onchange="myFunction()" placeholder="Category">
+  <option value="">Category list:</option>
     </select>
   	  </form>
 </div>
@@ -166,7 +174,7 @@ function myFunction() {
 </script>
 
 
-<div id = searches_box">	
+<div id = "searches_box">	
 <div id = "search_box">	
 <form id = "search_boundary" action = "gethint.php">
 Filter by school name: <input type="text" id="myInput1" onkeyup="myFunction()" placeholder="School name">

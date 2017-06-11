@@ -29,12 +29,39 @@ app.controller('MainController', ['$scope', function($scope) {
 	  }, */
 
 	  {
+	    "icon": 'images/San_Marcos_mod.png',
+	    "title": 'San Marcos River Restoration',
+	    "developer": 'Experience the pristine nature of San Marcos River',
+	    "url": "https://textbookconsultants.com",
+	    "url2": "https://www.facebook.com/textbookconsultants",
+	    "url3": "https://www.paypal.me/TextbookConsultants",
+	    "price": "Learn More" 
+	  },
+	  	  {
+	    "icon": 'images/WhiteFlower.jpg',
+	    "title": 'Preservation and Study of Wildlife Habitat',
+	    "developer": 'Our team is studying and documenting species in different wildlife habitat.',
+	    "url": "https://textbookconsultants.com",
+	    "url2": "https://www.facebook.com/textbookconsultants",
+	    "url3": "https://www.paypal.me/TextbookConsultants",
+	    "price": "Learn More" 
+	  },
+	  	  {
+	    "icon": 'images/habitat.jpg',
+	    "title": 'Assisting Seniors with moving',
+	    "developer": 'Let us know if you need help with moving.',
+	    "url": "https://textbookconsultants.com",
+	    "url2": "https://www.facebook.com/textbookconsultants",
+	    "url3": "https://www.paypal.me/TextbookConsultants",
+	    "price": "Learn More" 
+	  },
+	  	  {
 	    "icon": 'images/TB_logo.png',
 	    "title": 'Textbook Consultants',
 	    "developer": 'TextbookConsultants connects students, parents, and instructors to competitive and market-efficient price of textbooks.',
 	    "url": "https://textbookconsultants.com",
 	    "url2": "https://www.facebook.com/textbookconsultants",
-	    "url3": "https://www.paypal.com/donate/?token=GmcFyeJHCDpcdDaSvUdzVVqvmJ4gVoIjvFSDRPaDGL9-zwPjgG8cyIlAwmtBOfzC9QATm0",
+	    "url3": "https://www.paypal.me/TextbookConsultants",
 	    "price": "Learn More" 
 	  }
 	];

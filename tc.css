@@ -516,6 +516,11 @@ input[type=submit]:hover {
  
 }
 
+.center {
+ margin: 1rem 36rem; 
+ text-align: center;
+}
+
 
 @media only screen and (max-width: 1000px) {
 	.box {
@@ -622,6 +627,10 @@ input[type=submit]:hover {
 	
 	* {
           font-size: 1rem;
+	}
+	
+	.center {
+	 margin: 0; 
 	}
 	
 	#paragraph_1, #paragraph_2, #paragraph_3, #paragraph_4{

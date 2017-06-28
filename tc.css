@@ -89,6 +89,18 @@ p.drop-down a {
   margin: .625rem .3125rem .625rem .3125rem;
 }
 
+.analysis {
+  text-align: center;
+  color: #00009B;
+ font-family: 'Raleway', sans-serif;    
+  }
+
+.analysis_output {
+	text-align: center;
+	font-size: 1.5rem;
+
+}
+
 #sub_head {
  font-weight: 600;
  font-family: 'Raleway', sans-serif;  

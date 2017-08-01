@@ -3,15 +3,31 @@ $(document).ready(function(){
     $('.panel p').mouseenter(function(){ 
 	    $(this).toggleClass('active');
 	    $(this).fadeTo(100, 0.5);
-	    $(this).toggleClass('inactive');
-	    $(this).fadeTo(1500, 1);
+	    $(this).fadeTo(1200, 1);
     });
 });
+
+$(document).ready(function(){
+	$('.pull-me').on({
+    	mouseenter: function(){
+        	$(this).css("text-decoration", "underline");        
+        	},	
+    	mouseleave: function(){
+        	$(this).css("text-decoration", "none");        
+        	}
+	});
+});
+
+
+
 
 	
 $(document).ready(function(){
     $('.pull-me').mouseenter(function(){ 
-        $('.panel').slideToggle('slow');
+        $('.panel').slideDown('slow');
+    });
+    $('.box').mouseleave(function(){ 
+        $('.panel').slideUp('slow');
     });
 });
 

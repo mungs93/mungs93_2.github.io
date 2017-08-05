@@ -117,7 +117,7 @@ p.drop-down a {
  font-weight: 600;
  font-family: 'Tangerine', cursive;  
  color: #00009B;
- font-size: 10rem;
+ font-size: 9rem;
  margin: 0rem 0;
  padding: 3rem 0;
  line-height: 2.75rem;
@@ -193,7 +193,7 @@ text-decoration: none;
 .home_border2 {
 	margin: 0 auto;
 	height: 65rem;
-    background-image: url("images/golf.jpg");	
+    background-image: url("images/Golf.jpg");	
     background-size: 100% 48rem;
 	background-repeat: no-repeat;
 }

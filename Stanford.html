@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<html>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <title> Textbook Consultants</title>
+  <link rel="stylesheet" type="text/css" href="tc.css"/>
+  <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+  <script type = "text/javascript" src='tc.js'></script>
+  <link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css'/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+
+<script type="text/javascript">
+      function nocontext(e) {
+        var clickedTag = (e==null) ? event.srcElement.tagName : e.target.tagName;
+        if (clickedTag == "IMG")
+          return false;
+      }
+      document.oncontextmenu = nocontext;
+    </script>
+
+
+</head>
+
+<body>
+  <div class = "box">
+	<div id = "logo">
+	  <a href = "index.html">
+	  <img src = "images/TB_logo_3.png" alt = "Textbook Consultants logo" id = "header_logo">
+	  </a>
+	</div>
+	  <ul class = "menu">
+	    <li id = "menu_1"> <div class = "pull-me"> <a href = "index.html"> Home </a></div></li> 
+	    <li id = "menu_2"> 
+   		<div class = "pull-me"> <a href = "TC_AboutUs.html"> About Us </a></div>
+	    </li>
+	    <li id = "menu_3"> <div class = "pull-me"> <a href = "TC_Textbooks.html"> Textbook </div></a>
+	    <br />
+		<div class="panel">
+        <p class="drop-down"><a href = "TC_Textbooks.html">Search</a></p>
+        <br />
+        <p class="drop-down"><a href = "TC_Textbooks_Ana.html">Analysis</a></p>
+        </div>    
+	    </li>
+	    <li id = "menu_4"> <div class = "pull-me"> 
+	    <a href = "TC_Community.html"> Community </div></a> 
+        <br />
+   	    <div class="panel">
+        <p class="drop-down"><a href = "TC_Community.html">Community</a></p>
+        <br />
+        <p class="drop-down"><a href = "TC_Com_GP.html">Gifts & Pledge</a></p>
+        <br />
+        <p class="drop-down"><a href = "TC_Com_Tr.html">Transparency</a></p>
+        </div>
+        </li>
+	    <li id = "menu_5"> <div class = "pull-me"> <a href = "TC_Contact.html"> Contact </div></a>
+        <br />
+   	    <div class="panel">
+        <p class="drop-down"><a href = "TC_Contact.html">Contact & Feedback</a></p>
+        <br />
+        <p class="drop-down"><a href = "TC_Con_PS.html">Partnerships</a></p>
+        <br />
+        <p class="drop-down"><a href = "TC_Con_YS.html">Your Story</a></p>
+        </div>
+        </li>
+	  </ul>
+	</div>
+  	<br />
+  	<br />
+  	<br />
+  	<br />
+  	<br />
+  	<br />
+  	<br />
+  	<hr style = "border-top: 1px double #00009B;
+	border-bottom: 1px double #00009B;" class = "horiz_line" />
+
+  	
+  	<img src = "images/pen.jpg" alt = "Pen image" class = "textbook_border">	
+
+  	<br />
+  	<br />
+  	
+        <h2 id = "sub_head">Welcome to the <a href = "TC_Textbooks.html" class = "home_search_tag">Search</a> page:</h2>
+            <p class = "About_content" style = "text-align: center">
+            
+            "List_Price" indicates the official price. "New_Price" and "Used_Price" indicate the lowest possible prices on the market. <br />
+            "-1ed" means one edition lower than the edition used in the class. "-2ed" means two editions lower. <br /><br />
+			Due to limited quantity of books, we verify each book individually. Contact us for a link to any 'lowest price'
+			or any other information listed below.<br /><br />
+
+            If you liked our work, please visit 'Community' page and look through other projects we are working on.<br />
+            <br />
+            <a href = "TC_Textbooks.html" class = "home_search_tag"> Summer 2017 </a>
+            <br />
+            <br />
+             <a href = "TC_Textbooks.html" class = "home_search_tag"> </a> "         " <a href = "TC_Textbooks.html" class = "home_search_tag"> Exclude classes with pending textbook selection </a> 
+    </p>  
+
+        <div id = "search_box">
+  <form action="getuser.php">
+<label for="country"></label>
+    <select id="myInput11" name="school" onchange="myFunction()" placeholder="School name">
+  <option value="">School list: Show All</option>
+    <option value="Houston Community College">Houston Community College</option>
+  <option value="University of Houston-Downtown">University of Houston-Downtown</option>
+  <option value="University of Houston-Main Campus">University of Houston-Main Campus</option>
+  <option value="University of Pennsylvania">University of Pennsylvania</option>
+  <option value="Texas A">Texas A&M University</option>
+    </select>
+  	  </form>
+</div>
+
+        <div id = "search_box">
+  <form action="getuser.php">
+<label for="country"></label>
+    <select id="myInput12" name="school" onchange="myFunction()" placeholder="Category">
+<option value="">Category list: Show All</option>
+<option value="Accounting">Accounting</option>
+<option value="Africana Studies">Africana Studies</option>
+<option value="Agricultural Communication ">Agricultural Communication & Journalism</option>
+<option value="Agricultural Economics">Agricultural Economics</option>
+<option value="Agricultural Leadership ">Agricultural Leadership & Development</option>
+<option value="Agricultural Leadership, Education ">Agricultural Leadership, Education & Communication</option>
+<option value="Agricultural Systems Management">Agricultural Systems Management</option>
+<option value="Ancient History">Ancient History</option>
+<option value="Animal Science">Animal Science</option>
+<option value="Anthropology">Anthropology</option>
+<option value="Applied Administration">Applied Administration</option>
+<option value="Applied Sciences">Applied Sciences</option>
+<option value="Arabic">Arabic</option>
+<option value="Art">Art</option>
+<option value="Art History">Art History</option>
+<option value="Astronomy">Astronomy</option>
+<option value="Athletic Training">Athletic Training</option>
+<option value="Audio Recording Technology">Audio Recording Technology</option>
+<option value="Audio Recording Technology/Video Production">Audio Recording Technology/Video Production</option>
+<option value="Automotive Body Repairer">Automotive Body Repairer</option>
+<option value="Automotive Mechanic Technician">Automotive Mechanic Technician</option>
+<option value="Baker/Pastry Chef">Baker/Pastry Chef</option>
+<option value="Banking">Banking</option>
+<option value="Biological ">Biological & Agricultural Engineering</option>
+<option value="Biological Basis of Behavior">Biological Basis of Behavior</option>
+<option value="Biology">Biology</option>
+<option value="Business Administration">Business Administration</option>
+<option value="Business Computer Info System">Business Computer Info System</option>
+<option value="Business Management">Business Management</option>
+<option value="Business Technology">Business Technology</option>
+<option value="Chemical Engineering">Chemical Engineering</option>
+<option value="Chemistry">Chemistry</option>
+<option value="Child Development">Child Development</option>
+<option value="Civil Engineering">Civil Engineering</option>
+<option value="Classical Studies">Classical Studies</option>
+<option value="Communication">Communication</option>
+<option value="Communication Sciences and Disorders">Communication Sciences and Disorders</option>
+<option value="Communication Service">Communication Service</option>
+<option value="Communications">Communications</option>
+<option value="Comparative Literature and Literary Theory">Comparative Literature and Literary Theory</option>
+<option value="Computer and Information Science">Computer and Information Science</option>
+<option value="Computer Maintenance">Computer Maintenance</option>
+<option value="Computer Science">Computer Science</option>
+<option value="Computer Science ">Computer Science & Engineering</option>
+<option value="Construction Science">Construction Science</option>
+<option value="Construction Technology">Construction Technology</option>
+<option value="Corrosion Technology">Corrosion Technology</option>
+<option value="Cosmetology">Cosmetology</option>
+<option value="Counseling Psychology">Counseling Psychology</option>
+<option value="Criminology">Criminology</option>
+<option value="Culinary Arts">Culinary Arts</option>
+<option value="Dance">Dance</option>
+<option value="Dance Education">Dance Education</option>
+<option value="Diesel Engine Mechanic/Repair">Diesel Engine Mechanic/Repair</option>
+<option value="Digital Communication">Digital Communication</option>
+<option value="Digital Gaming ">Digital Gaming & Simulation</option>
+<option value="Digital Media">Digital Media</option>
+<option value="Drafting Technology">Drafting Technology</option>
+<option value="Drama">Drama</option>
+<option value="Early Childhood Education">Early Childhood Education</option>
+<option value="East Asian Languages And Civilizations">East Asian Languages And Civilizations</option>
+<option value="Ecnomics">Ecnomics</option>
+<option value="Economics">Economics</option>
+<option value="Ecosystem Science ">Ecosystem Science & Management</option>
+<option value="Education">Education</option>
+<option value="Education Curriculum ">Education Curriculum & Development</option>
+<option value="Education Human Resources Development">Education Human Resources Development</option>
+<option value="Education Psychology">Education Psychology</option>
+<option value="Education Psychology Field Based">Education Psychology Field Based</option>
+<option value="Educational Leadership and Cultural Studies">Educational Leadership and Cultural Studies</option>
+<option value="Educational Psychology">Educational Psychology</option>
+<option value="Electrical ">Electrical & Computer Engineering</option>
+<option value="Electrical and Computer Engineering">Electrical and Computer Engineering</option>
+<option value="Electrical Engineering Technology">Electrical Engineering Technology</option>
+<option value="Electrocardio Technology/Technician">Electrocardio Technology/Technician</option>
+<option value="Electromechanical Technology">Electromechanical Technology</option>
+<option value="Emergency Med Technology">Emergency Med Technology</option>
+<option value="Engineering">Engineering</option>
+<option value="Engineering Mathematics">Engineering Mathematics</option>
+<option value="Engineering Technology">Engineering Technology</option>
+<option value="English">English</option>
+<option value="English As a Second Language">English As a Second Language</option>
+<option value="Entomology">Entomology</option>
+<option value="Environmental Studies">Environmental Studies</option>
+<option value="Fashion Design">Fashion Design</option>
+<option value="Fashion Merchandising">Fashion Merchandising</option>
+<option value="Film Studies">Film Studies</option>
+<option value="Film/Cinema Studies">Film/Cinema Studies</option>
+<option value="Finance">Finance</option>
+<option value="Folklore">Folklore</option>
+<option value="Food Science ">Food Science & Technology</option>
+<option value="Forensic ">Forensic & Inv Science</option>
+<option value="French">French</option>
+<option value="Gender, Sexuality ">Gender, Sexuality & Women's Studies</option>
+<option value="General Business Administration">General Business Administration</option>
+<option value="Geography">Geography</option>
+<option value="Geology">Geology</option>
+<option value="Government">Government</option>
+<option value="Greek">Greek</option>
+<option value="Health">Health</option>
+<option value="Health Education">Health Education</option>
+<option value="Health Information Technology">Health Information Technology</option>
+<option value="Health Professions">Health Professions</option>
+<option value="Health Promotion and Community Health Sciences">Health Promotion and Community Health Sciences</option>
+<option value="Heating, Air Conditioning ">Heating, Air Conditioning & Refrigeration</option>
+<option value="History">History</option>
+<option value="Histotechnology">Histotechnology</option>
+<option value="Horticultural Sciences">Horticultural Sciences</option>
+<option value="Hospitality Administration">Hospitality Administration</option>
+<option value="Hotel and Restaurant Management">Hotel and Restaurant Management</option>
+<option value="Human Development and Consumer Sciences">Human Development and Consumer Sciences</option>
+<option value="Human Development and Family Studies">Human Development and Family Studies</option>
+<option value="Human Service Technology">Human Service Technology</option>
+<option value="Humanities">Humanities</option>
+<option value="Industrial Electricity">Industrial Electricity</option>
+<option value="Industry ">Industry & Systems Engineering</option>
+<option value="Insurance and Risk Management">Insurance and Risk Management</option>
+<option value="Integrated Product Design">Integrated Product Design</option>
+<option value="Integrated Reading ">Integrated Reading & Writing</option>
+<option value="Interdisciplinary Studies">Interdisciplinary Studies</option>
+<option value="Interior Design">Interior Design</option>
+<option value="International Affairs">International Affairs</option>
+<option value="International Business">International Business</option>
+<option value="International Relations">International Relations</option>
+<option value="Japanese">Japanese</option>
+<option value="Journalism">Journalism</option>
+<option value="Kinesiology">Kinesiology</option>
+<option value="Korean">Korean</option>
+<option value="Law">Law</option>
+<option value="Linguistics">Linguistics</option>
+<option value="Logistics ">Logistics & Materials Management</option>
+<option value="Machining Technology">Machining Technology</option>
+<option value="Management">Management</option>
+<option value="Management Information System">Management Information System</option>
+<option value="Management Information Systems">Management Information Systems</option>
+<option value="Maritime Transportation">Maritime Transportation</option>
+<option value="Marketing">Marketing</option>
+<option value="Master of Business Administration">Master of Business Administration</option>
+<option value="Mathematics">Mathematics</option>
+<option value="Mechanical Engineering">Mechanical Engineering</option>
+<option value="Mechanical Engineering And Applied Mechanics">Mechanical Engineering And Applied Mechanics</option>
+<option value="Medical Assistant">Medical Assistant</option>
+<option value="Medical Records Technology">Medical Records Technology</option>
+<option value="Microbiology">Microbiology</option>
+<option value="Music">Music</option>
+<option value="Music Business\xca">Music Business\xca</option>
+<option value="NA">NA</option>
+<option value="Networking ">Networking & Telecommunication</option>
+<option value="Nuclear Engineering">Nuclear Engineering</option>
+<option value="Nursing">Nursing</option>
+<option value="Nursing Assistant">Nursing Assistant</option>
+<option value="Nutrition">Nutrition</option>
+<option value="Occupational Therapy Assistant">Occupational Therapy Assistant</option>
+<option value="Operations,information And Decisions">Operations,information And Decisions</option>
+<option value="Organizational Dynamics">Organizational Dynamics</option>
+<option value="Organizational Leadership and Supervision">Organizational Leadership and Supervision</option>
+<option value="Paralegal/Legal Assistant">Paralegal/Legal Assistant</option>
+<option value="Parent Education Project">Parent Education Project</option>
+<option value="Petroleum Engineering">Petroleum Engineering</option>
+<option value="Petroleum Engineering Technology">Petroleum Engineering Technology</option>
+<option value="Pharmacy Technician/Assistant">Pharmacy Technician/Assistant</option>
+<option value="Philosophy">Philosophy</option>
+<option value="Phlebotomy">Phlebotomy</option>
+<option value="Photography">Photography</option>
+<option value="Physical Education ">Physical Education & Health</option>
+<option value="Physics">Physics</option>
+<option value="Political Science">Political Science</option>
+<option value="Poultry Science">Poultry Science</option>
+<option value="Process Technology">Process Technology</option>
+<option value="Professional Education">Professional Education</option>
+<option value="Psychological, Health ">Psychological, Health & Learning Sciences</option>
+<option value="Psychology">Psychology</option>
+<option value="Public Health">Public Health</option>
+<option value="Public Health Epidemiology Biostatistics">Public Health Epidemiology Biostatistics</option>
+<option value="Public Service ">Public Service & Administration</option>
+<option value="Radiologic Technology">Radiologic Technology</option>
+<option value="Reading">Reading</option>
+<option value="Real Estate">Real Estate</option>
+<option value="Recreation, Park ">Recreation, Park & Tourism Science</option>
+<option value="Religious Studies">Religious Studies</option>
+<option value="Respiratory Therapy Technician">Respiratory Therapy Technician</option>
+<option value="Restaurant Management">Restaurant Management</option>
+<option value="Robotics Technology/Technician">Robotics Technology/Technician</option>
+<option value="School Psychology">School Psychology</option>
+<option value="Sign Language">Sign Language</option>
+<option value="Social Sciences">Social Sciences</option>
+<option value="Social Work">Social Work</option>
+<option value="Sociology">Sociology</option>
+<option value="Spanish">Spanish</option>
+<option value="Speech">Speech</option>
+<option value="Sport Management">Sport Management</option>
+<option value="Statistics">Statistics</option>
+<option value="Supply Chain and Logistics Technology">Supply Chain and Logistics Technology</option>
+<option value="Surgical/Operating Room Technology">Surgical/Operating Room Technology</option>
+<option value="Teacher Education">Teacher Education</option>
+<option value="Technical Mathematics">Technical Mathematics</option>
+<option value="Urban ">Urban & Reg Planning</option>
+<option value="Urban Studies">Urban Studies</option>
+<option value="Vet Physiology ">Vet Physiology & Pharmacology</option>
+<option value="Vocational Nursing">Vocational Nursing</option>
+<option value="Wildlife ">Wildlife & Fisheries Science</option>
+<option value="Women's ">Women's & Gender Studies</option>
+<option value="Women's, Gender, and Sexuality Studies">Women's, Gender, and Sexuality Studies</option>
+<option value="World Cultures and Literatures">World Cultures and Literatures</option>
+<option value="Writing">Writing</option>
+  
+    </select>
+  	  </form>
+</div>
+
+<script>
+function myFunction() {
+  // Declare variables 
+  var input1,input2,input3,input4,input5,input6,input7,input11,input12,filter, table, tr, td0, td1, td2, td3, td4, td5, td6, i;
+  input1 = document.getElementById("myInput1");
+  input2 = document.getElementById("myInput2");
+  input3 = document.getElementById("myInput3");
+  input4 = document.getElementById("myInput4");
+  input5 = document.getElementById("myInput5");
+  input6 = document.getElementById("myInput6");
+  input7 = document.getElementById("myInput7");
+  input11 = document.getElementById("myInput11");
+  input12 = document.getElementById("myInput12");  
+  filter1 = input1.value.toUpperCase();
+  filter2 = input2.value.toUpperCase();
+  filter3 = input3.value.toUpperCase();
+  filter4 = input4.value.toUpperCase();
+  filter5 = input5.value.toUpperCase();
+  filter6 = input6.value.toUpperCase();
+  filter7 = input7.value.toUpperCase();
+  filter11 = input11.value.toUpperCase();
+  filter12 = input12.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td0 = tr[i].getElementsByTagName("td")[0];
+    td1 = tr[i].getElementsByTagName("td")[1];
+    td2 = tr[i].getElementsByTagName("td")[2];    
+    td3 = tr[i].getElementsByTagName("td")[3];
+    td4 = tr[i].getElementsByTagName("td")[5];
+    td5 = tr[i].getElementsByTagName("td")[6];
+    td6 = tr[i].getElementsByTagName("td")[7];
+    if (td0 && td1 && td2 && td3 && td4 && td5 && td6) {
+      if (td0.innerHTML.toUpperCase().indexOf(filter1) > -1 &&
+      	  td1.innerHTML.toUpperCase().indexOf(filter2) > -1 &&
+      	  td2.innerHTML.toUpperCase().indexOf(filter3) > -1 &&
+      	  td3.innerHTML.toUpperCase().indexOf(filter4) > -1 &&
+      	  td4.innerHTML.toUpperCase().indexOf(filter5) > -1 &&
+      	  td5.innerHTML.toUpperCase().indexOf(filter6) > -1 &&
+      	  td6.innerHTML.toUpperCase().indexOf(filter7) > -1 &&
+      	  td0.innerHTML.toUpperCase().indexOf(filter11) > -1 &&
+      	  td1.innerHTML.toUpperCase().indexOf(filter12) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    } 
+     
+  }  
+}
+</script>
+
+
+<div id = "searches_box">	
+<div id = "search_box">	
+<form id = "search_boundary" action = "gethint.php">
+Filter by school name: <input type="text" id="myInput1" onkeyup="myFunction()" placeholder="School name">
+</form>
+</div>
+
+<div id = "search_box">	
+<form id = "search_boundary">
+Filter by category: <input type="text" id="myInput2" onkeyup="myFunction()" placeholder="Category">
+</form>
+</div>
+
+<div id = "search_box">	
+<form id = "search_boundary">
+Filter by subject: <input type="text" id="myInput3" onkeyup="myFunction()" placeholder="Subject name">
+</form>
+</div>
+
+<div id = "search_box">	
+<form id = "search_boundary">
+Filter by class: <input type="text" id="myInput4" onkeyup="myFunction()" placeholder="Class name">
+</form>
+</div>
+  	<br />
+  	  	<br />
+  	  	  	<br />
+  	  	  	  	<br />
+  	  	  	  	  	<br />
+
+<div id = "search_box">	
+<form id = "search_boundary">
+Filter by ISBN: <input type="text" id="myInput5" onkeyup="myFunction()" placeholder="ISBN">
+</form>
+</div>
+
+<div id = "search_box">	
+<form id = "search_boundary">
+Filter by book name: <input type="text" id="myInput6" onkeyup="myFunction()" placeholder="Book name">
+</form>
+</div>
+
+<div id = "search_box">	
+<form id = "search_boundary">
+Filter by book author: <input type="text" id="myInput7" onkeyup="myFunction()" placeholder="Book author">
+</form>
+</div>
+
+</div>
+
+<p> <span id="txtHint"></span></p>
+
+<!--
+ body {
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-user-drag: none;
+      user-drag: none;
+      -webkit-touch-callout: none;
+    }
+-->
+
+<style type="text/css">
+
+	table.tableizer-table {
+		#font-size: 12px;
+		border: 1px solid #CCC; 
+		font-family: 'Raleway', sans-serif;
+   	    background-color: rgba(38,85,255,.03);
+	} 
+	.tableizer-table td {
+		#padding: 4px;
+		#margin: 3px;
+		border: 1px solid #CCC;
+	}
+	.tableizer-table th {
+		background-color: #104E8B; 
+		color: #FFF;
+		font-weight: bold;
+		
+	}
+</style>
+
+
+
+
+
+
+
+<table id="myTable" class="tableizer-table">
+
+<thead><tr class="tableizer-firstrow"><th>School</th><th>Category</th><th>Subject</th><th>Class</th><th>Book_Cover</th><th>ISBN</th><th>Book_name</th><th>Book_author</th><th>Edition</th></tr></thead><tbody>
+ <tr><td>Stanford GSB</td><td>Accounting</td><td>ACCT</td><td>212</td><td><img src="https://pictures.abebooks.com/isbn/9780133803808-us-300.jpg" class = "bookimg"></td><td>9780133803808</td><td>Managerial Accounting (w/Out MyAccountingLab)</td><td>Datar</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Accounting</td><td>ACCT</td><td>317</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Accounting</td><td>ACCT</td><td>333</td><td><img src="https://pictures.abebooks.com/isbn/9780132752671-us-300.jpg" class = "bookimg"></td><td>9780132752671</td><td>Taxes & Business Strategy</td><td>Scholes</td><td>5</td></tr>
+ <tr><td>Stanford GSB</td><td>Accounting</td><td>ACCT</td><td>354</td><td><img src="https://pictures.abebooks.com/isbn/9781101551059-us-300.jpg" class = "bookimg"></td><td>9781101551059</td><td>All the Devils Are Here</td><td>McLean</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Accounting</td><td>ACCT</td><td>524</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Accounting</td><td>ACCT</td><td>610</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Accounting</td><td>ACCT</td><td>617</td><td><img src="https://pictures.abebooks.com/isbn/9780262025768-us-300.jpg" class = "bookimg"></td><td>9780262025768</td><td>Contract Theory</td><td>Bolton</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Accounting</td><td>ACCT</td><td>618</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Finance</td><td>FINCE</td><td>211</td><td><img src="https://pictures.abebooks.com/isbn/9780134083278-us-300.jpg" class = "bookimg"></td><td>9780134083278</td><td>Corporate Fince (w/ Access code)</td><td>Berk</td><td>4</td></tr>
+ <tr><td>Stanford GSB</td><td>Finance</td><td>FINCE</td><td>214</td><td><img src="https://pictures.abebooks.com/isbn/9780134083278-us-300.jpg" class = "bookimg"></td><td>9780134083278</td><td>Corporate Fince (w/ Access code)</td><td>Berk</td><td>4</td></tr>
+ <tr><td>Stanford GSB</td><td>Finance</td><td>FINCE</td><td>350</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Finance</td><td>FINCE</td><td>351</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Finance</td><td>FINCE</td><td>362</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Finance</td><td>FINCE</td><td>373</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Finance</td><td>FINCE</td><td>381</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Finance</td><td>FINCE</td><td>624</td><td><img src="https://pictures.abebooks.com/isbn/9780691125565-us-300.jpg" class = "bookimg"></td><td>9780691125565</td><td>Theory of Corporate Fince</td><td>Tirole</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Finance</td><td>FINCE</td><td>625</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Finance</td><td>FINCE</td><td>630</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>General Management</td><td>GSBGEN</td><td>315</td><td><img src="https://pictures.abebooks.com/isbn/9780596522353-us-300.jpg" class = "bookimg"></td><td>9780596522353</td><td>Slide-Ology</td><td>Duarte</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>General Management</td><td>GSBGEN</td><td>317</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>General Management</td><td>GSBGEN</td><td>319</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>General Management</td><td>GSBGEN</td><td>324</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>General Management</td><td>GSBGEN</td><td>337</td><td><img src="https://pictures.abebooks.com/isbn/9780374533557-us-300.jpg" class = "bookimg"></td><td>9780374533557</td><td>Thinking, Fast & Slow</td><td>Kahneman</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>General Management</td><td>GSBGEN</td><td>347</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>General Management</td><td>GSBGEN</td><td>377</td><td><img src="https://pictures.abebooks.com/isbn/9781422131022-us-300.jpg" class = "bookimg"></td><td>9781422131022</td><td>Practice of Adaptive Leadership</td><td>Heifetz</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>General Management</td><td>GSBGEN</td><td>515</td><td><img src="https://pictures.abebooks.com/isbn/9781465290472-us-300.jpg" class = "bookimg"></td><td>9781465290472</td><td>Speaking Up without Freaking Out</td><td>Abrahams</td><td>3</td></tr>
+ <tr><td>Stanford GSB</td><td>General Management</td><td>GSBGEN</td><td>533</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>General Management</td><td>GSBGEN</td><td>541</td><td><img src="https://pictures.abebooks.com/isbn/9780374533557-us-300.jpg" class = "bookimg"></td><td>9780374533557</td><td>Thinking, Fast & Slow</td><td>Kahneman</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>General Management</td><td>GSBGEN</td><td>552</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>General Management</td><td>GSBGEN</td><td>561</td><td><img src="https://pictures.abebooks.com/isbn/9781138919549-us-300.jpg" class = "bookimg"></td><td>9781138919549</td><td>Sport Business Magement</td><td>Foster</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>General Management</td><td>GSBGEN</td><td>562</td><td><img src="https://pictures.abebooks.com/isbn/9781138919549-us-300.jpg" class = "bookimg"></td><td>9781138919549</td><td>Sport Business Magement</td><td>Foster</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>General Management</td><td>GSBGEN</td><td>574</td><td><img src="https://pictures.abebooks.com/isbn/9781465290472-us-300.jpg" class = "bookimg"></td><td>9781465290472</td><td>Speaking Up without Freaking Out</td><td>Abrahams</td><td>3</td></tr>
+ <tr><td>Stanford GSB</td><td>General Management</td><td>GSBGEN</td><td>576</td><td><img src="https://pictures.abebooks.com/isbn/9780262533553-us-300.jpg" class = "bookimg"></td><td>9780262533553</td><td>Sharing the Work</td><td>Strober</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>General Management</td><td>GSBGEN</td><td>585</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>General Management</td><td>GSBGEN</td><td>622</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>General Management</td><td>GSBGEN</td><td>641</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Human Resources Management</td><td>HRMGT</td><td>286</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Human Resources Management</td><td>HRMGT</td><td>302</td><td><img src="https://pictures.abebooks.com/isbn/9780471675921-us-300.jpg" class = "bookimg"></td><td>9780471675921</td><td>Personnel Economics in Practice</td><td>Lazear</td><td>3</td></tr>
+ <tr><td>Stanford GSB</td><td>Managerial Economics</td><td>MGTECON</td><td>300</td><td><img src="https://pictures.abebooks.com/isbn/9780393603767-us-300.jpg" class = "bookimg"></td><td>9780393603767</td><td>Macroeconomics</td><td>Jones</td><td>4</td></tr>
+ <tr><td>Stanford GSB</td><td>Managerial Economics</td><td>MGTECON</td><td>327</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Managerial Economics</td><td>MGTECON</td><td>381</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Managerial Economics</td><td>MGTECON</td><td>383</td><td><img src="https://pictures.abebooks.com/isbn/9780393979954-us-300.jpg" class = "bookimg"></td><td>9780393979954</td><td>Field Experiments</td><td>Green</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Managerial Economics</td><td>MGTECON</td><td>536</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Managerial Economics</td><td>MGTECON</td><td>541</td><td><img src="https://pictures.abebooks.com/isbn/9780132146654-us-300.jpg" class = "bookimg"></td><td>9780132146654</td><td>Intertiol Economics (w/out NewMyEconLab)</td><td>Krugman</td><td>10</td></tr>
+ <tr><td>Stanford GSB</td><td>Managerial Economics</td><td>MGTECON</td><td>602</td><td><img src="https://pictures.abebooks.com/isbn/9780123745071-us-300.jpg" class = "bookimg"></td><td>9780123745071</td><td>Auction Theory</td><td>Krish</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Managerial Economics</td><td>MGTECON</td><td>605</td><td><img src="https://pictures.abebooks.com/isbn/9780521848053-us-300.jpg" class = "bookimg"></td><td>9780521848053</td><td>Microeconometrics</td><td>Cameron</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Managerial Economics</td><td>MGTECON</td><td>608</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Managerial Economics</td><td>MGTECON</td><td>615</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Managerial Economics</td><td>MGTECON</td><td>618</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Managerial Economics</td><td>MGTECON</td><td>628</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Marketing</td><td>MKTG</td><td>337</td><td><img src="https://pictures.abebooks.com/isbn/9780374533557-us-300.jpg" class = "bookimg"></td><td>9780374533557</td><td>Thinking, Fast & Slow</td><td>Kahneman</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Marketing</td><td>MKTG</td><td>346</td><td><img src="https://pictures.abebooks.com/isbn/9781451665420-us-300.jpg" class = "bookimg"></td><td>9781451665420</td><td>Humor Code</td><td>McGraw</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Marketing</td><td>MKTG</td><td>373</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Marketing</td><td>MKTG</td><td>532</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Marketing</td><td>MKTG</td><td>535</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Marketing</td><td>MKTG</td><td>568</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Marketing</td><td>MKTG</td><td>575</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Marketing</td><td>MKTG</td><td>622</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Marketing</td><td>MKTG</td><td>642</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Marketing</td><td>MKTG</td><td>644</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Marketing</td><td>MKTG</td><td>645</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Organizational Behavior</td><td>OB</td><td>317</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Organizational Behavior</td><td>OB</td><td>324</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Organizational Behavior</td><td>OB</td><td>333</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Organizational Behavior</td><td>OB</td><td>345</td><td><img src="https://pictures.abebooks.com/isbn/9781857885675-us-300.jpg" class = "bookimg"></td><td>9781857885675</td><td>Co-Active Coaching</td><td>Whitworth</td><td>3</td></tr>
+ <tr><td>Stanford GSB</td><td>Organizational Behavior</td><td>OB</td><td>374</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Organizational Behavior</td><td>OB</td><td>383</td><td><img src="https://pictures.abebooks.com/isbn/9781101202807-us-300.jpg" class = "bookimg"></td><td>9781101202807</td><td>How of Happiness</td><td>Lyubomirsky</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Organizational Behavior</td><td>OB</td><td>388</td><td><img src="https://pictures.abebooks.com/isbn/9780810883918-us-300.jpg" class = "bookimg"></td><td>9780810883918</td><td>Directors Close Up 2</td><td>Kagan</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Organizational Behavior</td><td>OB</td><td>522</td><td><img src="https://pictures.abebooks.com/isbn/9781591392705-us-300.jpg" class = "bookimg"></td><td>9781591392705</td><td>Hidden Power of Social Networks</td><td>Cross</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Organizational Behavior</td><td>OB</td><td>527</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Organizational Behavior</td><td>OB</td><td>581</td><td><img src="https://pictures.abebooks.com/isbn/9781781253458-us-300.jpg" class = "bookimg"></td><td>9781781253458</td><td>Getting More of What You Want</td><td>Neale</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Organizational Behavior</td><td>OB</td><td>622</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Organizational Behavior</td><td>OB</td><td>660</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Organizational Behavior</td><td>OB</td><td>678</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Organizational Behavior</td><td>OB</td><td>110N</td><td><img src="https://pictures.abebooks.com/isbn/9780061899874-us-300.jpg" class = "bookimg"></td><td>9780061899874</td><td>Influence</td><td>Cialdini</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Operations and Information Technology</td><td>OIT</td><td>262</td><td><img src="https://pictures.abebooks.com/isbn/9780073525204-us-300.jpg" class = "bookimg"></td><td>9780073525204</td><td>Matching Supply with Demand</td><td>Cachon</td><td>3</td></tr>
+ <tr><td>Stanford GSB</td><td>Operations and Information Technology</td><td>OIT</td><td>269</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Operations and Information Technology</td><td>OIT</td><td>272</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Operations and Information Technology</td><td>OIT</td><td>334</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Operations and Information Technology</td><td>OIT</td><td>364</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Operations and Information Technology</td><td>OIT</td><td>385</td><td><img src="https://pictures.abebooks.com/isbn/9780521517423-us-300.jpg" class = "bookimg"></td><td>9780521517423</td><td>Biodesign</td><td>Yock</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Political Economics</td><td>POLECON</td><td>230</td><td><img src="https://pictures.abebooks.com/isbn/9780132620550-us-300.jpg" class = "bookimg"></td><td>9780132620550</td><td>Business & Its Environment</td><td>Baron</td><td>7</td></tr>
+ <tr><td>Stanford GSB</td><td>Political Economics</td><td>POLECON</td><td>231</td><td><img src="https://pictures.abebooks.com/isbn/9780132620550-us-300.jpg" class = "bookimg"></td><td>9780132620550</td><td>Business & Its Environment</td><td>Baron</td><td>7</td></tr>
+ <tr><td>Stanford GSB</td><td>Political Economics</td><td>POLECON</td><td>349</td><td><img src="https://pictures.abebooks.com/isbn/9780679748984-us-300.jpg" class = "bookimg"></td><td>9780679748984</td><td>Ghost Writer</td><td>Roth</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Political Economics</td><td>POLECON</td><td>681</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Strategic Management</td><td>STRAMGT</td><td>322</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Strategic Management</td><td>STRAMGT</td><td>328</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Strategic Management</td><td>STRAMGT</td><td>350</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Strategic Management</td><td>STRAMGT</td><td>351</td><td><img src="https://pictures.abebooks.com/isbn/9780814420140-us-300.jpg" class = "bookimg"></td><td>9780814420140</td><td>Complete Guide to Accelerating Sales Force Performance</td><td>Zoltners</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Strategic Management</td><td>STRAMGT</td><td>353</td><td><img src="https://pictures.abebooks.com/isbn/9781400841936-us-300.jpg" class = "bookimg"></td><td>9781400841936</td><td>Founder's Dilemmas</td><td>Wasserman</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Strategic Management</td><td>STRAMGT</td><td>355</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Strategic Management</td><td>STRAMGT</td><td>359</td><td><img src="https://pictures.abebooks.com/isbn/9781422196588-us-300.jpg" class = "bookimg"></td><td>9781422196588</td><td>Innovator's Solution</td><td>Christensen</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Strategic Management</td><td>STRAMGT</td><td>361</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Strategic Management</td><td>STRAMGT</td><td>510</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Strategic Management</td><td>STRAMGT</td><td>512</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Strategic Management</td><td>STRAMGT</td><td>519</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Strategic Management</td><td>STRAMGT</td><td>529</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Strategic Management</td><td>STRAMGT</td><td>537</td><td><img src="https://pictures.abebooks.com/isbn/9781612505749-us-300.jpg" class = "bookimg"></td><td>9781612505749</td><td>Redesign of Urban School Systems</td><td>McAdams</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Strategic Management</td><td>STRAMGT</td><td>546</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Strategic Management</td><td>STRAMGT</td><td>579</td><td><img src="https://pictures.abebooks.com/isbn/9780061998089-us-300.jpg" class = "bookimg"></td><td>9780061998089</td><td>Party</td><td>McGregor</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford GSB</td><td>Strategic Management</td><td>STRAMGT</td><td>583</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
+
+ <tr><td>Stanford</td><td>AA</td><td>273</td><td>Probabilistic Robotics</td><td>Thrun</td><td>&nbsp;</td></tr></thead><tbody>
+ <tr><td>Stanford</td><td>AA</td><td>280</td><td>Engineering Analysis of Smart Material Systems</td><td>Leo</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>AA</td><td>121Q</td><td>Its ONLY Rocket Science</td><td>Rogers</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>AA</td><td>244B</td><td>Intro to Plasma Physics & Controlled Fusion</td><td>Chen</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>AA</td><td>271A</td><td>Automatic Control of Aircraft & Missiles</td><td>Blakelock</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>AA</td><td>271A</td><td>Control Of Spacecraft & Aircraft</td><td>Bryson</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>AA</td><td>279C</td><td>1984</td><td>Orwell</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>AA</td><td>279C</td><td>Handmaids Tale</td><td>Atwood</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>AA</td><td>279C</td><td>Nazi Doctors (with New Intro & 2000 Copyright)</td><td>Lifton</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>African & African American Studies</td><td>102</td><td>Neighbors</td><td>Gross</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>African & African American Studies</td><td>106</td><td>My Trouble Is My English</td><td>Fu</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>African & African American Studies</td><td>106</td><td>Subtractive Schooling</td><td>Valenzuela</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>African & African American Studies</td><td>106</td><td>Through Ebony Eyes</td><td>Thompson</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>African & African American Studies</td><td>112</td><td>Death & Life of the Great American School System</td><td>Ravitch</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>African & African American Studies</td><td>112</td><td>Studying Diversity in Teacher Education</td><td>Ball</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>African & African American Studies</td><td>112</td><td>One Best System</td><td>Tyack</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>African & African American Studies</td><td>139</td><td>No Mercy Here</td><td>Haley</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>African & African American Studies</td><td>18B</td><td>Jazz Styles (TEXT ONLY)</td><td>Gridley</td><td>11th</td></tr>
+ <tr><td>Stanford</td><td>African & African American Studies</td><td>3E</td><td>Meaning of Michelle</td><td>Chambers</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>African Studies</td><td>209</td><td>African Intellectuals</td><td>Mkandawire</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>120</td><td>Close to the Machine</td><td>Ullman</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>120</td><td>Delete - the Virtue of Forgetting in the Digital Age</td><td>Mayer</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>120</td><td>Culture of the New Capitalism</td><td>Sennett</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>120</td><td>Remix</td><td>Lessig</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>134</td><td>How to Read Oceanic Art</td><td>Kjellgren</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>134</td><td>Pacific Arts of Polynesia & Micronesia</td><td>Kaeppler</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>150</td><td>Norton Anth of Amer Lit (Set: V A/V B)</td><td>Baym</td><td>9th</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>160</td><td>Cotton Tenants</td><td>Agee</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>160</td><td>Just Kids</td><td>Smith</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>186</td><td>New York By Gas-Light & Other Urban Sketches</td><td>Foster</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>186</td><td>Sister Carrie</td><td>Dreiser</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>186</td><td>Miss Lonelyhearts & Day of the Locust (Intro Lethem)</td><td>West</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>186</td><td>Ragged Dick - Or, Street Life in New York with the Boot Blacks</td><td>Alger</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>197</td><td>Other Wes Moore</td><td>Moore</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>197</td><td>Last Chance in Texas</td><td>Hubner</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>201</td><td>Education of Blacks in South, 1860-1935</td><td>Anderson</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>201</td><td>Pillars of Republic</td><td>Kaestle</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>201</td><td>How to Succeed in School Without Really Learning</td><td>Labaree</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>201</td><td>Struggle for American Curriculum</td><td>Kliebard</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>260</td><td>Maternity Rolls</td><td>Kuttai</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>260</td><td>Long Time No See</td><td>Finke</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>260</td><td>Traveling Blind</td><td>Krieger</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>260</td><td>How to Be a Sister</td><td>Garvin</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>117R</td><td>American Grace</td><td>Putnam</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>117R</td><td>One Family under God</td><td>Yukich</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>117R</td><td>Gods New Whiz Kids?</td><td>Kim</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>124A</td><td>AMSTUD 124A; ARTHIST 152; ENGLISH 124; HISTORY 151; POLISCI 124A Course Reader</td><td>Cain</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>146A</td><td>Pearl (Rack Size)</td><td>Steinbeck</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>146A</td><td>Of Mice & Men (Rack Size)</td><td>Steinbeck</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>146A</td><td>Cannery Row (Centennial Ed)</td><td>Steinbeck</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>146A</td><td>Travels with Charley in Search of America (Rack Size)</td><td>Steinbeck</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>150C</td><td>Norton Anth of Amer Lit (Set: V A/V B)</td><td>Baym</td><td>9th</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>255D</td><td>Quicksand & Passing</td><td>Larsen</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>255D</td><td>Hillbilly Elegy</td><td>Vance</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>255D</td><td>Sellout</td><td>Beatty</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>255D</td><td>Hemingses of Monticello</td><td>Gordon</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>American Studies</td><td>3E</td><td>Meaning of Michelle</td><td>Chambers</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>93</td><td>Writing Ethnographic Fieldnotes</td><td>Emerson</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>93</td><td>Learning From Strangers</td><td>Weiss</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>120</td><td>Chan Kom: A Maya Village</td><td>Redfield</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>120</td><td>Popol Vuh (Rev & Exp)</td><td>Tedlock</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>120</td><td>I, Rigoberta Menchu</td><td>Menchu</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>128</td><td>Image Brokers</td><td>Gursel</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>128</td><td>Conversation Pieces - Community & Communication in Modern Art 2e</td><td>Kester</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>128</td><td>Making</td><td>Ingold</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>128</td><td>Migrant Image</td><td>Demos</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>278</td><td>Beak of the Finch</td><td>Weiner</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>278</td><td>Galapagos: Natural History</td><td>Nicholls</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>278</td><td>Galapagos:Preserving Darwins Legacy</td><td>De</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>300</td><td>Mohawk Interruptus</td><td>Simpson</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>300</td><td>How Forests Think</td><td>Kohn</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>300</td><td>Righteous Dopefiend</td><td>Bourgois</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>300</td><td>Mushroom at the End of the World</td><td>Tsing</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>120F</td><td>Race & Retail</td><td>Bay</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>120F</td><td>Sovereignty Matters</td><td>Barker</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>120F</td><td>History of Black Business in America</td><td>Walker</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>123A</td><td>Repatriation Reader</td><td>Mihesuah</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>123A</td><td>Plundered Skulls & Stolen Spirits</td><td>Colwell</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>177C</td><td>Whose Development</td><td>Crewe</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>217A</td><td>Stuff</td><td>Frost</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>217A</td><td>Excess</td><td>Humphery</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>217A</td><td>Garbology</td><td>Humes</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>217A</td><td>Life-Changing Magic of Tidying Up</td><td>Kondo</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>223A</td><td>Repatriation Reader</td><td>Mihesuah</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>223A</td><td>Battlefields & Burial Grounds</td><td>Echo</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>223A</td><td>Plundered Skulls & Stolen Spirits</td><td>Colwell</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>371B</td><td>Sincerity & Authenticity</td><td>Trilling</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>371B</td><td>Emergent Methods in Social Research</td><td>Hesse</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>371B</td><td>Method of Hope</td><td>Miyazaki</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>371B</td><td>Utopia As Method</td><td>Levitas</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>82P</td><td>Ubik</td><td>Dick</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Anthropology</td><td>82P</td><td>Center Cannot Hold</td><td>Saks</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Applied Physics</td><td>270</td><td>Magnetism in Condensed Matter</td><td>Blundell</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Applied Physics</td><td>315</td><td>Biological Sequence Analysis</td><td>Durbin</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ARABLANG</td><td>23H</td><td>How to Read Oceanic Art</td><td>Kjellgren</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ARABLANG</td><td>23H</td><td>Pacific Arts of Polynesia & Micronesia</td><td>Kaeppler</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Archeology</td><td>42</td><td>Pompeii & Herculaneum</td><td>Cooley</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Archeology</td><td>42</td><td>Fires of Vesuvius: Pompeii Lost & Found</td><td>Beard</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Archeology</td><td>42</td><td>Complete Pompeii</td><td>Berry</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Archeology</td><td>102</td><td>Archaeology: Theories etch</td><td>Renfrew</td><td>7th</td></tr>
+ <tr><td>Stanford</td><td>Archeology</td><td>118</td><td>Ten Books on Architecture</td><td>Vitruvius</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Archeology</td><td>118</td><td>Roman Builders</td><td>Taylor</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Archeology</td><td>234</td><td>How to Read Oceanic Art</td><td>Kjellgren</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Archeology</td><td>234</td><td>Pacific Arts of Polynesia & Micronesia</td><td>Kaeppler</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Archeology</td><td>117A</td><td>Stuff</td><td>Frost</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Archeology</td><td>117A</td><td>Excess</td><td>Humphery</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Archeology</td><td>117A</td><td>Garbology</td><td>Humes</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Archeology</td><td>117A</td><td>Life-Changing Magic of Tidying Up</td><td>Kondo</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Archeology</td><td>123A</td><td>Repatriation Reader</td><td>Mihesuah</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Archeology</td><td>123A</td><td>Battlefields & Burial Grounds</td><td>Echo</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Archeology</td><td>123A</td><td>Plundered Skulls & Stolen Spirits</td><td>Colwell</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Art History</td><td>122</td><td>David: Art & Idea</td><td>Lee</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Art History</td><td>122</td><td>Romanticism</td><td>Honour</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Art History</td><td>152</td><td>AMSTUD 124A; ARTHIST 152; ENGLISH 124; HISTORY 151; POLISCI 124A Course Reader</td><td>Cain</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Art History</td><td>322</td><td>Neoclassicism</td><td>Irwin</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Art History</td><td>322</td><td>Romanticism</td><td>Honour</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Art History</td><td>322</td><td>David: Art & Idea</td><td>Lee</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Art History</td><td>329</td><td>Pervasive Animation</td><td>Buchan</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Art History</td><td>329</td><td>Animating Film Theory</td><td>Beckman</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Art History</td><td>329</td><td>Hollywood Flatlands</td><td>Leslie</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Art History</td><td>284B</td><td>How to Read Oceanic Art</td><td>Kjellgren</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Art History</td><td>284B</td><td>Pacific Arts of Polynesia & Micronesia</td><td>Kaeppler</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Art Studio</td><td>163</td><td>Learning Processing</td><td>Shiffman</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Art Studio</td><td>176</td><td>River of Shadows</td><td>Solnit</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>BIO</td><td>30</td><td>Ecology (w/out Connect Plus AccessCode)</td><td>Molles</td><td>6th</td></tr>
+ <tr><td>Stanford</td><td>BIO</td><td>43</td><td>Life (w/out BioPortal Access Card)</td><td>Sadava</td><td>10th</td></tr>
+ <tr><td>Stanford</td><td>BIO</td><td>43</td><td>BOTANY</td><td>Sadava</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>BIO</td><td>167</td><td>Discovery of Insulin (25th Anniv Ed)</td><td>Bliss</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>BIO</td><td>167</td><td>Understanding Diabetes</td><td>Dods</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>BIO</td><td>24N</td><td>How To Read Gardens</td><td>Harrison</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Biomedical Informatics</td><td>251</td><td>Gentle Introduction to Stata</td><td>Acock</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>CHEM</td><td>35</td><td>Organic Chem (w/WB, SSM &Access Code)</td><td>Jones</td><td>5th</td></tr>
+ <tr><td>Stanford</td><td>CHEM</td><td>153</td><td>Chemical Appl of Group Theory</td><td>Cotton</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>CHEM</td><td>153</td><td>CHEM 153 Course Reader (CUSTOM)</td><td>Solomon</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CHEM</td><td>155</td><td>Organotransition Metal Chemistry</td><td>Hartwig</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CHEM</td><td>171</td><td>Physical Chemistry</td><td>Atkins</td><td>10th</td></tr>
+ <tr><td>Stanford</td><td>CHEM</td><td>184</td><td>Organic Chemistry (Lab Notebook)</td><td>Itp</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CHEM</td><td>255</td><td>Organotransition Metal Chemistry</td><td>Hartwig</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CHEM</td><td>275</td><td>Angular Momentum</td><td>Zare</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CHILATST</td><td>110</td><td>Xicana Codex of Changing Consciousness</td><td>Moraga</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CHILATST</td><td>110</td><td>Borderlands/La Frontera: The New Mestiza</td><td>Anzaldua</td><td>4th</td></tr>
+ <tr><td>Stanford</td><td>CHILATST</td><td>110</td><td> </td><td>Blackwell</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CHILATST</td><td>193B</td><td>Dark Road</td><td>Ma</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Chinese</td><td>93</td><td>China: New History</td><td>Fairbank</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Chinese</td><td>93</td><td>Gate of Heavenly Peace</td><td>Spence</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Chinese</td><td>93</td><td>Peony Pavilion</td><td>Tang</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Chinese</td><td>115</td><td>Dark Road</td><td>Ma</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Chinese</td><td>207</td><td>Classical Chinese Primer</td><td>Wang</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Chinese</td><td>215</td><td>Dark Road</td><td>Ma</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Chinese Language</td><td>12</td><td>CHINLANG 12 Course Reader</td><td>Lin</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Chinese Language</td><td>23</td><td>Connections II (Set:Txt/Wkbk)</td><td>Liu</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Chinese Language</td><td>103</td><td>Discussing Everything Chinese: Traditional Characters (V2)</td><td>Foti</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Chinese Language</td><td>103</td><td>Discussing Everything Chinese (V2)</td><td>Foti</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Chinese Language</td><td>133</td><td>Advanced Business Chinese</td><td>Yuan</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Chinese Language</td><td>1033</td><td>Discussing Everything Chinese: Traditional Characters (V2)</td><td>Foti</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Chinese Language</td><td>1033</td><td>Discussing Everything Chinese (V2)</td><td>Foti</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Chinese Language</td><td>23B</td><td>Connections II (Set:Txt/Wkbk)</td><td>Liu</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Chinese Language</td><td>31E</td><td>MODERN CHINESE TEXTBOOK 1A</td><td>Better</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>35</td><td>Republic (Trans Grube)</td><td>Plato</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>35</td><td>Nicomachean Ethics</td><td>2nd</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>35</td><td>Three Theban Plays</td><td>Sophocles</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>35</td><td>Ten Plays</td><td>Euripides</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>36</td><td>As the Romans Did</td><td>Shelton</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>43</td><td>New Testament (w/Bind-in Access Code)</td><td>6th</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>43</td><td>New Oxford Annotated Bible: NRSV (with Apoc)</td><td>Coogan</td><td>4th</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>43</td><td>Legend & Apostle</td><td>Macdonald</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>53</td><td>Pompeii & Herculaneum</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>53</td><td>Fires of Vesuvius: Pompeii Lost & Found</td><td>Beard</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>53</td><td>Complete Pompeii</td><td>Berry</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>84</td><td>Romans: From Village to Empire</td><td>2nd</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>84</td><td>Historians of Ancient Rome</td><td>Mellor</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>121</td><td>Friday</td><td>Tournier</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>121</td><td>Philosophical Essays</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>121</td><td>Mr Palomar</td><td>Calvino</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>121</td><td>Walden & Civil Disobedience</td><td>Thoreau</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>168</td><td>Ten Books on Architecture</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>168</td><td>Roman Builders</td><td>Taylor</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>103L</td><td>Juvenal & Persius</td><td>Juvenal</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>103L</td><td>Satires (Book I) Ed. S.M. Braund</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>103L</td><td>SATIRES OF PERSIUS (P)</td><td>Barr</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>103L</td><td>Satires (Bk1)</td><td>Horace</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>13G</td><td>Reading Course in Homeric Greek (Bk2)</td><td>Edwards</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>13L</td><td>Vergil Aeneid</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>13L</td><td>Vergil - Aeneid: Book 4</td><td>OHara</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>13L</td><td>Aeneid</td><td>Virgil</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>29Q</td><td>Iliad</td><td>Homer</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>29Q</td><td>Clouds</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>29Q</td><td>Confessions (Trans Pine-Coffin)</td><td>Augustine</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>29Q</td><td>Five Dialogues</td><td>Plato</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>3L</td><td>Intro to Latin</td><td>Shelmerdine</td><td>istent_</td></tr>
+ <tr><td>Stanford</td><td>CLASSICS</td><td>7G</td><td>Message_Strip_198699" class="widget_height"></td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CME</td><td>100</td><td>Thomas Calculus, Multivariable (w/out MyMathLab Access)</td><td>Weir</td><td>13th</td></tr>
+ <tr><td>Stanford</td><td>CME</td><td>102</td><td>Advanced Engineering Math Stanford Custom Ed</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CME</td><td>102</td><td>CME 102/ENGR 155A Course Reader</td><td>Le</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CME</td><td>102</td><td>Advanced Engineering Mathematics</td><td>Kreyszig</td><td>10th</td></tr>
+ <tr><td>Stanford</td><td>CME</td><td>104</td><td>CME 104/ENGR 155B Course Reader</td><td>Khayms</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CME</td><td>206</td><td>Fund of Engineering Numerical Analysis</td><td>Moin</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CME</td><td>306</td><td>Partial Differential Equations with Numerical Methods</td><td>Larsson</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>108</td><td>First Look at Communication Theory (w/Out Connect Access)</td><td>Griffin</td><td>9th</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>133</td><td>COMM 133/233 Course Reader</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>133</td><td>Fiasco</td><td>Ricks</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>133</td><td>Angler</td><td>Gellman</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>208</td><td>First Look at Communication Theory (w/Out Connect Access)</td><td>Griffin</td><td>9th</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>220</td><td>Big Data</td><td>Mayer</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>220</td><td>Remix</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>220</td><td>Delete - the Virtue of Forgetting in the Digital Age</td><td>Mayer</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>220</td><td>Who Controls the Internet?</td><td>Goldsmith</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>233</td><td>COMM 133/233 Course Reader</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>233</td><td>Fiasco</td><td>Ricks</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>233</td><td>Angler</td><td>Gellman</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>104VV</td><td>Reporting for the Media (w/out Appendix on Style)</td><td>10th</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>104VV</td><td>Journalist & the Murderer</td><td>Malcolm</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>104VV</td><td>Telling True Stories</td><td>Kramer</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>120VV</td><td>Big Data</td><td>Mayer</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>120VV</td><td>Remix</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>120VV</td><td>Close to the Machine</td><td>Ullman</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>120VV</td><td>Who Controls the Internet?</td><td>Goldsmith</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>13ON</td><td>COMM 133/233 Course Reader</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>13ON</td><td>Fiasco</td><td>Ricks</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>13ON</td><td>Angler</td><td>Gellman</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>177Y</td><td>Berlin Diary</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>277Y</td><td>Foreign Correspondence</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>277Y</td><td>Triple Agent</td><td>Warrick</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>COMM</td><td>277Y</td><td>Berlin Diary</td><td>Shirer</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>110</td><td>Blackmail, My Love</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>110</td><td>Importance of Being Earnest</td><td>Wilde</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>110</td><td>Monsieur Venus</td><td>Rachilde</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>123</td><td>Brief Wondrous Life of Oscar Wao</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>123</td><td>Cien Anos de Soledad</td><td>Marquez</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>123</td><td>Absalom, Absalom (Trade Ed)</td><td>Faulkner</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>219</td><td>Crime & Punishment (Trade Ed)</td><td>Dostoevsky</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>219</td><td>Double</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>219</td><td>Idiot</td><td>Dostoevsky</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>219</td><td>Poor Folk</td><td>Dostoyevsky</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>220</td><td>Kongolese Saint Anthony</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>220</td><td>Portuguese in West Africa, 1415-1670</td><td>Newitt</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>223</td><td>Nazi Doctors (with New Intro & 2000 Copyright)</td><td>Lifton</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>223</td><td>Miss Evers Boys</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>223</td><td>Night (with New Preface)</td><td>Wiesel</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>223</td><td>Frankenstein</td><td>Shelley</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>310</td><td>Importance of Being Earnest</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>310</td><td>Giovannis Room</td><td>Baldwin</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>310</td><td>Monsieur Venus</td><td>Rachilde</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>10N</td><td>Henry V</td><td>Shakespeare</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>10N</td><td>Antony & Cleopatra</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>10N</td><td>Othello</td><td>Shakespeare</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>10N</td><td>Much Ado About Nothing</td><td>Shakespeare</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>138A</td><td>JAPAN 138/238; COMPLIT 138A Course Reader</td><td>Reichert</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>138A</td><td>Kitchen</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>138A</td><td>Kokoro</td><td>Soseki</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>138A</td><td>Masks</td><td>Enchi</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>151B</td><td>Endgame & Act Without Words I</td><td>Beckett</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>151B</td><td>Homecoming</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>151B</td><td>Translations</td><td>Friel</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>151B</td><td>Mother Courage & Her Children</td><td>Brecht</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>27Q</td><td>Old Man Who Read Love Stories</td><td>Sepulveda</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>27Q</td><td>Ecopoetry Anthology</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>27Q</td><td>Im with the Bears</td><td>Atwood</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>27Q</td><td>Alphabet</td><td>Christensen</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>320A</td><td>Paradise Lost</td><td>Milton</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>320A</td><td>Lusiads</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>320A</td><td>Aeneid of Virgil (Verse Trans Mandelbaum)</td><td>Virgil</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>320A</td><td>Liberation of Jerusalem</td><td>Tasso</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>351B</td><td>Six Characters in Search of  & Other Plays</td><td>Pirandello</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>351B</td><td>Othello</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>351B</td><td>Death of a Salesman (Trade Ed)</td><td>Miller</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>351B</td><td>Desdemona</td><td>Morrison</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>352A</td><td>Famished Road</td><td>Okri</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>352A</td><td>Chaka</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>352A</td><td>Disgrace</td><td>Coetzee</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>352A</td><td>Forest of a Thousand Daemons</td><td>Fagunwa</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>55N</td><td>Atomik Aztex</td><td>Foster</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>55N</td><td>Alexander Hamilton</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>55N</td><td>Dawn</td><td>Butler</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Literature</td><td>55N</td><td>Brief Wondrous Life of Oscar Wao</td><td>Diaz</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Comparative Medicine</td><td>80N</td><td>Intro to Animal Behaviour</td><td>Manning</td><td>6th</td></tr>
+ <tr><td>Stanford</td><td>CS</td><td>103</td><td>Intro to Theory of Computation</td><td>Sipser</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>CS</td><td>107</td><td>C Programming Language</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CS</td><td>107</td><td>COMPUTER SYSTEMS CS 107 STANFORD CUSTOM</td><td>Bryant</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CS</td><td>109</td><td>First Course in Probability</td><td>Ross</td><td>9th</td></tr>
+ <tr><td>Stanford</td><td>CS</td><td>110</td><td>Prin of Computer System Design</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CS</td><td>110</td><td>COMPUTER SYSTEMS CS110 STANFORD CUSTOM EDITION</td><td>Bryant</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>CS</td><td>161</td><td>Algorithm Design</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CS</td><td>161</td><td>Algorithms</td><td>Dasgupta</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CS</td><td>106A</td><td>CS 106A/ENGR 70A Course Reader</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CS</td><td>106A</td><td>Art & Science of Java</td><td>Roberts</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CS</td><td>106B</td><td>Programming Abstractions in C++ (w/Bind-In Access)</td><td>Roberts</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CS</td><td>106J</td><td>CS 106J Course Reader</td><td>Roberts</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CS</td><td>205A</td><td>Scientific Computing (looseleaf)</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CS</td><td>205A</td><td>Numerical Methods for Computer Vision etc. (w/Access)</td><td>Solomon</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CS</td><td>224S</td><td>Speech & Language Processing</td><td>Jurafsky</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>CS</td><td>327A</td><td>CS 327A Course Reader</td><td>Khatib</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CS</td><td>348B</td><td>Physically Based Rendering (w/CD)</td><td>Pharr</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CS</td><td>377U</td><td>Building Mobile Experiences</td><td>Bentley</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CS</td><td>379C</td><td>Notes of a Native Son</td><td>Baldwin</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CS</td><td>379C</td><td>All She Wanted</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CS</td><td>379C</td><td>EyeMinded</td><td>Jones</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CS</td><td>379C</td><td>Leroi Jones/Amiri Baraka Reader</td><td>Baraka</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>103</td><td>Clash!</td><td>Markus</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>134</td><td>How to Read Oceanic Art</td><td>Kjellgren</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>134</td><td>Pacific Arts of Polynesia & Micronesia</td><td>Kaeppler</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>165</td><td>Whistling Vivaldi</td><td>Steele</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>201</td><td>Neighbors</td><td>Gross</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>249</td><td>Le Blanc de lAlgerie</td><td>Djebar</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>249</td><td>De nos freres blesses</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>249</td><td>Histoire de la guerre dindependance algerienne</td><td>Thenault</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>249</td><td>Sur lAlgerie</td><td>Tocqueville</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>314</td><td>Notes of a Native Son</td><td>Baldwin</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>314</td><td>All She Wanted</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>314</td><td>EyeMinded</td><td>Jones</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>314</td><td>Leroi Jones/Amiri Baraka Reader</td><td>Baraka</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>103B</td><td>Why We Teach</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>103B</td><td>Subtractive Schooling</td><td>Valenzuela</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>103B</td><td>Through Ebony Eyes</td><td>Thompson</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>112x</td><td>One Best System</td><td>Tyack</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>112x</td><td>Flat World & Education</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>112x</td><td>Reign of Error</td><td>Ravitch</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>112x</td><td>Death & Life of the Great American School System</td><td>Ravitch</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>120F</td><td>History of Black Business in America</td><td>2nd</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>120F</td><td>Different Drummer</td><td>Kelley</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>120F</td><td>Scalped</td><td>Aaron</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>123B</td><td>Nazi Doctors (with New Intro & 2000 Copyright)</td><td>Lifton</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>123B</td><td>Miss Evers Boys</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>123B</td><td>Night (with New Preface)</td><td>Wiesel</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>123B</td><td>Frankenstein</td><td>Shelley</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>153F</td><td>Master Harold ... & the Boys</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>153F</td><td>Octoroon</td><td>Jacobs</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>153F</td><td>In the Blood</td><td>Parks</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>157x</td><td>Pentecost</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>157x</td><td>Letters From Cuba & Other Plays</td><td>Fornes</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>157x</td><td>Staging Asylum</td><td>Cox</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>185B</td><td>Jews of Odessa</td><td>Zipperstein</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>185B</td><td>Jew in Modern World</td><td>3rd</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>185B</td><td>Accidental Empire</td><td>Gorenberg</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>185B</td><td>Jews: History</td><td>Efron</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>19N</td><td>Kosher USA</td><td>Horowitz</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>19N</td><td>Religion, Food, & Eating in North America</td><td>Zeller</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>255D</td><td>Quicksand & Passing</td><td>Larsen</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>255D</td><td>Hillbilly Elegy</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>255D</td><td>Sellout</td><td>Beatty</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>255D</td><td>Hemingses of Monticello</td><td>Gordon</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>262K</td><td>Ethnic Los Angeles</td><td>Waldinger</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>35S</td><td>Underground Life</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>35S</td><td>Invisible Woman (New Ed)</td><td>Hugel</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>35S</td><td>Woman in Berlin</td><td>Anonymous</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>CSRE</td><td>3E</td><td>Meaning of Michelle</td><td>Chambers</td><td>istent_</td></tr>
+ <tr><td>Stanford</td><td>Dance</td><td>197</td><td>Other Wes Moore</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Dance</td><td>197</td><td>Last Chance in Texas</td><td>Hubner</td><td>istent_</td></tr>
+ <tr><td>Stanford</td><td>DDRL</td><td>189</td><td>Message_Strip_198699" class="widget_height"></td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>DESINST</td><td>423</td><td><div id="Persistent_Message_Strip_198699" class="widget_height"></td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>DLCL</td><td>13</td><td>Of the Social Contract & Other Political Writings</td><td>Rousseau</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>DLCL</td><td>13</td><td>Second Treatise of Government</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>DLCL</td><td>13</td><td>Frankenstein</td><td>Shelley</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>DLCL</td><td>13</td><td>Notes from Underground & Double (Trans Wilks)</td><td>Dostoyevsky</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>DLCL</td><td>143</td><td>Brief Wondrous Life of Oscar Wao</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>DLCL</td><td>143</td><td>Mercy</td><td>Morrison</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>DLCL</td><td>143</td><td>Absalom, Absalom (Trade Ed)</td><td>Faulkner</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>DLCL</td><td>371</td><td>Sincerity & Authenticity</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>DLCL</td><td>371</td><td>Method of Hope</td><td>Miyazaki</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>DLCL</td><td>371</td><td>Utopia As Method</td><td>Levitas</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EALC</td><td>402T</td><td><div id="Persistent_Message_Strip_198699" class="widget_height"></td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EARTH</td><td>251</td><td>Getting to Yes</td><td>3rd</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EARTH</td><td>251</td><td>CEE 151/251; EARTHSCI 251 Class Handouts Voucher</td><td>Christensen</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EARTH</td><td>251</td><td>Difficult Conversations (10th-Anniv Ed)</td><td>Stone</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EARTH</td><td>1C</td><td>LiveEnergy (Access card)</td><td>Ehlig</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Earth Systems</td><td>30</td><td>Ecology (w/out Connect Plus AccessCode)</td><td>Molles</td><td>6th</td></tr>
+ <tr><td>Stanford</td><td>Earth Systems</td><td>102</td><td>LiveEnergy (Access card)</td><td>Ehlig</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Earth Systems</td><td>106</td><td>Evolving Sphere of Food Security</td><td>Naylor</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Earth Systems</td><td>136</td><td>Bringing It to the Table</td><td>Berry</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Earth Systems</td><td>206</td><td>Evolving Sphere of Food Security</td><td>Naylor</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Earth Systems</td><td>236</td><td>Bringing It to the Table</td><td>Berry</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Earth Systems</td><td>105B</td><td><div id="Persistent_Message_Strip_198699" class="widget_height"></td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>East Asian Studies</td><td>143</td><td>Green Island</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>East Asian Studies</td><td>143</td><td>Government & Politics in Taiwan</td><td>Fell</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>East Asian Studies</td><td>143</td><td>State & Society in Taiwan Miracle</td><td>Gold</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>East Asian Studies</td><td>162</td><td>Modern Chinese State</td><td>Shambaugh</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>East Asian Studies</td><td>165</td><td>Challenging Southeast Asian Development</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>East Asian Studies</td><td>165</td><td>Southeast Asia in the New International Era</td><td>Dayley</td><td>7th</td></tr>
+ <tr><td>Stanford</td><td>East Asian Studies</td><td>165</td><td>How Asia Works</td><td>Studwell</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>East Asian Studies</td><td>243</td><td>Green Island</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>East Asian Studies</td><td>243</td><td>Government & Politics in Taiwan</td><td>Fell</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>East Asian Studies</td><td>243</td><td>State & Society in Taiwan Miracle</td><td>Gold</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>East Asian Studies</td><td>262</td><td>Modern Chinese State</td><td>Shambaugh</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>East Asian Studies</td><td>265</td><td>Challenging Southeast Asian Development</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>East Asian Studies</td><td>265</td><td>Southeast Asia in the New International Era</td><td>Dayley</td><td>7th</td></tr>
+ <tr><td>Stanford</td><td>East Asian Studies</td><td>265</td><td>How Asia Works</td><td>Studwell</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>1</td><td>MICROECONOMICS</td><td>Iclicker</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>45</td><td>Iclicker2 (w/REEF 6 Month Polling Access Card)</td><td>Iclicker</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>50</td><td>Microeconomics</td><td>5th</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>51</td><td>Microeconomic Theory (w/InfoApps Access)</td><td>11th</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>51</td><td>Intermediate Microeconomics</td><td>Varian</td><td>9th</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>52</td><td>Iclicker2 (w/REEF 6 Month Polling Access Card)</td><td>Iclicker</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>52</td><td>MACROECONOMICS</td><td>Iclicker</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>52</td><td>Macroeconomics (w/out Access)</td><td>Mankiw</td><td>9th</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>101</td><td>Rise & Fall of American Growth</td><td>Gordon</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>106</td><td>Evolving Sphere of Food Security</td><td>Naylor</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>125</td><td>Poor Economics</td><td>Banerjee</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>126</td><td>Health Economics</td><td>Bhattacharya</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>140</td><td>Investments</td><td>Bodie</td><td>10th</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>141</td><td>Public Finance</td><td>Rosen</td><td>10th</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>164</td><td>Advanced Intro to International Trade Law</td><td>Trebilcock</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>182</td><td>Two-Sided Matching</td><td>Roth</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>191</td><td>Intro to Management Accounting(w/out MyAcctLab) (Cs1-17)</td><td>Horngren</td><td>16th</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>204</td><td>Microeconomic Theory</td><td>Mas</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>206</td><td>Evolving Sphere of Food Security</td><td>Naylor</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>260</td><td>Modern Chinese State</td><td>Shambaugh</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>267</td><td>Trade Policy & Market Structure</td><td>Helpman</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>272</td><td>Mostly Harmless Econometrics</td><td>Angrist</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>291</td><td>Social & Economic Networks</td><td>Jackson</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Economics</td><td>102B</td><td>Prin of Econometrics</td><td>Hill</td><td>4th</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>111</td><td>Harry Potter & the Cursed Child: Official Script Bk of West End Production (Pts1 & 2)</td><td>Rowling</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>111</td><td>Absolutely True Diary of a Part-Time Indian</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>111</td><td>Grave Mercy</td><td>Lafevers</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>111</td><td>American Born Chinese</td><td>Yang</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>112</td><td>Flat World & Education</td><td>Darling</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>112</td><td>Reign of Error</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>112</td><td>Shame of the Nation</td><td>Kozol</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>112</td><td>Studying Diversity in Teacher Education</td><td>Ball</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>201</td><td>Pillars of Republic</td><td>Kaestle</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>201</td><td>Brown v. Board of Education</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>201</td><td>Education for Extinction</td><td>Adams</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>201</td><td>School, Society, and State</td><td>Steffes</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>205</td><td>Intro to Biosocial Medicine</td><td>Barr</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>212</td><td>Shame of the Nation</td><td>Kozol</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>212</td><td>Death & Life of the Great American School System</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>212</td><td>One Best System</td><td>Tyack</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>212</td><td>Reign of Error</td><td>Ravitch</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>214</td><td>How to Read Oceanic Art</td><td>Kjellgren</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>214</td><td>Pacific Arts of Polynesia & Micronesia</td><td>Kaeppler</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>278</td><td>Evaluation</td><td>2nd</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>278</td><td>Essen of Utilization-Focused Evaluation</td><td>Patton</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>285</td><td>Teaching for the Lifespan</td><td>Reiff</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>290</td><td>Student-Centered Leadership</td><td>Hargreaves</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>292</td><td>Style: Lessons in Clarity & Grace</td><td>12th</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>292</td><td>Writing for Social Scientists</td><td>Becker</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>292</td><td>Stylish Academic Writing</td><td>Sword</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>337</td><td>Subtractive Schooling</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>337</td><td>Through Ebony Eyes</td><td>Thompson</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>337</td><td>My Trouble Is My English</td><td>Fu</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>366</td><td>Writing Ethnographic Fieldnotes</td><td>Emerson</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>386</td><td>Presidencies Derailed</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>386</td><td>Reframing Academic Leadership</td><td>Bolman</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>386</td><td>How Academic Leadership Works</td><td>Birnbaum</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>395</td><td>How to Write a Lot</td><td>Silva</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>395</td><td>Writing for Social Scientists</td><td>Becker</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>103B</td><td>Why We Teach</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>103B</td><td>Subtractive Schooling</td><td>Valenzuela</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>103B</td><td>Through Ebony Eyes</td><td>Thompson</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EDUC</td><td>193A</td><td>Peer Counseling (New & Rev)</td><td>Dandrea</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EE</td><td>65</td><td>EE 65 Course Reader</td><td>Miller</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EE</td><td>213</td><td>Logical Effort: Designing Fast CMOS Circuits</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EE</td><td>213</td><td>CMOS VLSI Design (w/Bind-In Access)</td><td>Weste</td><td>4th</td></tr>
+ <tr><td>Stanford</td><td>EE</td><td>213</td><td>Digital Integrated Circuits</td><td>Rabaey</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>EE</td><td>261</td><td>EE 261 Course Reader</td><td>Gill</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EE</td><td>273</td><td>Digital Systems Engineering</td><td>Dally</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EE</td><td>273</td><td>Advanced Signal Integrity for High-Speed Digital Designs</td><td>Hall</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EE</td><td>1013</td><td>EE 101B Course Reader</td><td>Murmann</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EE</td><td>1023</td><td>EE 102B Course Reader</td><td>Kahn</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EFSLANG</td><td>690A</td><td>EE 65 Course Reader</td><td>Miller</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>EFSLANG</td><td>695B</td><td>Well Said (w/out 4 CDs)</td><td>Grant</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>EFSLANG</td><td>698A</td><td>Academic Writing for Graduate Students</td><td>Swales</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>EFSLANG</td><td>698B</td><td><div id="Persistent_Message_Strip_198699" class="widget_height"></td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENERGY</td><td>102</td><td>LiveEnergy (Access card)</td><td>Ehlig</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENERGY</td><td>293C</td><td>Modern Library Writers Workshop</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENERGY</td><td>293C</td><td>Twilight of the Superheroes</td><td>Eisenberg</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>76</td><td>War of the Worlds</td><td>Wells</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>76</td><td>Windup Girl</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>76</td><td>Parable of the Sower</td><td>Butler</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>76</td><td>Zone One</td><td>Whitehead</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>91</td><td>To Show & to Tell</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>91</td><td>Touchstone Anthology of Contemporary Creative Nonfiction</td><td>Williford</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>92</td><td>Letters to a Young Poet</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>92</td><td>Poetry Home Repair Manual</td><td>Kooser</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>94</td><td>ENGLISH 94 Course Reader</td><td>Pufahl</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>124</td><td>AMSTUD 124A; ARTHIST 152; ENGLISH 124; HISTORY 151; POLISCI 124A Course Reader</td><td>Cain</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>130</td><td>Fanny Hill</td><td>Cleland</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>130</td><td>Patrick Melrose Novels</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>130</td><td>Giovannis Room</td><td>Baldwin</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>130</td><td>Incidents in Life of Slave Girl</td><td>Jacobs</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>144</td><td>Garden Party & Other Stories</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>144</td><td>Portrait of the Artist as a Young Man</td><td>Joyce</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>144</td><td>Waste Land & Other Poems</td><td>Eliot</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>146</td><td>In Our Time</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>146</td><td>ENGLISH 146 Course Reader</td><td>Tallent</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>160</td><td>Norton Anthology of Poetry</td><td>Ferguson</td><td>5th</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>161</td><td>Robinson Crusoe</td><td>Defoe</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>161</td><td>Big Sleep (Trade Ed)</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>161</td><td>In Cold Blood</td><td>Capote</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>161</td><td>Mrs Dalloway (Annotated/Intro by Scott)</td><td>Woolf</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>184</td><td>Brief Wondrous Life of Oscar Wao</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>184</td><td>Mercy</td><td>Morrison</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>184</td><td>Absalom, Absalom (Trade Ed)</td><td>Faulkner</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>186</td><td>New York By Gas-Light & Other Urban Sketches</td><td>Foster</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>186</td><td>Twilight: Los Angeles, 1992</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>186</td><td>Miss Lonelyhearts & Day of the Locust (Intro Lethem)</td><td>West</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>186</td><td>Ragged Dick - Or, Street Life in New York with the Boot Blacks</td><td>Alger</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>190</td><td>Salvage the Bones</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>190</td><td>Best American Short Stories 2016</td><td>Junot</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>192</td><td>Different Hours: Poems</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>192</td><td>Life on Mars</td><td>Smith</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>192</td><td>Charms Against Lightning</td><td>Arthur</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>244</td><td>London Fields</td><td>Amis</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>244</td><td>Lonely Londoners</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>244</td><td>Mrs Dalloway (Trade Ed)</td><td>Woolf</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>244</td><td>Concise Chinese-English Dictionary for Lovers</td><td>Guo</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>290</td><td>Modern Library Writers Workshop</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>290</td><td>Twilight of the Superheroes</td><td>Eisenberg</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>292</td><td>Alphabet</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>292</td><td>Baltics</td><td>Transtrmer</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>292</td><td>Bright Dead Things</td><td>Limon</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>314</td><td>Lusiads</td><td>De</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>314</td><td>Faerie Queene</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>314</td><td>Orlando Furioso (Part 2)</td><td>Ariosto</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>314</td><td>Liberation of Jerusalem</td><td>Tasso</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>115D</td><td>Merchant of Venice</td><td>Shakespeare</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>115D</td><td>Twelfth Night</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>115D</td><td>Impersonations</td><td>Orgel</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>115D</td><td>As You Like It</td><td>Shakespeare</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>11B</td><td>Norton Anth of Amer Lit (Set: V A/V B)</td><td>Baym</td><td>9th</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>12C</td><td>Turn of the Screw & in the Cage</td><td>James</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>12C</td><td>Hard Times (Trade Ed)</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>12C</td><td>Housekeeping</td><td>Robinson</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>12C</td><td>Slaughterhouse-Five (Trade Ed)</td><td>Vonnegut</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>144B</td><td>Buddha of Suburbia</td><td>Kureishi</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>144B</td><td>Oranges Are Not the Only Fruit</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>144B</td><td>Flauberts Parrot</td><td>Barnes</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>144B</td><td>White Teeth</td><td>Smith</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>146A</td><td>Cannery Row (Centennial Ed)</td><td>Steinbeck</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>146A</td><td>Red Pony (Trade Ed)</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>146A</td><td>Pearl (Rack Size)</td><td>Steinbeck</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>146A</td><td>Grapes of Wrath</td><td>Steinbeck</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>162W</td><td>History of Sexuality (Trade Ed) (V1:Intro)</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>162W</td><td>Restoration & 18th Century Comedy</td><td>McMillin</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>162W</td><td>Dangerous Liaisons</td><td>DeLaclos</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>181G</td><td>Winters Tale (The Pelican Shakespeare)</td><td>Shakespeare</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>181G</td><td>Bleak House</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>181G</td><td>Henry IV (Part 1)</td><td>Shakespeare</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>181G</td><td>Measure for Measure</td><td>Shakespeare</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>184B</td><td>One Hundred Years of Solitude</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>184B</td><td>Absalom, Absalom (Trade Ed)</td><td>Faulkner</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>184B</td><td>Brief Wondrous Life of Oscar Wao</td><td>Diaz</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>189D</td><td>Madame Bovary: (Movie Tie-In)</td><td>Flaubert</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>189D</td><td>Adam Bede (New Ed)</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>189D</td><td>Frankenstein: 1818 Text</td><td>Shelley</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>189D</td><td>To the Lighthouse (Trade Ed)</td><td>Woolf</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>192T</td><td>Citizen</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>192T</td><td>Whereas</td><td>Soldier</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>192T</td><td>Zong!</td><td>Philip</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>234G</td><td>Passage to India</td><td>Forster</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>234G</td><td>Culture & Imperialism</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>234G</td><td>She</td><td>Haggard</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>234G</td><td>Heart of Darkness</td><td>Conrad</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>308B</td><td>Rise of Silas Lapham</td><td>Howells</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>308B</td><td>Who Would Have Thought It?</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>308B</td><td>McTeague</td><td>Norris</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>308B</td><td>Red Badge of Courage</td><td>Crane</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>373G</td><td>Romeo & Juliet</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>373G</td><td>A Concise Companion to Shakespeare and the Text</td><td>Murphy</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>373G</td><td>Hamlet: Texts of 1603 & 1623</td><td>Shakespeare</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>44B</td><td>White Teeth</td><td>Smith</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>44B</td><td>Accidental</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>44B</td><td>Oranges Are Not the Only Fruit</td><td>Winterson</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>44B</td><td>Flauberts Parrot</td><td>Barnes</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>90Q</td><td>Levels of the Game</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>90Q</td><td>Days of Grace: Memoir</td><td>Ashe</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>90Q</td><td>In These Girls, Hope is a Muscle</td><td>Blais</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGLISH</td><td>96T</td><td><div id="Persistent_Message_Strip_198699" class="widget_height"></td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGR</td><td>14</td><td>Engineering Mech: Statics (w/out Mastering Access)</td><td>Hibbeler</td><td>14th</td></tr>
+ <tr><td>Stanford</td><td>ENGR</td><td>15</td><td>Engineering Mechanics: Dynamics (TEXT ONLY)</td><td>Hibbeler</td><td>14th</td></tr>
+ <tr><td>Stanford</td><td>ENGR</td><td>30</td><td>Thermodynamics ENGR 30 Stanford Custom</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGR</td><td>30</td><td>THERMODYNAMICS (SMARTBOOK ACCESS CARD)</td><td>Cengel</td><td>8th</td></tr>
+ <tr><td>Stanford</td><td>ENGR</td><td>50</td><td>INTRODUCTION TO MATERIALS  SCI / custom Stanford</td><td>Smith</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGR</td><td>105</td><td>Feedback Control of Dynamic Systems</td><td>Franklin</td><td>7th</td></tr>
+ <tr><td>Stanford</td><td>ENGR</td><td>154</td><td>Thomas Calculus, Multivariable (w/out MyMathLab Access)</td><td>Weir</td><td>13th</td></tr>
+ <tr><td>Stanford</td><td>ENGR</td><td>140A</td><td>Crossing the Chasm</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGR</td><td>140A</td><td>Technology Ventures</td><td>Byers</td><td>4th</td></tr>
+ <tr><td>Stanford</td><td>ENGR</td><td>155A</td><td>CME 102/ENGR 155A Course Reader</td><td>Le</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGR</td><td>155B</td><td>CME 104/ENGR 155B Course Reader</td><td>Khayms</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGR</td><td>70A</td><td>CS 106A/ENGR 70A Course Reader</td><td>Stepp</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ENGR</td><td>70A</td><td>Art & Science of Java</td><td>Roberts</td><td>istent_</td></tr>
+ <tr><td>Stanford</td><td>ENGR</td><td>70B</td><td>Message_Strip_198699" class="widget_height"></td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ETHICS</td><td>232T</td><td>Evolving Sphere of Food Security</td><td>Naylor</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FAMMED</td><td>251C</td><td>Dark Road</td><td>Ma</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>93</td><td>Gate of Heavenly Peace</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>93</td><td>Peony Pavilion</td><td>Tang</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>93</td><td>Emperor of China</td><td>Spence</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>121</td><td>History of Sexuality (Trade Ed) (V1:Intro)</td><td>Foucault</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>121</td><td>Times Square Red, Times Square Blue</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>121</td><td>Pregnant Butch</td><td>Summers</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>121</td><td>Night Sky with Exit Wounds</td><td>Vuong</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>141</td><td>Primer on Social Movements</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>141</td><td>Drag Queens at the 801 Cabaret</td><td>Rupp</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>141</td><td>Separate Roads to Feminism</td><td>Roth</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>150</td><td>Dark Road</td><td>Ma</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>227</td><td>Exile & Identity</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>227</td><td>Writing the Siege of Leningrad</td><td>Simmons</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>227</td><td>Mass Rape</td><td>Stiglmayer</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>250</td><td>Dark Road</td><td>Ma</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>260</td><td>Unquiet Mind</td><td>Jamison</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>260</td><td>Maternity Rolls</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>260</td><td>Women & Girls with Autism Spectrum Disorder</td><td>Hendrickx</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>260</td><td>How to Be a Sister</td><td>Garvin</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>314</td><td>All She Wanted</td><td>Jones</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>314</td><td>EyeMinded</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>314</td><td>Ill Never Write My Memoirs</td><td>Jones</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>314</td><td>Leroi Jones/Amiri Baraka Reader</td><td>Baraka</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>360</td><td>Maternity Rolls</td><td>Kuttai</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>360</td><td>Long Time No See</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>360</td><td>Traveling Blind</td><td>Krieger</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>360</td><td>How to Be a Sister</td><td>Garvin</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>110x</td><td>Importance of Being Earnest</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>110x</td><td>Monsieur Venus</td><td>Rachilde</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>130S</td><td>Giovannis Room</td><td>Baldwin</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>130S</td><td>Lady Chatterleys Lover (Intro Lessing)</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>130S</td><td>Fanny Hill</td><td>Cleland</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>130S</td><td>Wuthering Heights (Preface by Miller)</td><td>Bronte</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>153F</td><td>Octoroon</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>153F</td><td>In the Blood</td><td>Parks</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>153F</td><td>Fun Home</td><td>Kron</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>154B</td><td>No Mercy Here</td><td>Haley</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>310X</td><td>Monsieur Venus</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>310X</td><td>Importance of Being Earnest</td><td>Wilde</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>310X</td><td>Giovannis Room</td><td>Baldwin</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>35S</td><td>Racial State: Germany 1933-1945</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>35S</td><td>After the Nazi Racial State</td><td>Chin</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>35S</td><td>Underground Life</td><td>Beck</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>36N</td><td>Rubyfruit Jungle</td><td>Brown</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>36N</td><td>Mayor of Castro Street</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>36N</td><td>Best Little Boy in World (Trade Ed-25th Anniv)</td><td>Tobias</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>36N</td><td>Kid</td><td>Savage</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>3E</td><td>Meaning of Michelle</td><td>Chambers</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>55N</td><td>Becoming Belafonte</td><td>Smith</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>55N</td><td>To Everything There Is a Season</td><td>Winkler</td><td>istent_</td></tr>
+ <tr><td>Stanford</td><td>FEMGEN</td><td>7W</td><td>Message_Strip_198699" class="widget_height"></td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FILMPROD</td><td>105</td><td>Writers Journey</td><td>3rd</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FILMPROD</td><td>105</td><td>Screenwriting</td><td>Gulino</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FILMPROD</td><td>114</td><td>Documentary Storytelling</td><td>Curran</td><td>4th</td></tr>
+ <tr><td>Stanford</td><td>FILMSTUD</td><td>102</td><td>FILMSTUD 102/302 Course Reader</td><td>Oeler</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FILMSTUD</td><td>102</td><td>Signs & Meaning in the Cinema</td><td>5th</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FILMSTUD</td><td>102</td><td>Eisenstein Reader</td><td>Taylor</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FILMSTUD</td><td>102</td><td>What Is Cinema? (V1)</td><td>Bazin</td><td>istent_</td></tr>
+ <tr><td>Stanford</td><td>FILMSTUD</td><td>119</td><td>Message_Strip_198699" class="widget_height"></td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FILMSTUD</td><td>127</td><td>Postnaturalism</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FILMSTUD</td><td>127</td><td>Frankenstein</td><td>Shelley</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>FILMSTUD</td><td>129</td><td>Animating Film Theory</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FILMSTUD</td><td>129</td><td>Hollywood Flatlands</td><td>Leslie</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FILMSTUD</td><td>129</td><td>Pervasive Animation</td><td>Buchan</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FILMSTUD</td><td>147</td><td>New Latin American Cinema (V1)</td><td>Martin</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FILMSTUD</td><td>302</td><td>FILMSTUD 102/302 Course Reader</td><td>Oeler</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FILMSTUD</td><td>302</td><td>Signs & Meaning in the Cinema</td><td>5th</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FILMSTUD</td><td>302</td><td>Eisenstein Reader</td><td>Taylor</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FILMSTUD</td><td>302</td><td>What Is Cinema? (V1)</td><td>Bazin</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FILMSTUD</td><td>347</td><td>New Latin American Cinema (V1)</td><td>Martin</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FILMSTUD</td><td>423</td><td>Matinee Melodrama</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FILMSTUD</td><td>423</td><td>Serial Agencies</td><td>Kelleter</td><td>istent_</td></tr>
+ <tr><td>Stanford</td><td>FILMSTUD</td><td>300C</td><td>Message_Strip_198699" class="widget_height"></td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FRENCH</td><td>13</td><td>Survival in Auschwitz (Trade Ed)</td><td>Levi</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FRENCH</td><td>13</td><td>Notes from Underground & Double (Trans Wilks)</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FRENCH</td><td>13</td><td>Second Treatise of Government</td><td>Locke</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FRENCH</td><td>13</td><td>Frankenstein</td><td>Shelley</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FRENCH</td><td>163</td><td>Histoire dun Voyage en Terre Bresil (Livre Poche#0707)</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FRENCH</td><td>163</td><td>Des monstres et prodiges</td><td>Pare</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FRENCH</td><td>241</td><td>GERMINAL</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FRENCH</td><td>241</td><td>Quatrevingt-treize (Livre de Poche #16078)</td><td>Hugo</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FRENCH</td><td>241</td><td>Eugenie Grandet (Garn-Flam #1357)</td><td>Balzac</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FRENLA</td><td>1</td><td>FRENCH VOCABULARY</td><td>Jansma</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FRENLA</td><td>3</td><td>Motifs (LLF)(w/iLrn Heinle Learning Center, 4t PAC)</td><td>Jansma</td><td>6th</td></tr>
+ <tr><td>Stanford</td><td>FRENLA</td><td>10</td><td>Vocabulaire Progressive du Francais - Nouvelle Edition: Livre + Audio CD</td><td>Miquel</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FRENLA</td><td>15</td><td>Vocabulaire progressif du francais: niveau intermed (w/CD)</td><td>Miquel</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FRENLA</td><td>124</td><td>Contrastes: Grammaire etc (w/MyFrenchLab 1 sem Access)</td><td>Rochat</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>FRENLA</td><td>250</td><td>French for Reading</td><td>Sandberg</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FRENLA</td><td>1A</td><td>Motifs (LLF)(w/iLrn Heinle Learning Center, 4t PAC)</td><td>Jansma</td><td>6th</td></tr>
+ <tr><td>Stanford</td><td>FRENLA</td><td>23C</td><td>Reseau: Communication (LL)(w/MYFRENCHLAB multi-sem Access)</td><td>2nd</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>FRENLA</td><td>23C</td><td>Reseau (w/MyFrenchLab Access)</td><td>Schultz</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>GEOPHY</td><td>150</td><td>Geodynamics</td><td>Turcotte</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>GEOPHY</td><td>202</td><td>Reservoir Geomechanics</td><td>Zoback</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GEOPHY</td><td>250</td><td>Geodynamics</td><td>Turcotte</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>GEOPHY</td><td>385V</td><td>Deutsch Na Klar (Loose Pgs)(w/Connect)(Custom)(SU)</td><td>7th</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GEOPHY</td><td>385V</td><td>SIEGFRIEDS TOD</td><td>Specht</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GERLAN</td><td>1</td><td>Motive A1/A2/B1</td><td>Puchta</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GERLAN</td><td>2</td><td>DER ZERBROCHENE KRUG (GLOSSARY)</td><td>Kleist</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GERLAN</td><td>2</td><td>German Grammar Barchart</td><td>Kleist</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GERLAN</td><td>2</td><td>Dr. Faust</td><td>Specht</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GERLAN</td><td>3</td><td>Deutsch Na Klar (Loose Pgs)(w/Connect)(Custom)(SU)</td><td>7th</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GERLAN</td><td>3</td><td>SIEGFRIEDS TOD</td><td>Specht</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GERLAN</td><td>21</td><td>Der Besuch der Alten Dame (Diogenes #23045)</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GERLAN</td><td>21</td><td>Sicher! B1</td><td>Perlmann</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GERLAN</td><td>22</td><td>Tschick (Intl Book Imprt)</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GERLAN</td><td>22</td><td>Em neu Bruckenkurs.Kursbuch</td><td>Perlmann</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>GERLAN</td><td>11P</td><td>Deutsch Na Klar (Loose Pgs)(w/Connect)(Custom)(SU)</td><td>7th</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GERLAN</td><td>11P</td><td>WBLM DEUTSCH: NA KLAR</td><td>Briggs</td><td>7th</td></tr>
+ <tr><td>Stanford</td><td>GERLAN</td><td>21W</td><td><div id="Persistent_Message_Strip_198699" class="widget_height"></td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GERLAN</td><td>22W</td><td>Geschaftsdeutsch</td><td>Wehage</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GERMAN</td><td>119</td><td>Laramie Project & the Laramie Project: Ten Years Later</td><td>Kaufman</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GERMAN</td><td>119</td><td>Eight Modern Plays</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GERMAN</td><td>119</td><td>Twilight: Los Angeles, 1992</td><td>Smith</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GERMAN</td><td>119</td><td>Peer Gynt & Brand</td><td>Ibsen</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GERMAN</td><td>133</td><td>GERMAN 133 Course Reader</td><td>Landry</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GERMAN</td><td>319</td><td>Four Major Plays (Centennial Ed) (V1)</td><td>Ibsen</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GERMAN</td><td>319</td><td>Peer Gynt & Brand</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GERMAN</td><td>319</td><td>Eight Modern Plays</td><td>Caputi</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GERMAN</td><td>319</td><td>Twilight: Los Angeles, 1992</td><td>Smith</td><td>istent_</td></tr>
+ <tr><td>Stanford</td><td>GERMAN</td><td>397</td><td>Message_Strip_198699" class="widget_height"></td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GLOBAL</td><td>220</td><td>Advancing Democracy Abroad</td><td>McFaul</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GLOBAL</td><td>220</td><td>Long Game</td><td>Chollet</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GS</td><td>104</td><td>Petrology</td><td>Blatt</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>GS</td><td>110</td><td>Structural Geology</td><td>Fossen</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GS</td><td>180</td><td>Igneous & Metamorphic Petrology</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GS</td><td>180</td><td>Petrography of Igneous & Metamorphic Rocks (w/CD)</td><td>Philpotts</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GS</td><td>204</td><td>Petrology</td><td>Blatt</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>GS</td><td>280</td><td>Igneous & Metamorphic Petrology</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>GS</td><td>280</td><td>Petrography of Igneous & Metamorphic Rocks (w/CD)</td><td>Philpotts</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>3</td><td>Making a New Deal</td><td>Cohen</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>3</td><td>Things They Carried</td><td>OBrien</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>3</td><td>Homeward Bound (20th Anniv Ed)</td><td>May</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>3</td><td>Cold War Civil Rights (with New Preface)</td><td>Dudziak</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>16</td><td>Crusades: A Reader</td><td>Allen</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>16</td><td>Mission to Asia</td><td>Dawson</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>16</td><td>First Crusade: Chronicle of Fulcher of Chartres etc</td><td>Peters</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>16</td><td>Song of the Cid</td><td>Raffel</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>78</td><td>Right-Wing Women in Chile</td><td>Power</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>78</td><td>History of the Cuban Revolution</td><td>NA</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>93</td><td>Six Records of a Floating Life</td><td>Fu</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>93</td><td>China: New History</td><td>Fairbank</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>93</td><td>Gate of Heavenly Peace</td><td>Spence</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>95</td><td>Korea Old & New: A History</td><td>Eckert</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>95</td><td>Koreas Place in Sun: Modern History</td><td>Cumings</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>95</td><td>Sources of Korean Tradition (V2)</td><td>Choe</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>116</td><td>Crusades: A Reader</td><td>Allen</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>116</td><td>Mission to Asia</td><td>Dawson</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>116</td><td>First Crusade: Chronicle of Fulcher of Chartres etc</td><td>Peters</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>116</td><td>Song of the Cid</td><td>Raffel</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>151</td><td>AMSTUD 124A; ARTHIST 152; ENGLISH 124; HISTORY 151; POLISCI 124A Course Reader</td><td>Cain</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>178</td><td>Right-Wing Women in Chile</td><td>Power</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>178</td><td>History of the Cuban Revolution</td><td>Chomsky</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>193</td><td>China: New History</td><td>Fairbank</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>193</td><td>Gate of Heavenly Peace</td><td>Spence</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>193</td><td>Peony Pavilion</td><td>Tang</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>195</td><td>Korea Old & New: A History</td><td>Eckert</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>195</td><td>Koreas Place in Sun: Modern History</td><td>Cumings</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>195</td><td>Sources of Korean Tradition (V2)</td><td>Choe</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>201</td><td>Neighbors</td><td>Gross</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>227</td><td>Writing the Siege of Leningrad</td><td>Simmons</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>227</td><td>Mass Rape</td><td>Stiglmayer</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>227</td><td>Exile & Identity</td><td>Jolluck</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>298</td><td>Rural Modern</td><td>Merkel</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>298</td><td>Continuous Revolution</td><td>Mittler</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>298</td><td>Intellectual Foundations of Chinese Modernity</td><td>Fung</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>298</td><td>Age of Irreverence</td><td>Rea</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>327</td><td>Writing the Siege of Leningrad</td><td>Simmons</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>327</td><td>Mass Rape</td><td>Stiglmayer</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>327</td><td>Exile & Identity</td><td>Jolluck</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>395</td><td>Korea Old & New: A History</td><td>Eckert</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>395</td><td>Koreas Place in Sun: Modern History</td><td>Cumings</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>395</td><td>Sources of Korean Tradition (V2)</td><td>Choe</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>398</td><td>Origins of Chinese Communism</td><td>Dirlik</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>398</td><td>Intellectual Foundations of Chinese Modernity</td><td>Fung</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>398</td><td>Age of Irreverence</td><td>Rea</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>398</td><td>Death in Beijing</td><td>Asen</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>102A</td><td>Romans: From Village to Empire</td><td>Boatwright</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>102A</td><td>Historians of Ancient Rome</td><td>Mellor</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>105A</td><td>Taming of Chance</td><td>Hacking</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>105A</td><td>History of Modern Fact</td><td>Poovey</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>105A</td><td>Japan in Print</td><td>Berry</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>105A</td><td>Programmed Inequality</td><td>Hicks</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>10B</td><td>Three Treatises</td><td>Luther</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>10B</td><td>Cheese & the Worms</td><td>Ginzburg</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>10B</td><td>Conquest of New Spain</td><td>Diaz</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>10B</td><td>Figaro Trilogy</td><td>Beaumarchais</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>10C</td><td>Communist Manifesto</td><td>Marx</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>10C</td><td>Colonizer & Colonized (Exp)</td><td>Memmi</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>10C</td><td>History of Modern Europe (V2)</td><td>Merriman</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>10C</td><td>Frankenstein</td><td>Shelley</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>110B</td><td>Wealth of Nations</td><td>Smith</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>110B</td><td>Three Treatises</td><td>Luther</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>110B</td><td>Free Sea</td><td>Grotius</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>110B</td><td>Second Treatise of Government</td><td>Locke</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>110C</td><td>Frankenstein</td><td>Shelley</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>110C</td><td>Nineteen Eighty-Four (Centennial Ed)(Trade Ed)</td><td>Orwell</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>110C</td><td>Neighbors</td><td>Gross</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>110C</td><td>Colonizer & Colonized (Exp)</td><td>Memmi</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>11S</td><td>Art & Architecture in Italy: 1250-1400</td><td>White</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>11S</td><td>Towns of Italy in the Later Middle Ages</td><td>Dean</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>11S</td><td>Your Money or Your Life</td><td>Le</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>133A</td><td>New Worlds, Lost Worlds: Rule of Tudors 1485-1603</td><td>Brigden</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>133A</td><td>Arden of Faversham</td><td>White</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>133A</td><td>Utopia</td><td>More</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>150C</td><td>Making a New Deal</td><td>Cohen</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>150C</td><td>Homeward Bound (20th Anniv Ed)</td><td>May</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>150C</td><td>Cold War Civil Rights (with New Preface)</td><td>Dudziak</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>185B</td><td>Reuben Sachs</td><td>Levy</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>185B</td><td>Accidental Empire</td><td>Gorenberg</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>185B</td><td>Jews: History</td><td>Efron</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>185B</td><td>Jew in Modern World</td><td>Mendes</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>201B</td><td>Art of Not Being Governed</td><td>Scott</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>201B</td><td>Comanche Empire</td><td>Hamalainen</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>201B</td><td>How to Lie with Maps</td><td>Monmonier</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>201B</td><td>Walled States, Waning Sovereignty</td><td>Brown</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>201K</td><td>Guerrilla Warfare</td><td>Guevara</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>201K</td><td>Autobiography (1893). by: Annie Wood Besant</td><td>Besant</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>201K</td><td>Childe Harolds Pilgrimage</td><td>Byron</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>201K</td><td>Communist Manifesto</td><td>Marx</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>203J</td><td>Great Thirst</td><td>Hundley</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>203J</td><td>Let There Be Water</td><td>Siegel</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>203J</td><td>Price of Thirst</td><td>Piper</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>203J</td><td>Late Victorian Holocausts</td><td>Davis</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>204E</td><td>Wages of Destruction</td><td>Tooze</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>204E</td><td>Hitler Myth</td><td>Kershaw</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>204E</td><td>Peasants Into Frenchmen</td><td>Weber</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>204E</td><td>Nazi Seizure of Power</td><td>Allen</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>234G</td><td>She</td><td>Haggard</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>234G</td><td>Childe Harolds Pilgrimage</td><td>Byron</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>234G</td><td>Jane Eyre</td><td>Bronte</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>234G</td><td>Culture & Imperialism</td><td>Said</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>236B</td><td>On Morality & Society</td><td>Durkheim</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>236B</td><td>Communist Manifesto (New Ed Intro Jones)</td><td>Marx</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>236B</td><td>Social Contract</td><td>Rousseau</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>236B</td><td>Democracy in America & Two Essays on America (New Trans Bevan)</td><td>De</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>237D</td><td>Discourse On Inequality</td><td>Rousseau</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>237D</td><td>Readings in Western Civilization (V7: Old Regime)</td><td>Baker</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>237D</td><td>Family Romance of French Revolution</td><td>Hunt</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>238J</td><td>Tools of Empire</td><td>Headrick</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>238J</td><td>United State & Africa</td><td>Duignen</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>238J</td><td>Africa in the World</td><td>Cooper</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>238J</td><td>Absolute Destruction</td><td>Hull</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>239G</td><td>Un intellectuel en dissidence</td><td>Jeanson</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>239G</td><td>Histoire de la guerre dindependance algerienne</td><td>Thenault</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>239G</td><td>Sur lAlgerie</td><td>Tocqueville</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>239G</td><td>Le Blanc de lAlgerie</td><td>Djebar</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>242F</td><td>Epidemics Laid Low</td><td>Bourdelais</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>242F</td><td>Medieval & Early Renaissance Medicine</td><td>Siraisi</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>242F</td><td>Mosquito Empires</td><td>McNeill</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>242F</td><td>Woman Beneath Skin</td><td>Duden</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>252B</td><td>Fate of Freedom Elsewhere</td><td>Schmidli</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>252B</td><td>Mission to Iran</td><td>Sullivan</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>252B</td><td>Blood Telegram</td><td>Bass</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>252B</td><td>Lodge in Vietnam - a Patriot Abroad</td><td>Blair</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>255D</td><td>Quicksand & Passing</td><td>Larsen</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>255D</td><td>Hillbilly Elegy</td><td>Vance</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>255D</td><td>Sellout</td><td>Beatty</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>255D</td><td>Hemingses of Monticello</td><td>Gordon</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>258B</td><td>How to Succeed in School Without Really Learning</td><td>Labaree</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>258B</td><td>Education for Extinction</td><td>Adams</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>258B</td><td>School, Society, and State</td><td>Steffes</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>258B</td><td>Education of Blacks in South, 1860-1935</td><td>Anderson</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>259E</td><td>Rethinking the Korean War</td><td>Stueck</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>259E</td><td>Light at the End of the Tunnel</td><td>Rotter</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>259E</td><td>Morenci Marines</td><td>Longley</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>259E</td><td>Imperial Life in the Emerald City</td><td>Chandrasekaran</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>262K</td><td>Ethnic Los Angeles</td><td>Waldinger</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>264G</td><td>Mad Among Us</td><td>Grob</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>264G</td><td>Psychoanalysis</td><td>Malcolm</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>264G</td><td>Girl, Interrupted</td><td>Kaysen</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>264G</td><td>Mystical Bedlam</td><td>Macdonald</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>271D</td><td>Drinking, Homicide & Rebel in Colonial Mexican Villages</td><td>Taylor</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>271D</td><td>Flock Divided</td><td>OHara</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>271D</td><td>Shaky Colonialism</td><td>Walker</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>271D</td><td>Plague of Sheep</td><td>Melville</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>272D</td><td>Anglos & Mexicans in Making of Texas, 1836-1986</td><td>Montejano</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>272D</td><td>Chicano!</td><td>Rosales</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>272D</td><td>Becoming Mexican American</td><td>Sanchez</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>282C</td><td>Harem-Years</td><td>Shaarawi</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>282C</td><td>Persepolis: Story of a Childhood (V1)</td><td>Satrapi</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>282C</td><td>Women & Gender in Islam</td><td>Ahmed</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>290E</td><td>Koreas Occupied Cinemas, 1893-1948</td><td>Yecies</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>290E</td><td>Modern Girl Around the World</td><td>Weinbaum</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>301K</td><td>Wretched of the Earth (New Trans Philcox)</td><td>Fanon</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>301K</td><td>Motorcycle Diaries</td><td>Guevara</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>301K</td><td>Guerrilla Warfare</td><td>Guevara</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>301K</td><td>Childe Harolds Pilgrimage</td><td>Byron</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>303]</td><td>Let There Be Water</td><td>Siegel</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>303]</td><td>Beyond the Big Ditch</td><td>Carse</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>303]</td><td>Price of Thirst</td><td>Piper</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>303]</td><td>Great Thirst</td><td>Hundley</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>307E</td><td>Hitler Myth</td><td>Kershaw</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>307E</td><td>Peasants Into Frenchmen</td><td>Weber</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>307E</td><td>Nazi Seizure of Power</td><td>Allen</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>307E</td><td>Seeing Like a State</td><td>Scott</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>332B</td><td>Travels</td><td>Polo</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>332B</td><td>Birth of the Despot</td><td>Valensi</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>332B</td><td>Worth of Women</td><td>Fonte</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>332B</td><td>Autobiography of a 17th-Century Venetian Rabbi</td><td>Modena</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>334G</td><td>Childe Harolds Pilgrimage</td><td>Byron</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>334G</td><td>Heart of Darkness</td><td>Conrad</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>334G</td><td>Passage to India</td><td>Forster</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>334G</td><td>Orientalism (25th Anniversary Ed)</td><td>Said</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>336B</td><td>On Morality & Society</td><td>Durkheim</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>336B</td><td>Communist Manifesto (New Ed Intro Jones)</td><td>Marx</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>336B</td><td>Social Contract</td><td>Rousseau</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>336B</td><td>Democracy in America & Two Essays on America (New Trans Bevan)</td><td>De</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>337D</td><td>Discourse On Inequality</td><td>Rousseau</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>337D</td><td>Readings in Western Civilization (V7: Old Regime)</td><td>Baker</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>337D</td><td>Family Romance of French Revolution</td><td>Hunt</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>33A</td><td>New Worlds, Lost Worlds: Rule of Tudors 1485-1603</td><td>Brigden</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>33A</td><td>Arden of Faversham</td><td>White</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>33A</td><td>Utopia</td><td>More</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>342F</td><td>Epidemics Laid Low</td><td>Bourdelais</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>342F</td><td>Medieval & Early Renaissance Medicine</td><td>Siraisi</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>342F</td><td>Mosquito Empires</td><td>McNeill</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>342F</td><td>Woman Beneath Skin</td><td>Duden</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>355D</td><td>Flaming Iguanas</td><td>Lopez</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>355D</td><td>Hemingses of Monticello</td><td>Gordon</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>355D</td><td>Hillbilly Elegy</td><td>Vance</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>355D</td><td>Sellout</td><td>Beatty</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>359B</td><td>Imperial Life in the Emerald City</td><td>Chandrasekaran</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>359B</td><td>Rethinking the Korean War</td><td>Stueck</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>359B</td><td>Understanding the U. S. Wars in Iraq & Afghanistan</td><td>Bailey</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>359B</td><td>Invaded</td><td>McPherson</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>35S</td><td>After the Nazi Racial State</td><td>Chin</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>35S</td><td>Underground Life</td><td>Beck</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>35S</td><td>Invisible Woman (New Ed)</td><td>Hugel</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>36N</td><td>Brokeback Mountain (Trade Ed)</td><td>Proulx</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>36N</td><td>Mayor of Castro Street</td><td>Shilts</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>36N</td><td>Angels in America (Rev)</td><td>Kushner</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>36N</td><td>Kid</td><td>Savage</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>382C</td><td>Fantasia: Algerian Cavalcade</td><td>Djebar</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>382C</td><td>Women & Gender in Islam</td><td>Ahmed</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>382C</td><td>Harem-Years</td><td>Shaarawi</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>385C</td><td>Accidental Empire</td><td>Gorenberg</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>385C</td><td>Zionism</td><td>Engel</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>385C</td><td>Jews of Odessa</td><td>Zipperstein</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>385C</td><td>Jew in Modern World</td><td>Mendes</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>390B</td><td>Koreas Occupied Cinemas, 1893-1948</td><td>Yecies</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>390B</td><td>Modern Girl Around the World</td><td>Weinbaum</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>393C</td><td>Gate of Heavenly Peace</td><td>Spence</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>393C</td><td>Peony Pavilion</td><td>Tang</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>393C</td><td>Emperor of China</td><td>Spence</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>3E</td><td>Meaning of Michelle</td><td>Chambers</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>401A</td><td>Nomos of Earth in Intl Law of Jus Publicum Europaeum</td><td>Schmitt</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>401A</td><td>Art of Not Being Governed</td><td>Scott</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>401A</td><td>Myth of Continents</td><td>Lewis</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>401A</td><td>Walled States, Waning Sovereignty</td><td>Brown</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>50C</td><td>Making a New Deal</td><td>Cohen</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>50C</td><td>Homeward Bound (20th Anniv Ed)</td><td>May</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>50C</td><td>Cold War Civil Rights (with New Preface)</td><td>Dudziak</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>5A</td><td>Japan in Print</td><td>Berry</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>5A</td><td>Human Use of Human Beings</td><td>Wiener</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>5A</td><td>Cybernetic Brain</td><td>Pickering</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>5A</td><td>Paper Knowledge</td><td>Gitelman</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>7VV</td><td>Right-Wing Women in Chile</td><td>Power</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>7VV</td><td>History of the Cuban Revolution</td><td>Chomsky</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>85B</td><td>Reuben Sachs</td><td>Levy</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>85B</td><td>Accidental Empire</td><td>Gorenberg</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>85B</td><td>Jews: History</td><td>Efron</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>HISTOR</td><td>85B</td><td>Jew in Modern World</td><td>Mendes</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>HRP</td><td>252</td><td>Gentle Introduction to Stata</td><td>Acock</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>HUMBIO</td><td>65</td><td>Intro to Biosocial Medicine</td><td>Barr</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HUMBIO</td><td>131</td><td>Kinesiology of the Musculoskeletal System</td><td>Neumann</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>HUMBIO</td><td>142</td><td>Age of Opportunity</td><td>Steinberg</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HUMBIO</td><td>142</td><td>Adolescence & Emerging Adulthood (w/MyPsychLab Access)</td><td>Arnett</td><td>5th</td></tr>
+ <tr><td>Stanford</td><td>HUMBIO</td><td>168</td><td>Guilt</td><td>Katchadourian</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HUMBIO</td><td>168</td><td>Way It Turned Out</td><td>Katchadourian</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HUMBIO</td><td>120A</td><td>Intro to US Health Policy</td><td>Barr</td><td>4th</td></tr>
+ <tr><td>Stanford</td><td>HUMBIO</td><td>124E</td><td>Health Economics</td><td>Bhattacharya</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HUMBIO</td><td>162L</td><td>Ubik</td><td>Dick</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HUMBIO</td><td>162L</td><td>Center Cannot Hold</td><td>Saks</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HUMBIO</td><td>175H</td><td>Immortal Life of Henrietta Lacks</td><td>Skloot</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HUMBIO</td><td>175H</td><td>1984</td><td>Orwell</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HUMBIO</td><td>175H</td><td>Bad Blood: The Tuskegee Syphilis Experiment</td><td>Jones</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HUMBIO</td><td>175H</td><td>Miss Evers Boys</td><td>Feldshuh</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>HUMBIO</td><td>4A</td><td>Life: Science of Biology (Loose-leaf version)</td><td>Sadava</td><td>10th</td></tr>
+ <tr><td>Stanford</td><td>HUMBIO</td><td>4A</td><td>Life (w/out BioPortal Access Card)</td><td>Sadava</td><td>10th</td></tr>
+ <tr><td>Stanford</td><td>HUMBIO</td><td>5E</td><td>How Learning Works</td><td>Ambrose</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ILAC</td><td>220E</td><td>Kongolese Saint Anthony</td><td>Thornton</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ILAC</td><td>220E</td><td>Portuguese in West Africa, 1415-1670</td><td>Newitt</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Immersion in Arts Living in Culture</td><td>93</td><td>Little Book of Talent</td><td>Coyle</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Immersion in Arts Living in Culture</td><td>93</td><td>Crying of Lot 49</td><td>Pynchon</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>INDE</td><td>209D</td><td>Political Science Research Methods (w/out DVD)</td><td>Johnson</td><td>7th</td></tr>
+ <tr><td>Stanford</td><td>INDE</td><td>209D</td><td>Pursuit of History</td><td>Tosh</td><td>6th</td></tr>
+ <tr><td>Stanford</td><td>INDE</td><td>209D</td><td>Designing Social Inquiry</td><td>King</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>INTNLR</td><td>123</td><td>Of Paradise & Power</td><td>Kagan</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>INTNLR</td><td>123</td><td>Populism</td><td>Mudde</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>INTNLR</td><td>123</td><td>Political System of European Union</td><td>Hix</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>INTNLR</td><td>174</td><td>In the Garden of Beasts</td><td>Larson</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>INTNLR</td><td>174</td><td>Lodge in Vietnam - a Patriot Abroad</td><td>Blair</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>INTNLR</td><td>174</td><td>Mission to Iran</td><td>Sullivan</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>INTNLR</td><td>174</td><td>Blood Telegram</td><td>Bass</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>INTNLR</td><td>168A</td><td>Invaded</td><td>McPherson</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>INTNLR</td><td>168A</td><td>Imperial Life in the Emerald City</td><td>Chandrasekaran</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>INTNLR</td><td>168A</td><td>Understanding the U. S. Wars in Iraq & Afghanistan</td><td>Bailey</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>INTNLR</td><td>168A</td><td>Morenci Marines</td><td>Longley</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>IPS</td><td>201</td><td>Practical Guide for Policy Analysis</td><td>Bardach</td><td>5th</td></tr>
+ <tr><td>Stanford</td><td>IPS</td><td>210</td><td>We Wish to Inform You That Tomorrow...</td><td>Gourevitch</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>IPS</td><td>210</td><td>Virtual War</td><td>Ignatieff</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>IPS</td><td>210</td><td>Turbulent Decade: Confronting Refugee Crisis of 1990s</td><td>Ogata</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>IPS</td><td>210</td><td>Empire of Humanity</td><td>Barnett</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>IPS</td><td>242</td><td>Alter Egos</td><td>Landler</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>IPS</td><td>242</td><td>Long Game</td><td>Chollet</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>IPS</td><td>242</td><td>Advancing Democracy Abroad</td><td>McFaul</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>IPS</td><td>246</td><td>Chinese Foreign Relations</td><td>Sutter</td><td>4th</td></tr>
+ <tr><td>Stanford</td><td>IPS</td><td>246</td><td>China Challenge</td><td>Christensen</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>IPS</td><td>246</td><td>New Great Game</td><td>Fingar</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ITALIAN</td><td>332B</td><td>Travels</td><td>Polo</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ITALIAN</td><td>332B</td><td>Birth of the Despot</td><td>Valensi</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ITALIAN</td><td>332B</td><td>Worth of Women</td><td>Fonte</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ITALIAN</td><td>332B</td><td>Life & Death in Venetian Convent</td><td>Riccoboni</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ITALLA</td><td>1</td><td>ITALIAN VOCABULARY</td><td>Branciforte</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ITALLA</td><td>3</td><td>Parliamo italiano! (w/WileyPLUS Lrng Space Code)</td><td>Branciforte</td><td>5th</td></tr>
+ <tr><td>Stanford</td><td>ITALLA</td><td>3</td><td>Collins Italian Concise Dictionary, 6th Edition</td><td>Harpercollins</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ITALLA</td><td>20</td><td>SPASSO, CHE SPASSO! (Italian Ed)</td><td>Bresciani</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ITALLA</td><td>250</td><td>Trame</td><td>Abbona</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ITALLA</td><td>1A</td><td>Parliamo italiano! (w/WileyPLUS Lrng Space Code)</td><td>Branciforte</td><td>5th</td></tr>
+ <tr><td>Stanford</td><td>ITALLA</td><td>22A</td><td>Ponti - Stanford custom bundle</td><td>Tognozzi</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>ITALLA</td><td>22A</td><td>Collins Italian Concise Dictionary, 6th Edition</td><td>Harpercollins</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>JAPAN</td><td>238</td><td>Black Rain</td><td>Ibuse</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>JAPAN</td><td>238</td><td>Kokoro</td><td>Soseki</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>JAPAN</td><td>238</td><td>Masks</td><td>Enchi</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>JAPAN</td><td>238</td><td>Kitchen</td><td>Yoshimoto</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>JAPANL</td><td>1</td><td>JAPANLNG 1 Course Reader</td><td>Magnani</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>JAPANL</td><td>1</td><td>JAPANESE GRAMMAR</td><td>Magnani</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>JAPANL</td><td>2</td><td>JAPANLNG 2 Course Reader</td><td>Magnani</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>JAPANL</td><td>2</td><td>Genki 1 (w/CD)</td><td>Banno</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>JAPANL</td><td>3</td><td>Genki (w/CD)(Lvl 2)</td><td>Banno</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>JAPANL</td><td>3</td><td>JAPANLNG 3 Course Reader</td><td>Mukai</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>JAPANL</td><td>23</td><td>Tobira</td><td>Oka</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>JAPANL</td><td>23</td><td>Tobira: Grammar Power: Exercises for Mastery</td><td>Tsutsui</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>JAPANL</td><td>103</td><td>Authentic Japanese: Intermediate to Advanced (w/2CDs)</td><td>Kamada</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>JEWISHST</td><td>185B</td><td>Reuben Sachs</td><td>Levy</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>JEWISHST</td><td>185B</td><td>Accidental Empire</td><td>Gorenberg</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>JEWISHST</td><td>185B</td><td>Jews: History</td><td>Efron</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>JEWISHST</td><td>185B</td><td>Jew in Modern World</td><td>Mendes</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>JEWISHST</td><td>19N</td><td>Religion, Food, & Eating in North America</td><td>Zeller</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>JEWISHST</td><td>19N</td><td>Kosher USA</td><td>Horowitz</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>JEWISHST</td><td>19N</td><td>Take This Bread</td><td>Miles</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>KORLAN</td><td>3</td><td>Integrated Korean:Workbook Beginning 2</td><td>Klear</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>KORLAN</td><td>3</td><td>Integrated Korean: Beginning 2</td><td>Cho</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>KORLAN</td><td>23</td><td>Integrated Korean Workbook: Intermediate 2</td><td>Park</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>KORLAN</td><td>23</td><td>Integrated Korean: Intermediate 2</td><td>Cho</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>KORLAN</td><td>103</td><td>New Sogang Korean 4B (w/  Grammar, Voca Book)</td><td>Oh</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>KORLAN</td><td>103</td><td>Sogang Korean 4B Workbook</td><td>Kim</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>KORLAN</td><td>213</td><td>Sogang Korean Students Book 5B</td><td>Kim</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>KORLAN</td><td>213</td><td>Sogang Korean 5B (workbook)</td><td>Kim</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>LINGUI</td><td>I255H</td><td>Blacks Law Dictionary: Pocket Ed</td><td>Garner</td><td>5th</td></tr>
+ <tr><td>Stanford</td><td>LINGUI</td><td>I255H</td><td>Bluebook: Uniform System of Citation</td><td>Harvard</td><td>20th</td></tr>
+ <tr><td>Stanford</td><td>LINGUI</td><td>292A</td><td>Language Assessment</td><td>Brown</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MATH</td><td>283</td><td>Speech & Language Processing</td><td>Jurafsky</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>MATH</td><td>230C</td><td>Compositional Semantics</td><td>Jacobson</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MATH</td><td>282B</td><td>Speech & Language Processing</td><td>Jurafsky</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>MATH</td><td>63DM</td><td>Intro to Topology</td><td>Mendelson</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>MATH</td><td>63DM</td><td>Intro to Probability</td><td>Bertsekas</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MATSCI</td><td>155</td><td>Algebraic Theory of Numbers</td><td>Samuel</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MATSCI</td><td>199</td><td>Complex Variables</td><td>Fisher</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MATSCI</td><td>209</td><td>Calculus: Single Variable</td><td>Hughes</td><td>6th</td></tr>
+ <tr><td>Stanford</td><td>MATSCI</td><td>209</td><td>CALCULUS 1</td><td>Hughes</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MATSCI</td><td>210</td><td>Lie Groups</td><td>Bump</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>MATSCI</td><td>159Q</td><td>Algebraic Theory of Numbers</td><td>Samuel</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MATSCI</td><td>83N</td><td>Achievement Habit</td><td>Roth</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MATSCI</td><td>83N</td><td>Art of Invention</td><td>Paley</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MATSCI</td><td>83N</td><td>ART OF SCIENTIFIC INVESTIGATION</td><td>Beveridge</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MCP</td><td>156</td><td>Prin of Electronic Materials & Devices (w/CD)</td><td>Kasap</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>MCP</td><td>222</td><td>Mechanical Behavior of Materials</td><td>Courtney</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>MED</td><td>121</td><td>Plenitude</td><td>Gold</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MED</td><td>121</td><td>Make It New</td><td>Katz</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MED</td><td>159</td><td>Architectual Chip Board .060</td><td>Moleskine</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MED</td><td>159</td><td>GLUE STICKS ALL TEMP 4IN(20)</td><td>Moleskine</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MED</td><td>159</td><td>Cutting Mat 18X24 Green/Black</td><td>Moleskine</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MED</td><td>252</td><td>Elements of Propulsion: Gas Turbines & Rockets</td><td>Mattingly</td><td>2nd</td></tr>
+ <tr><td>Stanford</td><td>MED</td><td>108Q</td><td>Architectual Chip Board .060</td><td>Moleskine</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MED</td><td>108Q</td><td>GLUE STICKS ALL TEMP 4IN(20)</td><td>Moleskine</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MED</td><td>108Q</td><td>Cutting Mat 18X24 Green/Black</td><td>Moleskine</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MED</td><td>120N</td><td>Plenitude</td><td>Gold</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MED</td><td>120N</td><td>Make It New</td><td>Katz</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>201</td><td>MS&E 201 Course Reader</td><td>Tse</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>201</td><td>Intro to Dynamic Systems</td><td>Luenberger</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>213</td><td>Bound in Venice</td><td>Magno</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>213</td><td>Civic Ritual in Renaissance Venice</td><td>Muir</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>213</td><td>Birth of the Despot</td><td>Valensi</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>213</td><td>Worth of Women</td><td>Fonte</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>223</td><td>Intro to Probability Models</td><td>Ross</td><td>11th</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>223</td><td>Simulation Modeling & Analysis</td><td>Law</td><td>5th</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>223</td><td>Stochastic Petri Nets</td><td>Haas</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>243</td><td>Bound in Venice</td><td>Magno</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>243</td><td>Civic Ritual in Renaissance Venice</td><td>Muir</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>243</td><td>Birth of the Despot</td><td>Valensi</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>243</td><td>Worth of Women</td><td>Fonte</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>262</td><td>MS&E 262 Course Reader</td><td>Hausman</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>276</td><td>Technology Ventures</td><td>Byers</td><td>4th</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>276</td><td>Founders Dilemmas</td><td>Wasserman</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>297</td><td>Bound in Venice</td><td>Magno</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>297</td><td>Civic Ritual in Renaissance Venice</td><td>Muir</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>297</td><td>Birth of the Despot</td><td>Valensi</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>297</td><td>Worth of Women</td><td>Fonte</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>322</td><td>Stochastic Calculus & Financial Applications</td><td>Steele</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>330</td><td>London Fields</td><td>Amis</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>330</td><td>Lonely Londoners</td><td>Selvon</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>330</td><td>Mrs Dalloway (Trade Ed)</td><td>Woolf</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MS&E</td><td>330</td><td>Concise Chinese-English Dictionary for Lovers</td><td>Guo</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MTL</td><td>334</td><td>Leviathan</td><td>Hobbes</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MTL</td><td>334</td><td>Second Treatise of Government</td><td>Locke</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>MTL</td><td>334</td><td>Letter Concerning Toleration</td><td>Locke</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Music</td><td>310</td><td>Republic of Love</td><td>Stokes</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Music</td><td>310</td><td>Singing a Hindu Nation</td><td>Schultz</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Music</td><td>310</td><td>Cultural Intimacy</td><td>Herzfeld</td><td>3rd</td></tr>
+ <tr><td>Stanford</td><td>Music</td><td>310</td><td>Nation & Classical Music - from Handel to Copland</td><td>Riley</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Music</td><td>319</td><td>Leviathan</td><td>Hobbes</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Music</td><td>319</td><td>Second Treatise of Government</td><td>Locke</td><td>&nbsp;</td></tr>
+ <tr><td>Stanford</td><td>Music</td><td>319</td><td>Letter Concerning Toleration</td><td>Locke</td><td></td></tr>
+
+
+
+</tbody></table>
+
+
+
+
+
+
+  	<br />
+  	<br />
+  	<br />
+  	<br />
+  	<hr style = "border-top: 1px double #00009B;
+	border-bottom: 1px double #00009B;" />
+  	<br />
+ 
+<footer class="footer_end">
+	<a href = "https://www.facebook.com/textbookconsultants/" target = "_blank"> <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg" style = "width: 3.125rem;height:3.125rem; padding: 2.5rem 2.5rem;"> </a>
+	<p id = "Copyright"> &#169; Copyright 2017 TextbookConsultants.com. All Rights Reserved. </p>
+	<p> <a href = "Terms_of_Service.html" class = "home_search_tag_2">Terms of Service | </a>  <a href = "Privacy_Policy.html" class = "home_search_tag_2">Privacy Policy</a> </p>
+</footer>
+        
+</body> 
+</html>

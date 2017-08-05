@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payment Form</title>
+    </head>
+    <body>
+        <div id="pay">
+        <fieldset>
+            <legend>Payment Form</legend>
+            <span id="small">Please do not enter sensitive information</span>
+            
+            <form action="?">
+                <fieldset>
+                    <legend>Payment Information</legend>
+                    <table>
+                        <tr><td>Credit Card Number</td><td><input type="text" placeholder="1234 5678 3456 8373" maxlength="19" size="16" required/></td></tr>
+                        <tr><td>Security Code</td><td><input type="text" size="3" maxlength="3" placeholder="123" required /></td></tr>
+                        <tr><td>Expiration Date</td><td><input type="month" required/></td></tr>
+                        <tr><td>Type</td><td><input type="radio" name="card" required>Visa</input><input type="radio" name="card">Debit</input></td></tr>
+                </table>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Shipping Information</legend>
+                    <table>
+                        <tr><td>First name</td><td><input type="text" placeholder="John" size="16" maxlength="50" required/></td></tr>
+                        <tr><td>Last name</td><td><input type="text" placeholder="Doe" size="16" maxlength="50" required/></td></tr>
+                        <tr><td>Email</td><td><input type="email" size="16" maxlength="50" placeholder="johndoe@yahoo.com" required/></td></tr>
+                        <tr><td>Confirm email</td><td><input type="email" size="16" maxlength="50" placeholder="johndoe@yahoo.com" required/></td></tr>
+                        <tr><td>Address 1</td><td><input type="text" placeholder="301 Maple St" maxlength="30" size="12" required/></td></tr>
+                        <tr><td>Address 2</td><td><input type="text" placeholder="303 Maple St" maxlength="30" size="12" /></td></tr>
+                        <tr><td>City</td><td><input type="text" size="12" maxlength="50" placeholder="New York" required /></td></tr>
+                        <tr><td>State/Province</td><td><select><option value="state">Choose State</option></select></td></tr>
+                        <tr><td>Zip Code</td><td><input type="text" size="5" maxlength="5" placeholder="54623" required/></td></tr>
+                        <tr><td>Country</td><td><select><option value="country">Choose Country</option></select></td></tr>
+                        <tr><td>Phone Number</td><td><input type="text" size"10" maxlength="17" placeholder="+1 343 893 0203"</td></tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <table>
+                        <tr><td>Delivery Instructions</td><td><textarea></textarea></td></tr>
+                        <tr><td>Gift Wrap</td><td><input type="checkbox"/></td></tr>
+                    </table>
+                </fieldset>
+                <br />
+                <input id="btn" type="submit" value="Submit Order" /><input id="btn" type="reset" value="Reset Input" />
+            </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
+
+
+
+body {
+   margin:15px;
+}
+
+#small {
+    margin-left:70%;
+    font-size:50%;
+}
+
+fieldset {
+   background-color:tan;
+   border:1px solid;
+   border-color:green;
+   border-radius:15px;
+}
+
+fieldset fieldset {
+    background-color:grey;
+    border-radius:5px;
+}
+
+table {
+    font-weight:lighter;
+}
+
+legend {
+    font-weight:bolder;
+}
+
+
+input {
+   background-color:cyan;
+}
+
+textarea {
+   background-color:cyan; 
+}
+
+
+
+## differnt code
+
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+final class Main {
+
+
+    public static void main(String[] args) {
+        isValid("4539 1488 0343 6467");
+    }
+
+
+
+       static boolean isValid(String candidate) {
+           boolean works = false;
+            if(candidate.length() <= 1 || !containsOnlyNumbers(candidate)){
+                System.out.println(false);
+            } else {
+               if (candidate.matches("^[00]+$") || !candidate.matches("[a-zA-Z \\S]")){
+                    return false;
+                }
+                String trimmed = candidate.replaceAll("\\s+","");
+                String firstletter = trimmed.substring(0,1);
+                String parsed = parseStr(trimmed);
+                works = addCheck(parsed);
+                System.out.println(works);
+
+            }
+            return works;
+        }
+        static String parseStr(String str){
+            String reversedStr = reverseMe(str);
+            StringBuilder strb = new StringBuilder(reversedStr);
+            int len = str.length();
+
+            outerloop:
+            for(int i = 1; len > i; i += 1){
+                int t = Character.getNumericValue(reversedStr.charAt(i));
+
+                t = t * 2;
+                if(!(t < 9)){
+                    t = t - 9;
+                }
+                String f = String.valueOf(t);
+                strb.replace(i, i+1, f);
+                if(i + 2 > len){
+                    break outerloop;
+                } else {
+                    i++;
+                }
+            }
+
+            return strb.toString();
+        }
+    static String reverseMe(String s) {
+        StringBuilder sb = new StringBuilder();
+        for(int i = s.length() - 1; i >= 0; --i)
+            sb.append(s.charAt(i));
+        return sb.toString();
+    }
+    static boolean containsOnlyNumbers(String str) {
+        //It can't contain only numbers if it's null or empty...
+        if (str == null || str.length() == 0) {
+            return false;
+        } else{
+        Pattern p = Pattern.compile("[a-zA-Z \\s]");
+        Matcher m = p.matcher(str);
+        boolean b = m.matches();
+        return !b;
+        }
+    }
+        static boolean addCheck(String s) {
+            int len = s.length();
+            int res = 0;
+            for (int i = 0; len > i; i++) {
+                int t = Character.getNumericValue(s.charAt(i));
+                res = res + t;
+
+            }
+            boolean isDivisibleBy20 = res % 10 == 0;
+            return isDivisibleBy20;
+        }
+
+    }

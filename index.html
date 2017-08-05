@@ -16,12 +16,15 @@
   <link rel="stylesheet" type="text/css" href="tc.css"/>
   <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
   <script type = "text/javascript" src='tc.js'></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">></script>
   <link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css'/>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.js"></script>  
   <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="mainapp/main.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
 </head>
 
 <body>
@@ -72,61 +75,75 @@
   	<br />
   	<br />
   	<br />
+  	 	  	<br />
+ 	<br />
+
+
+
+
+  	 	<div class = "home_border3">
   	<br />
   	<br />
-  	<hr style = "border-top: 1px double #00009B;
-	border-bottom: 1px double #00009B;"  class = "horiz_line"/>
-	  	<br />
+ 	<br />
   	<br />
+ 	<br />
+  	<br />
+  	<br />  	
   	
- 	<div class = "home_border2">
+        <h2 id = "main_head">Welcome to Textbook Consultants</h2>  	 	
+    <p class = "main_content"> Select from the choices below to preview the list
+    </p>  
 
-        <h2 id = "sub_head">Let's Talk About Textbooks. We Will...</h2>
-    <section class="row container">
-		<div class = "home_images">
+  	  <div ng-app="AppMarketApp">    
+    <div class="main" ng-controller="MainController">
+      <div class="container">
+         <div class="card" ng-repeat="app in apps">
+          <app-info info="app"></app-info>
+        </div>
+      </div>
+    </div>
 
-        <img src = "images/home1.png" align = "middle" id = "img_home_one">            
-	  	<br />
-        <img src = "images/home2.png" align = "middle" id = "img_home_two">            
-	  	<br />
-        <img src = "images/home3.png" align = "middle" id = "img_home_three">
-	  	<br />
-        <img src = "images/home4.png" align = "middle" id = "img_home_four">
+    <!-- Modules -->
+    <script src="mainapp/app.js"></script>
+    <!-- Controllers -->
+    <script src="mainapp/MainController.js"></script>
+    <!-- Directives -->
+    <script src="mainapp/appInfo.js"></script>
+    <script src="mainapp/installApp.js"></script>
 
-		</div>
-        
-        <div class = "home_texts">
-        <p id="paragraph_1" style = "font-size: 20px">Reduce textbook searching time and cost and pursue other priorities</p>
-	  	<br />
-        <p id="paragraph_2" style = "font-size: 20px"> Explore textbooks used in upcoming or interesting classes</p>
-	  	<br />
-        <p id="paragraph_3" style = "font-size: 20px"> Reduce the cost of textbooks with market-efficient and competitive price</p>
-	  	<br />
-        <p id="paragraph_4" style = "font-size: 20px"> Analyze what we can learn from the information on textbooks</p>
-		</div>
-		</div>
-    </section>
+  	</div>
+  	</div>
+  	
+  	 <!-- <button onmouseover = "msg()">Click me </button>
+  	 <script>
+  	 function msg() {
+  	 alert("Hi!");
+  	 }
+  	 </script>
+  	 
+  	  -->
 
   	<br />
   	<br />
+ 	<br />
   	<br />
+ 	<br />
   	<br />
-	</div>
+  	<br />  	
 
-  	<br />
-  	<br />
-  	<br />
-  	<br />
+	<div class = "home_border">
+	<div id = "new_ng_app" ng-app = "app2">
+        <h2 id = "main_head" style = "color: black;">Tell us about you:</h2>
+    <p class = "main_content2">     My (first) name is: <input type="text" ng-model="firstname" style = "width: 16rem;" onchange="clearIt(this)" placeholder="First name"/><br/> </p>
+    <!-- getDocumentID input to boxes -->
 
- 	<div class = "home_border">
-        <h2 id = "sub_head">I am a....</h2>
-
-
+	<p class = "main_content2"> I am interested in: </p>
+<br />
 
 <div id="Student" class="tabcontent">
   <img src = "images/butterfly.jpg" align = "right" id = "tab_image_one">
 								<br />
-  <p class = "Student_content"> Leave the textbook searching to us <br />
+  <p class = "Student_content"> Hi {{ firstname }}, leave the textbook searching to us <br />
 							    and be assured that you get good information <br />
 							    on the textbooks for the upcoming class.</p>
 								<br />
@@ -180,10 +197,11 @@
   							   (We were all students once with great instructors)	</p>  
 </div>
 
+<button class="tablink" onclick="openCity('Student', this, '#006CFF')" id="defaultOpen">Corporate Training and Learning</button>
+<button class="tablink" id="tablink_2" onclick="openCity('Parent', this, '#FF3200')">Professional Development</button>
+<button class="tablink" id="tablink_3" onclick="openCity('Instructor', this, '#00CF00')">Lifelong Learning</button>
 
-<button class="tablink" onclick="openCity('Student', this, '#006CFF')" id="defaultOpen">Student</button>
-<button class="tablink" id="tablink_2" onclick="openCity('Parent', this, '#FF3200')">Parent</button>
-<button class="tablink" id="tablink_3" onclick="openCity('Instructor', this, '#00CF00')">Instructor</button>
+</div>
 
   	<br />
   	<br />
@@ -193,9 +211,48 @@
 
   	<br />
   	<br />
+  	<br />
+  	<br />
 
-	<div class = "home_border">
-        <h2 id = "sub_head" style = "color: black;">Let's get Started in the <a href = "TC_Textbooks.html" class = "home_search_tag">Search</a> page:</h2>
+  	<div class = "home_border2">
+
+        <h2 id = "sub_head">Let us introduce ourselves </h2>
+    <section class="row container">
+		<div class = "home_images">
+
+        <img src = "images/home1.png" align = "middle" id = "img_home_one">            
+	  	<br />
+        <img src = "images/home2.png" align = "middle" id = "img_home_two">            
+	  	<br />
+        <img src = "images/home3.png" align = "middle" id = "img_home_three">
+	  	<br />
+        <img src = "images/home4.png" align = "middle" id = "img_home_four">
+
+		</div>
+        
+        <div class = "home_texts">
+        <p id="paragraph_1" style = "font-size: 20px">Reduce textbook searching time and cost and pursue other priorities</p>
+	  	<br />
+        <p id="paragraph_2" style = "font-size: 20px"> Explore textbooks used in upcoming or interesting classes</p>
+	  	<br />
+        <p id="paragraph_3" style = "font-size: 20px"> Reduce the cost of textbooks with market-efficient and competitive price</p>
+	  	<br />
+        <p id="paragraph_4" style = "font-size: 20px"> Analyze what we can learn from the information on textbooks</p>
+		</div>
+		</div>
+    </section>
+
+
+	</div>
+ 
+ <p style = "text-align: right; position: static;"> <a href = "Login/login.html"> Log in </a> | <a href = "Login/login.html"> Sign up </a></p> 
+
+
+  	<br />
+  	<br />
+
+	<div class = "home_border4">
+        <h2 id = "sub_head" style = "color: black;"> Let's get Started in the <a href = "TC_Textbooks.html" class = "home_search_tag">Search</a> page:</h2>
   	<br />
 
 
@@ -205,8 +262,6 @@
   	<br />
   	<br />
   	<br />
-  	<hr style = "border-top: 1px double #00009B;
-	border-bottom: 1px double #00009B;" />
   	<br />
  
  
@@ -220,6 +275,6 @@
 	<p id = "Copyright"> &#169; Copyright 2017 TextbookConsultants.com. All Rights Reserved. </p>
 	<p> <a href = "Terms_of_Service.html" class = "home_search_tag_2">Terms of Service | </a>  <a href = "Privacy_Policy.html" class = "home_search_tag_2">Privacy Policy</a> </p>
 </footer>
-        
+       
 </body> 
 </html>

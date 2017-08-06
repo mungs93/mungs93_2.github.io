@@ -25,6 +25,7 @@
   <link href="mainapp/main.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
+  <script src="galleria/galleria-1.5.7.min.js"></script>
 </head>
 
 <body>
@@ -135,66 +136,51 @@
 	<div id = "new_ng_app" ng-app = "app2">
         <h2 id = "main_head" style = "color: black;">Tell us about you:</h2>
     <p class = "main_content2">     My (first) name is: <input type="text" ng-model="firstname" style = "width: 16rem;" onchange="clearIt(this)" placeholder="First name"/><br/> </p>
-    <!-- getDocumentID input to boxes -->
+       
+       <span id = "boxfornametag">
+       <div class="name-tag">
+            <h1>Welcome, </h1>
+            <p> {{ firstname }}</p>
+        </div>
+        </span>
 
 	<p class = "main_content2"> I am interested in: </p>
 <br />
 
 <div id="Student" class="tabcontent">
-  <img src = "images/butterfly.jpg" align = "right" id = "tab_image_one">
-								<br />
-  <p class = "Student_content"> Hi {{ firstname }}, leave the textbook searching to us <br />
-							    and be assured that you get good information <br />
-							    on the textbooks for the upcoming class.</p>
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-  <p class = "Student_content"> We wish you a great luck in the upcoming<br />
-  								semester and wish that knowledge grows with <br />
-  								every opportunity to learn.		</p>
+  <img src = "images/corporate.jpg" align = "right" id = "tab_image_one">
+  <p class = "Student_content"> Hi {{ firstname }}, we are excited to see you on board. <br /> <br />
+  								Leave us the search for cost-effective  <br />
+  								and efficient way to continue your corporate success. <br /> <br />
+								You can view the standard learning tools <br />
+								for a variety of subjects and classes. <br /> <br />
+								We wish you a continued success in the future endeavors<br />
+  								and that knowledge grows with every opportunity to learn.<br /> </p>
 </div>
 
 <div id="Parent" class="tabcontent">
-  <img src = "images/Hall.jpg" align = "right" id = "tab_image_two">
-  <p class = "Student_content"> Hi {{ firstname }}, you can offset the cost of textbooks <br />
-							    from the family budget with our searches. </p>
-								<br />
-								<br />
-								<br />
+  <img src = "images/professional.jpg" align = "right" id = "tab_image_two">
+  <p class = "Student_content"> Hi {{ firstname }}, welcome to the website. <br /><br />
+  								Leave the search for the latest instructions  <br />
+  								in the academia to us and continue your <br />
+  								leading edge in knowledge and competition. <br /> <br />
+								You can view the standard learning tools <br />
+								for a variety of subjects and classes. <br /> <br />
+								We wish you a continued success in the future endeavors<br />
+  								and that knowledge grows with every opportunity to learn.<br /> </p>
 
-								<br />
-  <p class = "Student_content"> College is a big financial investment and <br />
-							    we want to reduce that cost where we can. </p>
-								<br />
-								<br />
-								<br />
-
-								<br />
 
 
 </div>
 
 <div id="Instructor" class="tabcontent">
-  <img src = "images/river.jpeg" align = "right" id = "tab_image_three">
-  <p class = "Student_content_2"> Hi {{ firstname }}, you can see what textbooks are used <br />
-							    across classes and schools with our searches. </p>
-								<br />
-								<br />
-								<br />
-								<br />
-  <p class = "Student_content_2"> You can also see the information and statistics <br />
-							    on textbooks in use with our analysis. </p>
-								<br />
-								<br />
-								<br />
-								<br />
-  <p class = "Student_content_2"> Thank you for your instructions. <br />
-  							   (We were all students once with great instructors)	</p>  
+  <img src = "images/life2.jpg" align = "right" id = "tab_image_three">
+  <p class = "Student_content_2"> Hi {{ firstname }}, we congratulate you <br />
+  								 on a journey to a lifelong learning.<br /><br />
+								 Along the journey to become better at every moment, <br />
+								 a variety of subjects and classes here may be useful.<br /> <br />
+  								 We wish you a continued success in the future endeavors<br />
+  								 and that knowledge grows with every opportunity to learn.<br /> </p>
 </div>
 
 <button class="tablink" onclick="openCity('Student', this, '#006CFF')" id="defaultOpen">Corporate Training and Learning</button>
@@ -212,11 +198,14 @@
   	<br />
   	<br />
   	<br />
-  	<br />
 
   	<div class = "home_border2">
-
-        <h2 id = "sub_head">Let us introduce ourselves </h2>
+  	<br />
+  	<br />
+        <h2 id = "main_head" style = "color: white;">Let us Introduce Ourselves </h2>
+        
+        
+            <p class = "main_content2" style = "color: white;"> You will..</p>  
     <section class="row container">
 		<div class = "home_images">
 
@@ -237,9 +226,11 @@
 	  	<br />
         <p id="paragraph_3" style = "font-size: 20px"> Reduce the cost of textbooks with market-efficient and competitive price</p>
 	  	<br />
-        <p id="paragraph_4" style = "font-size: 20px"> Analyze what we can learn from the information on textbooks</p>
+        <p id="paragraph_4" style = "font-size: 20px"> View the analysis of what we learned from the information on textbooks</p>
 		</div>
 		</div>
+		
+		
     </section>
 
 
@@ -252,7 +243,7 @@
   	<br />
 
 	<div class = "home_border4">
-        <h2 id = "sub_head" style = "color: black;"> Let's get Started in the <a href = "TC_Textbooks.html" class = "home_search_tag">Search</a> page:</h2>
+        <h2 id = "sub_head" style = "color: black;"> Let's get <a href = "TC_Textbooks.html" class = "home_search_tag">Started</a>:</h2>
   	<br />
 
 

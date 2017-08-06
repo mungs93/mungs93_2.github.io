@@ -57,7 +57,40 @@ ul.menu li{
   text-transform: uppercase;
   clear: float;
 }
-
+	#boxfornametag * {
+	box-sizing: border-box;
+	}
+	
+  .name-tag {
+                border: 1px solid red;
+                border-radius: 6px;
+                width: 300px;
+                height: 150px;
+                background: red;
+                font-family: sans-serif;
+ 	          	margin: 0 0 10px 33rem;     
+            }
+            
+            .name-tag h1 {
+                color: white;
+                text-align: center;
+                height: 25px;
+                margin: 5px 0px 0px 0px;
+                font-size: 20px;
+            }
+            .name-tag p {
+                position: relative;
+                left: 5px;
+                padding: 10px;
+                width: 290px;
+                height: 90px;
+                background: white;
+                font-family: cursive;
+                font-size: 20px;
+                text-align: center;
+            }
+            
+            
 .pull-me a {
   color: inherit;
   font-family: inherit;
@@ -137,20 +170,24 @@ footer.container p {
 
 #paragraph_1{
   padding: .9375rem 0rem 0rem 0rem;
-  margin: 4.375rem 0rem 0rem 21.875rem;
+  margin: 0rem 0rem 0rem 21.875rem;
   font-weight: bold;
+  color: white;
 }
 #paragraph_2{
   margin: 5.625rem 0rem 0rem 21.875rem;
   font-weight: bold;
+  color: white;
 }
 #paragraph_3{
   margin: 5.9375rem 0rem 0rem 21.875rem;
   font-weight: bold;
+  color: white;
 }
 #paragraph_4{
   margin: 5.625rem 0rem 0rem 21.875rem;
   font-weight: bold;
+  color: white;
 }
 
 .home_texts p{
@@ -194,7 +231,7 @@ text-decoration: none;
 	margin: 0 auto;
 	height: 65rem;
     background-image: url("images/Golf.jpg");	
-    background-size: 100% 48rem;
+    background-size: 100% 60rem;
 	background-repeat: no-repeat;
 }
 
@@ -312,7 +349,7 @@ div.ng-mouseover{
   float: left;
   text-align: left;
   margin: .625rem 0rem;
-  padding: 1.25rem 0rem;
+  padding: .75rem 0rem;
   font-size: 1.5rem;
   font-family: 'Raleway', bold;
   color: white; 
@@ -478,6 +515,8 @@ input[type=submit]:hover {
 	position: inline-block;
 }
 
+
+.galleria{ width: 100%; height: 60rem; background: #000 }
 
 
 .container2 {

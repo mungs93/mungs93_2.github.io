@@ -22,7 +22,7 @@ app.controller('MainController', ['$scope', function($scope) {
 	    developer: 'Memorial Church, Stanford, CA.',
 	    developer2: '1340 classes and 1360 books', 
 	    price: '$'+10,
-	    link: "Stanford.html"	    
+	    link: "TC_Textbooks.html"	    
 	  },
 	  {
 	    icon: 'images/Penn2.jpg',

@@ -5,7 +5,7 @@ app.controller('MainController', ['$scope', function($scope) {
 	    title: 'Harvard', 
 	    developer: 'Memorial Church, Cambridge, MA.', 
 	    developer2: '1340 classes and 1360 books', 
-	    price: '$'+10,
+	    price: 
 	    link: "TC_Textbooks.html"
 	  }, 
 	  { 
@@ -13,7 +13,7 @@ app.controller('MainController', ['$scope', function($scope) {
 	    title: 'Yale', 
 	    developer: 'Chico Dusty', 
 	    developer2: '1340 classes and 1360 books', 
-	    price: '$'+10,
+	    price:
 	    link: "TC_Textbooks.html"	    
 	  },
 	  {
@@ -21,7 +21,7 @@ app.controller('MainController', ['$scope', function($scope) {
 	    title: 'Stanford',
 	    developer: 'Memorial Church, Stanford, CA.',
 	    developer2: '1340 classes and 1360 books', 
-	    price: '$'+10,
+	    price: 
 	    link: "TC_Textbooks.html"	    
 	  },
 	  {
@@ -29,15 +29,15 @@ app.controller('MainController', ['$scope', function($scope) {
 	    title: 'Penn',
 	    developer: 'College Hall, Philadelphia, PA.',
 	    developer2: '1340 classes and 1360 books', 
-	    price: '$'+10,
+	    price: 
 	    link: "TC_Textbooks.html"	    
 	  },
 	  {
 	    icon: 'images/All2.jpg',
-	    title: 'All Colleges',
+	    title: 'More Colleges',
 	    developer: 'Silverman Hall, Philadelphia, PA',
 	    developer2: '1340 classes and 1360 books', 
-	    price: '$'+30,
+	    price: 
 	    link: "TC_Textbooks.html"
 	  }
 	];

@@ -23,10 +23,16 @@ $(document).ready(function(){
         $('.panel').slideUp('slow');
     });    
 
-
 	var app2 = angular.module('app2', []);    
     angular.bootstrap(document.getElementById("new_ng_app"), ['app2']);
+
+	$(".anim1").hide();
+	$("#anim2").hide();
+	$('.anim1').fadeIn(3500);
+	$("#anim2").fadeIn(3500);
 });
+
+//
 
 var slideShow = function(container) {
     this.images = [];
@@ -46,7 +52,7 @@ var slideShow = function(container) {
         if (this.curImage >= this.images.length) {
             this.curImage = 0;
         }
-        window.setTimeout(nextSlide.bind(this), 6000);
+        window.setTimeout(nextSlide.bind(this), 5000);
     };    
     nextSlide.call(this);
 };
@@ -92,6 +98,10 @@ $(document).ready(function() {
     	var toAdd = $("input[name=message]").val();
         $('#messages').append("<p>"+toAdd+"</p>");
     });
+});
+
+$(document).ready(function() {
+
 });
 
 

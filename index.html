@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-8142640338820573",
-    enable_page_level_ads: true
-  });
-</script>
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
@@ -22,7 +14,7 @@
   <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-  <link href="mainapp/main.css" rel="stylesheet" />
+  <link href="homeapp/main.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
 
@@ -32,256 +24,29 @@
 
 </head>
 
-<body>
-  <div class = "box">
-	<div id = "logo">
-	  <a href = "index.html">
-	  <img src = "images/TB_logo_3.png" alt = "Textbook Consultants logo" id = "header_logo">
-	  </a>
+
+<body style = "background-color: rgb(245,245,250);">
+
+	  <img src = "images/TB_logo_3.png" alt = "Textbook Consultants logo" id = "header_home_logo">
+	<div id = "home_icons_bundle">
+	  <a href = "T_Textbooks.html" class = "home_link1"> <img src = "images/collage1_border.jpg" style = "padding: 0 0 18rem 0;" alt = "Textbook Consultants menu" id = "home_icons"> <img src = "images/collage1_border_mod.jpg" style = "padding: 0 0 18rem 0;" id = "home_icons"> </a>
+	  <a href = "N_Statistics.html" class = "home_link2"> <img src = "images/collage2_border.jpg" style = "padding: 0 0 18rem 0;" alt = "Textbook Consultants menu" id = "home_icons"><img src = "images/collage2_border_mod.jpg" style = "padding: 0 0 18rem 0;" id = "home_icons"></a>
+	  <a href = "L_Learn.html" class = "home_link3"> <img src = "images/collage3_border.jpg" alt = "Textbook Consultants menu" id = "home_icons"><img src = "images/collage3_border_mod.jpg" id = "home_icons"></a>
+	  <a href = "M_Community.html" class = "home_link4"> <img src = "images/collage4_border.jpg" alt = "Textbook Consultants menu" id = "home_icons"><img src = "images/collage4_border_mod.jpg" id = "home_icons"></a>
 	</div>
-	  <ul class = "menu">
-	    <li id = "menu_top"> <div class = "pull-me"> <a href = "index.html"> Home </a></div></li> 
-	    <li id = "menu_top"> 
-   		<div class = "pull-me"> <a href = "TC_AboutUs.html">  About Us</a></div>
-	    </li>
-	    <li id = "menu_top"> <div class = "pull-me"> <a href = "TC_Textbooks.html">  Textbook </div></a>
-	    <br />
-		<div class="panel">
-        <p class="drop-down"><a href = "TC_Textbooks.html">Search</a></p>
-        <br />
-        <p class="drop-down"><a href = "TC_Textbooks_Ana.html">Analysis</a></p>
-        </div>    
-	    </li>
-	    <li id = "menu_top"> <div class = "pull-me"> 
-	    <a href = "TC_Community.html">  Community </div></a> 
-        <br />
-   	    <div class="panel">
-        <p class="drop-down"><a href = "TC_Community.html">Community</a></p>
-        <br />
-        <p class="drop-down"><a href = "TC_Com_GP.html">Gifts & Pledge</a></p>
-        <br />
-        <p class="drop-down"><a href = "TC_Com_Tr.html">Transparency</a></p>
-        </div>
-        </li>
-	    <li id = "menu_top"> <div class = "pull-me"> <a href = "TC_Contact.html"> Contact </div></a>
-        <br />
-   	    <div class="panel">
-        <p class="drop-down"><a href = "TC_Contact.html">Contact & Feedback</a></p>
-        <br />
-        <p class="drop-down"><a href = "TC_Con_PS.html">Partnerships</a></p>
-        <br />
-        <p class="drop-down"><a href = "TC_Con_YS.html">Your Story</a></p>
-        </div>
-        </li>
-	  </ul>
-	</div>
-  	<br />
-  	<br />
-  	<br />
-  	<br />
-  	<br />
-  	 	  	<br />
- 	<br />
+	<br />
 
-
-
-
-  	 	<div class = "home_border3">
-  	<br />
-  	<br />
- 	<br />
-  	<br />
- 	<br />
-  	<br />
-  	<br />  	
-  	
-    <h2 id = "main_head" class = "anim1"> Welcome to Textbook Consultants </h2>
-    <p class = "main_content" id = "anim2"> Select from the choices below to preview the list</p>  
-
-  	  <div ng-app="AppMarketApp">    
-    <div class="main" ng-controller="MainController">
-      <div class="container">
-         <div class="card" ng-repeat="app in apps">
-          <app-info info="app"></app-info>
-        </div>
-      </div>
-    </div>
-
+	
     <!-- Modules -->
-    <script src="mainapp/app.js"></script>
+    <script src="homeapp/app.js"></script>
     <!-- Controllers -->
-    <script src="mainapp/MainController.js"></script>
+    <script src="homeapp/MainController.js"></script>   
     <!-- Directives -->
-    <script src="mainapp/appInfo.js"></script>
-    <script src="mainapp/installApp.js"></script>
-
-  	</div>
-  	</div>
-  	
-  	 <!-- <button onmouseover = "msg()">Click me </button>
-  	 <script>
-  	 function msg() {
-  	 alert("Hi!");
-  	 }
-  	 </script>
-  	 
-  	  -->
-
-  	<br />
-  	<br />
- 	<br />
-  	<br />
- 	<br />
-  	<br />
-  	<br />  	
-
-	<div class = "home_border">
-	<div id = "new_ng_app" ng-app = "app2">
-        <h2 id = "main_head" style = "color: black;">Tell us about you:</h2>
-    <p class = "main_content2">     My (first) name is: <input type="text" ng-model="firstname" style = "width: 16rem;" onchange="clearIt(this)" placeholder="First name"/><br/> </p>
-       
-       <span id = "boxfornametag">
-       <div class="name-tag">
-            <h1>Welcome, </h1>
-            <p> {{ firstname }}</p>
-        </div>
-        </span>
-
-	<p class = "main_content2"> I am interested in: </p>
-<br />
-
-<div id="Student" class="tabcontent">
-  <img src = "images/corporate.jpg" align = "right" id = "tab_image_one">
-  <p class = "Student_content"> Hi {{ firstname }}, we are excited to see you on board. <br /> <br />
-  								Leave us the search for cost-effective  <br />
-  								and efficient way to continue your corporate success. <br /> <br />
-								You can view the standard learning tools <br />
-								for a variety of subjects and classes. <br /> <br />
-								We wish you a continued success in the future endeavors<br />
-  								and that knowledge grows with every opportunity to learn.<br /> </p>
-</div>
-
-<div id="Parent" class="tabcontent">
-  <img src = "images/professional.jpg" align = "right" id = "tab_image_two">
-  <p class = "Student_content"> Hi {{ firstname }}, welcome to the website. <br /><br />
-  								Leave the search for the latest instructions  <br />
-  								in the academia to us and continue your <br />
-  								leading edge in knowledge and competition. <br /> <br />
-								You can view the standard learning tools <br />
-								for a variety of subjects and classes. <br /> <br />
-								We wish you a continued success in the future endeavors<br />
-  								and that knowledge grows with every opportunity to learn.<br /> </p>
+    <script src="homeapp/appInfo.js"></script>
+    <script src="homeapp/installApp.js"></script>
 
 
 
-</div>
-
-<div id="Instructor" class="tabcontent">
-  <img src = "images/life2.jpg" align = "right" id = "tab_image_three">
-  <p class = "Student_content_2"> Hi {{ firstname }}, we congratulate you <br />
-  								 on a journey to a lifelong learning.<br /><br />
-								 Along the journey to become better at every moment, <br />
-								 a variety of subjects and classes here may be useful.<br /> <br />
-  								 We wish you a continued success in the future endeavors<br />
-  								 and that knowledge grows with every opportunity to learn.<br /> </p>
-</div>
-
-<button class="tablink" onclick="openCity('Student', this, '#006CFF')" id="defaultOpen">Corporate Training and Learning</button>
-<button class="tablink" id="tablink_2" onclick="openCity('Parent', this, '#FF3200')">Professional Development</button>
-<button class="tablink" id="tablink_3" onclick="openCity('Instructor', this, '#00CF00')">Lifelong Learning</button>
-
-</div>
-
-  	<br />
-  	<br />
-  	<br />
-  	<br />
-	</div>
-
-  	<br />
-  	<br />
-  	<br />
-  	
-  	   <div id="sliderFrame">
-        <div id="slider">
-            <img src="images/Slide1.png" />
-            <img src="images/Slide2.jpg" />
-            <img src="images/Slide3.jpg" />
-        </div>
-        <!--Custom navigation buttons on both sides-->
-        <div class="group1-Wrapper">
-            <a onclick="imageSlider.previous()" class="group1-Prev"></a>
-            <a onclick="imageSlider.next()" class="group1-Next"></a>
-        </div>
-        <!--nav bar-->
-        <div style="text-align:center;padding:20px;z-index:20;">
-            <a onclick="imageSlider.previous()" class="group2-Prev"></a>
-            <a id='auto' onclick="switchAutoAdvance()"></a>
-            <a onclick="imageSlider.next()" class="group2-Next"></a>
-        </div>
-    </div>
-<!--
-  	<div class = "home_border2">
-  	<br />
-  	<br />
-        <h2 id = "main_head" style = "color: white;">Let us Introduce Ourselves </h2>
-        
-        
-            <p class = "main_content2" style = "color: white;"> You will..</p>  
-    <section class="row container">
-		<div class = "home_images">
-
-        <img src = "images/home1.png" align = "middle" id = "img_home_one">            
-	  	<br />
-        <img src = "images/home2.png" align = "middle" id = "img_home_two">            
-	  	<br />
-        <img src = "images/home3.png" align = "middle" id = "img_home_three">
-	  	<br />
-        <img src = "images/home4.png" align = "middle" id = "img_home_four">
-
-		</div>
-        
-        <div class = "home_texts">
-        <p id="paragraph_1" style = "font-size: 20px">Reduce textbook searching time and cost and pursue other priorities</p>
-	  	<br />
-        <p id="paragraph_2" style = "font-size: 20px"> Explore textbooks used in upcoming or interesting classes</p>
-	  	<br />
-        <p id="paragraph_3" style = "font-size: 20px"> Reduce the cost of textbooks with market-efficient and competitive price</p>
-	  	<br />
-        <p id="paragraph_4" style = "font-size: 20px"> View the analysis of what we learned from the information on textbooks</p>
-		</div>
-		</div>
-    </section>
-	</div>
--->
- 
-
-
-  	<br />
-  	<br />
-
-	<div class = "home_border4">
-        <h2 id = "sub_head" style = "color: black;"> Let's get <a href = "TC_Textbooks.html" class = "home_search_tag">Started</a>:</h2>
-
-</div>
-
-  	<br />
-  	<br />
-  	<br />
-  	<br />
-  	<br />
- 
- 
-<footer class="footer_end">
- <a title="Web Analytics" href="http://clicky.com/101046576"><img alt="Web Analytics" src="//static.getclicky.com/media/links/badge.gif" border="0" style = "float: left; clear: float;" /></a>
-<script src="//static.getclicky.com/js" type="text/javascript"></script>
-<script type="text/javascript">try{ clicky.init(101046576); }catch(e){}</script>
-<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101046576ns.gif" /></p></noscript>
-
-	<a href = "https://www.facebook.com/textbookconsultants/" target = "_blank"> <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg" style = "width: 3.125rem;height:3.125rem; padding: 2.5rem 2.5rem;"> </a>
-	<p id = "Copyright"> &#169; Copyright 2017 TextbookConsultants.com. All Rights Reserved. </p>
-	<p> <a href = "Terms_of_Service.html" class = "home_search_tag_2">Terms of Service | </a>  <a href = "Privacy_Policy.html" class = "home_search_tag_2">Privacy Policy</a> </p>
-</footer>
        
 </body> 
 </html>

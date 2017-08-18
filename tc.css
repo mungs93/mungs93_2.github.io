@@ -32,6 +32,35 @@ body {
 	height:5.5rem;
 }
 
+/* home style */
+#header_home_logo {
+	max-width:82.5rem;
+	height:16.5rem;
+	position: absolute;
+	margin: 35rem 0 0 0;
+	text-align: center;
+}
+#home_icons {
+	width:40rem;
+	height:35rem;
+}
+#home_icons_bundle {
+	display: inline-block;
+	text-align: center;
+}
+
+.home_link1 img:last-child, .home_link2 img:last-child, .home_link3 img:last-child, .home_link4 img:last-child {
+	display:none
+}
+.home_link1:hover img:first-child, .home_link2:hover img:first-child, .home_link3:hover img:first-child, .home_link4:hover img:first-child{
+	display:none
+}
+.home_link1:hover img:last-child, .home_link2:hover img:last-child, .home_link3:hover img:last-child, .home_link4:hover img:last-child{
+	display:inline-block
+}
+
+
+/* home style end */
 
 .pull-me{
   cursor:pointer;

@@ -29,7 +29,7 @@ app.controller('MainController', ['$scope', function($scope) {
 	  }, */
 
 	  {
-	    "icon": 'images/houston.jpg',
+	    "icon": 'images/houston.JPG',
 	    "title": 'Houston Recovery',
 	    "developer": 'The damage to Houston does not end with the hurricane or the flood. For years on, we Houstonians will need to fight microorganisms, adverse species, harmful chemicals and elements, diminished infrastructure, and more. We will use any and every help to eliminate these threats and restore Houston to better than it was before.',
 	    "url": "http://textbookconsultants.com/M_Community.html",

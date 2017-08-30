@@ -29,10 +29,19 @@ app.controller('MainController', ['$scope', function($scope) {
 	  }, */
 
 	  {
-	    "icon": 'images/San_Marcos_mod.png',
-	    "title": 'San Marcos River Restoration',
-	    "developer": 'Experience the pristine nature of San Marcos River',
-	    "url": "https://textbookconsultants.com",
+	    "icon": 'images/houston.jpg',
+	    "title": 'Houston Recovery',
+	    "developer": 'The damage to Houston does not end with the hurricane or the flood. For years on, we Houstonians will need to fight microorganisms, adverse species, harmful chemicals and elements, diminished infrastructure, and more. We will use any and every help to eliminate these threats and restore Houston to better than it was before.',
+	    "url": "http://textbookconsultants.com/M_Community.html",
+	    "url2": "https://www.facebook.com/textbookconsultants",
+	    "url3": "https://www.paypal.me/TextbookConsultants",
+	    "price": "Learn More" 
+	  },
+	  	  	  {
+	    "icon": 'images/texas.png',
+	    "title": 'Texas Recovery',
+	    "developer": 'The damage from the Hurricane Harvey is not confined to Houston. Whenever possible, we hope to reach out to neighbor cities and do the same work we do for Houston.',
+	    "url": "http://textbookconsultants.com/M_Community.html",
 	    "url2": "https://www.facebook.com/textbookconsultants",
 	    "url3": "https://www.paypal.me/TextbookConsultants",
 	    "price": "Learn More" 
@@ -40,8 +49,8 @@ app.controller('MainController', ['$scope', function($scope) {
 	  	  {
 	    "icon": 'images/WhiteFlower.jpg',
 	    "title": 'Preservation and Study of Wildlife Habitat',
-	    "developer": 'Our team is studying and documenting species in different wildlife habitat.',
-	    "url": "https://textbookconsultants.com",
+	    "developer": 'Our team is studying and documenting species in different wildlife habitat, specifically in Texas.',
+	    "url": "http://textbookconsultants.com/M_Community.html",
 	    "url2": "https://www.facebook.com/textbookconsultants",
 	    "url3": "https://www.paypal.me/TextbookConsultants",
 	    "price": "Learn More" 
@@ -50,16 +59,7 @@ app.controller('MainController', ['$scope', function($scope) {
 	    "icon": 'images/habitat.jpg',
 	    "title": 'Assisting Seniors with moving',
 	    "developer": 'Let us know if you need help with moving.',
-	    "url": "https://textbookconsultants.com",
-	    "url2": "https://www.facebook.com/textbookconsultants",
-	    "url3": "https://www.paypal.me/TextbookConsultants",
-	    "price": "Learn More" 
-	  },
-	  	  {
-	    "icon": 'images/TB_logo.png',
-	    "title": 'Textbook Consultants',
-	    "developer": 'TextbookConsultants connects students, parents, and instructors to competitive and market-efficient price of textbooks.',
-	    "url": "https://textbookconsultants.com",
+	    "url": "http://textbookconsultants.com/M_Community.html",
 	    "url2": "https://www.facebook.com/textbookconsultants",
 	    "url3": "https://www.paypal.me/TextbookConsultants",
 	    "price": "Learn More" 

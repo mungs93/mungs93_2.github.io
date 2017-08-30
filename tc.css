@@ -647,6 +647,7 @@ input[type=submit]:hover {
 	.box {
 	  max-width: 100%;	
 	  padding: 0;
+		display: static;
 	}
 	
 	#header_logo {
@@ -657,10 +658,11 @@ input[type=submit]:hover {
 	.pull-me{
 		border-right: 0;
   		border-bottom: 1.5px solid #00009B;
+		display: static;
 	}
 	
 	.drop-down {
-		position: fixed;
+		display: static;
 	}
 	
 	ul.menu li{

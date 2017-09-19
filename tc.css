@@ -284,6 +284,14 @@ text-decoration: none;
 	background-color: rgb(240,240,250);
 }
 
+.home_border5 {
+	margin: 0 auto;
+	width: 100%;
+    background-image: url("images/wine3.jpg");	
+    background-size: 100%;
+	background-repeat: no-repeat;
+}
+
 
 .about_border {
 	border-style: outset;

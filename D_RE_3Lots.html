@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <title> Textbook Consultants</title>
+  <link rel="stylesheet" type="text/css" href="tc.css"/>
+  <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+  <script type = "text/javascript" src='tc.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">></script>
+  <link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css'/>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.js"></script>  
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="mainapp/main.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
+
+
+
+<script type="text/javascript">
+      function nocontext(e) {
+        var clickedTag = (e==null) ? event.srcElement.tagName : e.target.tagName;
+        if (clickedTag == "IMG")
+          return false;
+      }
+      document.oncontextmenu = nocontext;
+    </script>
+
+
+</head>
+
+<body>
+  <div class = "box">
+	<div id = "logo">
+
+	  <a href = "index.html">
+	  <img src = "images/TB_logo_3.png" alt = "Textbook Consultants logo" id = "header_logo">
+	  </a>
+
+	</div>
+	</div>
+  	<br />
+  	<br />
+  	<br />
+  	<br />
+  	<br />
+  	 	  	<br />
+ 	<br />
+
+
+
+
+  	 	<div class = "home_border6">
+  	<br />
+  	<br />
+ 	<br />
+  	<br />
+ 	<br />
+  	<br />
+  	<br />  	
+  	
+    <h2 id = "main_head" class = "anim1"> Houston Real Estate Information </h2>
+    <p class = "main_content" id = "anim2"> See below for the list</p>  
+      	<br />
+  	<br />
+ 	<br />
+  	<br />
+ 	<br />
+  	<br />
+            <p class = "About_content">
+
+            <br />
+            <br />
+    </p>  
+
+
+  	<br />
+  	<br />
+  	<br />
+  	<br />
+  	<br />
+  	 	  	<br />
+ 	<br />
+
+<p> <span id="txtHint"></span></p>
+
+<h3 id = "main_head"> Menu </h3>
+
+ 	<p class = "About_content"> <a href = "RE.html" class = "home_search_tag">Intro</a> </p>
+<p class = "About_content"> <a href = "D_RE_1Single.html" class = "home_search_tag"> Single Family Housing</a> </p>
+<p class = "About_content"> <a href = "D_RE_2Condo.html" class = "home_search_tag">Condo/Townhouse</a> </p>
+<p class = "About_content"> <a href = "D_RE_3Lots.html" class = "home_search_tag">*** Lots ***</a> </p>
+<p class = "About_content"> <a href = "D_RE_4Rental.html" class = "home_search_tag">Rental</a> </p>
+<p class = "About_content"> <a href = "D_RE_5PerSqft.html" class = "home_search_tag">Per Sqft / Per Price</a> </p>
+
+
+<!--
+ body {
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-user-drag: none;
+      user-drag: none;
+      -webkit-touch-callout: none;
+    }
+-->
+
+<style type="text/css">
+
+	table.tableizer-table {
+		#font-size: 12px;
+		border: 1px solid #CCC; 
+		font-family: 'Raleway', sans-serif;
+   	    background-color: rgba(38,85,255,.03);
+	} 
+	.tableizer-table td {
+		#padding: 4px;
+		#margin: 3px;
+		border: 1px solid #CCC;
+	}
+	.tableizer-table th {
+		background-color: #104E8B; 
+		color: #FFF;
+		font-weight: bold;
+		
+	}
+</style>
+<table id="myTable" class="tableizer-table">
+
+<thead><tr class="tableizer-firstrow"><th>Area</th><th>Map_1</th><th>Map_2</th><th>Map_3</th><th>Price_Lots</th><th>Months of Inventory</th><th>NumberSold</th><th>AveragePrice</th></tr></thead><tbody>
+ <tr><td>1960.Cypress</td><td><img src="Maps/1960.Cypress.png" class = "bookimg2"></td><td><img src="Maps/1960.Cypress2.png" class = "bookimg2"></td><td><img src="Maps/1960.Cypress 3.png" class = "bookimg2"></td><td><img src="Real/Lots/1960Cypress.jpg" class = "bookimg2"></td><td>3</td><td>4</td><td>$101,225 </td></tr>
+ <tr><td>1960.Cypress Creek North</td><td><img src="Maps/1960.Cypress Creek North.png" class = "bookimg2"></td><td><img src="Maps/1960.Cypress Creek North 2.png" class = "bookimg2"></td><td><img src="Maps/1960.Cypress Creek North 3.png" class = "bookimg2"></td><td><img src="Real/Lots/1960North.jpg" class = "bookimg2"></td><td>15.3</td><td>11</td><td>53186</td></tr>
+ <tr><td>1960.Cypress Creek South</td><td><img src="Maps/1960.Cypress Creek South.png" class = "bookimg2"></td><td><img src="Maps/1960.Cypress Creek South 2.png" class = "bookimg2"></td><td><img src="Maps/1960.Cypress Creek South 3.png" class = "bookimg2"></td><td><img src="Real/Lots/1960South.jpg" class = "bookimg2"></td><td>26</td><td>6</td><td>$134,233 </td></tr>
+ <tr><td>Aldine Area</td><td><img src="Maps/Aldine Area.png" class = "bookimg2"></td><td><img src="Maps/Aldine Area 2.png" class = "bookimg2"></td><td><img src="Maps/Aldine Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Aldine Area.jpg" class = "bookimg2"></td><td>17.8</td><td>35</td><td>$128,345 </td></tr>
+ <tr><td>Alief</td><td><img src="Maps/Alief.png" class = "bookimg2"></td><td><img src="Maps/Alief 2.png" class = "bookimg2"></td><td><img src="Maps/Alief 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Alief.jpg" class = "bookimg2"></td><td>8</td><td>9</td><td>$101,778 </td></tr>
+ <tr><td>Alvin North</td><td><img src="Maps/Alvin North.png" class = "bookimg2"></td><td><img src="Maps/Alvin North 2.png" class = "bookimg2"></td><td><img src="Maps/Alvin North 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Alvin North.jpg" class = "bookimg2"></td><td>13.1</td><td>42</td><td>$85,966 </td></tr>
+ <tr><td>Alvin South</td><td><img src="Maps/Alvin South.png" class = "bookimg2"></td><td><img src="Maps/Alvin South 2.png" class = "bookimg2"></td><td><img src="Maps/Alvin South 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Alvin South.jpg" class = "bookimg2"></td><td>6.4</td><td>60</td><td>$92,207 </td></tr>
+ <tr><td>Angelina County</td><td><img src="Maps/Angelina County.png" class = "bookimg2"></td><td><img src="Maps/Angelina County 2.png" class = "bookimg2"></td><td><img src="Maps/Angelina County 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Angelina County.jpg" class = "bookimg2"></td><td>42</td><td>2</td><td>$41,500 </td></tr>
+ <tr><td>Atascocita North</td><td><img src="Maps/Atascocita North.png" class = "bookimg2"></td><td><img src="Maps/Atascocita North 2.png" class = "bookimg2"></td><td><img src="Maps/Atascocita North 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Atascocita North.jpg" class = "bookimg2"></td><td>24</td><td>1</td><td>$44,000 </td></tr>
+ <tr><td>Atascocita South</td><td><img src="Maps/Atascocita South.png" class = "bookimg2"></td><td><img src="Maps/Atascocita South 2.png" class = "bookimg2"></td><td><img src="Maps/Atascocita South 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Atascocita South.jpg" class = "bookimg2"></td><td>21</td><td>8</td><td>$42,875 </td></tr>
+ <tr><td>Bacliff.San Leon</td><td><img src="Maps/Bacliff.San Leon.png" class = "bookimg2"></td><td><img src="Maps/Bacliff.San Leon 2.png" class = "bookimg2"></td><td><img src="Maps/Bacliff.San Leon 3.png" class = "bookimg2"></td><td><img src="Real/Lots/BacliffLeon.jpg" class = "bookimg2"></td><td>16.1</td><td>70</td><td>$77,024 </td></tr>
+ <tr><td>Bayou Vista</td><td><img src="Maps/Bayou Vista.png" class = "bookimg2"></td><td><img src="Maps/Bayou Vista 2.png" class = "bookimg2"></td><td><img src="Maps/Bayou Vista 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Bayou Vista.jpg" class = "bookimg2"></td><td>8.6</td><td>7</td><td>$82,143 </td></tr>
+ <tr><td>Baytown.Chambers County</td><td><img src="Maps/Baytown.Chambers County.png" class = "bookimg2"></td><td><img src="Maps/Baytown.Chambers County 2.png" class = "bookimg2"></td><td><img src="Maps/Baytown.Chambers County 3.png" class = "bookimg2"></td><td><img src="Real/Lots/BaytownCounty.jpg" class = "bookimg2"></td><td>60</td><td>2</td><td>$43,250 </td></tr>
+ <tr><td>Baytown.Harris County</td><td><img src="Maps/Baytown.Harris County.png" class = "bookimg2"></td><td><img src="Maps/Baytown.Harris County 2.png" class = "bookimg2"></td><td><img src="Maps/Baytown.Harris County 3.png" class = "bookimg2"></td><td><img src="Real/Lots/.jpg" class = "bookimg2"></td><td>15.7</td><td>46</td><td>$119,072 </td></tr>
+ <tr><td>Bear Creek South</td><td><img src="Maps/Bear Creek South.png" class = "bookimg2"></td><td><img src="Maps/Bear Creek South 2.png" class = "bookimg2"></td><td><img src="Maps/Bear Creek South 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Bear Creek South.jpg" class = "bookimg2"></td><td>8</td><td>3</td><td>$390,000 </td></tr>
+ <tr><td>Bellaire Area</td><td><img src="Maps/Bellaire Area.png" class = "bookimg2"></td><td><img src="Maps/Bellaire Area 2.png" class = "bookimg2"></td><td><img src="Maps/Bellaire Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Bellaire Area.jpg" class = "bookimg2"></td><td>7.7</td><td>14</td><td>$493,636 </td></tr>
+ <tr><td>Braeswood Place</td><td><img src="Maps/Braeswood Place.png" class = "bookimg2"></td><td><img src="Maps/Braeswood Place 2.png" class = "bookimg2"></td><td><img src="Maps/Braeswood Place 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Braeswood Place.jpg" class = "bookimg2"></td><td>18</td><td>6</td><td>$556,500 </td></tr>
+ <tr><td>Brays Oaks</td><td><img src="Maps/Brays Oaks.png" class = "bookimg2"></td><td><img src="Maps/Brays Oaks 2.png" class = "bookimg2"></td><td><img src="Maps/Brays Oaks 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Brays Oaks.jpg" class = "bookimg2"></td><td>18.7</td><td>9</td><td>$115,167 </td></tr>
+ <tr><td>Briar Hollow</td><td><img src="Maps/Briar Hollow.png" class = "bookimg2"></td><td><img src="Maps/Briar Hollow 2.png" class = "bookimg2"></td><td><img src="Maps/Briar Hollow 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Briar Hollow.jpg" class = "bookimg2"></td><td>0</td><td>0</td><td>&nbsp;</td></tr>
+ <tr><td>Briargrove</td><td><img src="Maps/Briargrove.png" class = "bookimg2"></td><td><img src="Maps/Briargrove 2.png" class = "bookimg2"></td><td><img src="Maps/Briargrove 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Briargrove.jpg" class = "bookimg2"></td><td>0</td><td>0</td><td>&nbsp;</td></tr>
+ <tr><td>Briargrove Park.Walnutbend</td><td><img src="Maps/Briargrove Park.Walnutbend.png" class = "bookimg2"></td><td><img src="Maps/Briargrove Park.Walnutbend 2.png" class = "bookimg2"></td><td><img src="Maps/Briargrove Park.Walnutbend 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Briargrove ParkWalnutbend.jpg" class = "bookimg2"></td><td>36</td><td>1</td><td>$375,000 </td></tr>
+ <tr><td>Briarmeadow.Tanglewilde</td><td><img src="Maps/Briarmeadow.Tanglewilde.png" class = "bookimg2"></td><td><img src="Maps/Briarmeadow.Tanglewilde 2.png" class = "bookimg2"></td><td><img src="Maps/Briarmeadow.Tanglewilde 3.png" class = "bookimg2"></td><td><img src="Real/Lots/BriarmeadowTanglewilde.jpg" class = "bookimg2"></td><td>9.6</td><td>5</td><td>$216,780 </td></tr>
+ <tr><td>Brookshire</td><td><img src="Maps/Brookshire.png" class = "bookimg2"></td><td><img src="Maps/Brookshire 2.png" class = "bookimg2"></td><td><img src="Maps/Brookshire 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Brookshire.jpg" class = "bookimg2"></td><td>é</td><td>24</td><td>$130,169 </td></tr>
+ <tr><td>Caplen</td><td><img src="Maps/Caplen.png" class = "bookimg2"></td><td><img src="Maps/Caplen 2.png" class = "bookimg2"></td><td><img src="Maps/Caplen 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Caplen.jpg" class = "bookimg2"></td><td>45.6</td><td>10</td><td>$99,350 </td></tr>
+ <tr><td>Chambers County East</td><td><img src="Maps/Chambers County East.png" class = "bookimg2"></td><td><img src="Maps/Chambers County East 2.png" class = "bookimg2"></td><td><img src="Maps/Chambers County East 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Chambers County East.jpg" class = "bookimg2"></td><td>36</td><td>17</td><td>$92,817 </td></tr>
+ <tr><td>Chambers County West</td><td><img src="Maps/Chambers County West.png" class = "bookimg2"></td><td><img src="Maps/Chambers County West 2.png" class = "bookimg2"></td><td><img src="Maps/Chambers County West 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Chambers County West.jpg" class = "bookimg2"></td><td>25.9</td><td>19</td><td>$226,916 </td></tr>
+ <tr><td>Champions Area</td><td><img src="Maps/Champions Area.png" class = "bookimg2"></td><td><img src="Maps/Champions Area 2.png" class = "bookimg2"></td><td><img src="Maps/Champions Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Champions Area.jpg" class = "bookimg2"></td><td>24</td><td>6</td><td>$117,333 </td></tr>
+ <tr><td>Charnwood.Briarbend</td><td><img src="Maps/Charnwood.Briarbend.png" class = "bookimg2"></td><td><img src="Maps/Charnwood.Briarbend 2.png" class = "bookimg2"></td><td><img src="Maps/Charnwood.Briarbend 3.png" class = "bookimg2"></td><td><img src="Real/Lots/CharnwoodBriarbend.jpg" class = "bookimg2"></td><td>0</td><td>0</td><td>&nbsp;</td></tr>
+ <tr><td>Clear Lake Area</td><td><img src="Maps/Clear Lake Area.png" class = "bookimg2"></td><td><img src="Maps/Clear Lake Area 2.png" class = "bookimg2"></td><td><img src="Maps/Clear Lake Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Clear Lake Area.jpg" class = "bookimg2"></td><td>30</td><td>16</td><td>$86,072 </td></tr>
+ <tr><td>Cleveland Area</td><td><img src="Maps/Cleveland Area.png" class = "bookimg2"></td><td><img src="Maps/Cleveland Area 2.png" class = "bookimg2"></td><td><img src="Maps/Cleveland Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Cleveland Area.jpg" class = "bookimg2"></td><td>17.3</td><td>83</td><td>$79,360 </td></tr>
+ <tr><td>Coldsprinng.South San Jacinto County</td><td><img src="Maps/Coldsprinng.South San Jacinto County.png" class = "bookimg2"></td><td><img src="Maps/Coldsprinng.South San Jacinto County 2.png" class = "bookimg2"></td><td><img src="Maps/Coldsprinng.South San Jacinto County 3.png" class = "bookimg2"></td><td><img src="Real/Lots/ColdsprinngSouth San Jacinto County.jpg" class = "bookimg2"></td><td>10.8</td><td>30</td><td>$71,896 </td></tr>
+ <tr><td>Conroe Northeast</td><td><img src="Maps/Conroe Northeast.png" class = "bookimg2"></td><td><img src="Maps/Conroe Northeast 2.png" class = "bookimg2"></td><td><img src="Maps/Conroe Northeast 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Conroe Northeast.jpg" class = "bookimg2"></td><td>8.6</td><td>77</td><td>$71,877 </td></tr>
+ <tr><td>Conroe Southeast</td><td><img src="Maps/Conroe Southeast.png" class = "bookimg2"></td><td><img src="Maps/Conroe Southeast 2.png" class = "bookimg2"></td><td><img src="Maps/Conroe Southeast 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Conroe Southeast.jpg" class = "bookimg2"></td><td>10</td><td>47</td><td>$65,596 </td></tr>
+ <tr><td>Conroe Southwest</td><td><img src="Maps/Conroe Southwest.png" class = "bookimg2"></td><td><img src="Maps/Conroe Southwest 2.png" class = "bookimg2"></td><td><img src="Maps/Conroe Southwest 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Conroe Southwest.jpg" class = "bookimg2"></td><td>6.6</td><td>119</td><td>$93,050 </td></tr>
+ <tr><td>Copperfield Area</td><td><img src="Maps/Copperfield Area.png" class = "bookimg2"></td><td><img src="Maps/Copperfield Area 2.png" class = "bookimg2"></td><td><img src="Maps/Copperfield Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Copperfield Area.jpg" class = "bookimg2"></td><td>0</td><td>0</td><td>&nbsp;</td></tr>
+ <tr><td>Cottage Grove</td><td><img src="Maps/Cottage Grove.png" class = "bookimg2"></td><td><img src="Maps/Cottage Grove 2.png" class = "bookimg2"></td><td><img src="Maps/Cottage Grove 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Cottage Grove.jpg" class = "bookimg2"></td><td>13.3</td><td>9</td><td>$549,000 </td></tr>
+ <tr><td>Crosby Area</td><td><img src="Maps/Crosby Area.png" class = "bookimg2"></td><td><img src="Maps/Crosby Area 2.png" class = "bookimg2"></td><td><img src="Maps/Crosby Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Crosby Area.jpg" class = "bookimg2"></td><td>9.5</td><td>52</td><td>$84,825 </td></tr>
+ <tr><td>Crystal Beach</td><td><img src="Maps/Crystal Beach.png" class = "bookimg2"></td><td><img src="Maps/Crystal Beach 2.png" class = "bookimg2"></td><td><img src="Maps/Crystal Beach 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Crystal Beach.jpg" class = "bookimg2"></td><td>21.4</td><td>87</td><td>$61,543 </td></tr>
+ <tr><td>Cypress North</td><td><img src="Maps/Cypress North.png" class = "bookimg2"></td><td><img src="Maps/Cypress North 2.png" class = "bookimg2"></td><td><img src="Maps/Cypress North 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Cypress North.jpg" class = "bookimg2"></td><td>21.1</td><td>21</td><td>$131,734 </td></tr>
+ <tr><td>Cypress South</td><td><img src="Maps/Cypress South.png" class = "bookimg2"></td><td><img src="Maps/Cypress South 2.png" class = "bookimg2"></td><td><img src="Maps/Cypress South 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Cypress South.jpg" class = "bookimg2"></td><td>4.8</td><td>5</td><td>$97,480 </td></tr>
+ <tr><td>Dayton</td><td><img src="Maps/Dayton.png" class = "bookimg2"></td><td><img src="Maps/Dayton 2.png" class = "bookimg2"></td><td><img src="Maps/Dayton 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Dayton.jpg" class = "bookimg2"></td><td>10.6</td><td>51</td><td>$53,424 </td></tr>
+ <tr><td>Deer Park</td><td><img src="Maps/Deer Park.png" class = "bookimg2"></td><td><img src="Maps/Deer Park 2.png" class = "bookimg2"></td><td><img src="Maps/Deer Park 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Deer Park.jpg" class = "bookimg2"></td><td>0</td><td>0</td><td>&nbsp;</td></tr>
+ <tr><td>Denver Harbor</td><td><img src="Maps/Denver Harbor.png" class = "bookimg2"></td><td><img src="Maps/Denver Harbor 2.png" class = "bookimg2"></td><td><img src="Maps/Denver Harbor 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Denver Harbor.jpg" class = "bookimg2"></td><td>10.6</td><td>69</td><td>$67,127 </td></tr>
+ <tr><td>Dickinson</td><td><img src="Maps/Dickinson.png" class = "bookimg2"></td><td><img src="Maps/Dickinson 2.png" class = "bookimg2"></td><td><img src="Maps/Dickinson 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Dickinson.jpg" class = "bookimg2"></td><td>16.7</td><td>23</td><td>$71,996 </td></tr>
+ <tr><td>Downtown - Galveston</td><td><img src="Maps/Downtown - Galveston.png" class = "bookimg2"></td><td><img src="Maps/Downtown - Galveston 2.png" class = "bookimg2"></td><td><img src="Maps/Downtown - Galveston 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Downtown - Galveston.jpg" class = "bookimg2"></td><td>24</td><td>1</td><td>88000</td></tr>
+ <tr><td>Downtown - Houston</td><td><img src="Maps/Downtown - Houston.png" class = "bookimg2"></td><td><img src="Maps/Downtown - Houston 2.png" class = "bookimg2"></td><td><img src="Maps/Downtown - Houston 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Downtown - Houston.jpg" class = "bookimg2"></td><td>0</td><td>0</td><td>&nbsp;</td></tr>
+ <tr><td>East Beach</td><td><img src="Maps/East Beach.png" class = "bookimg2"></td><td><img src="Maps/East Beach 2.png" class = "bookimg2"></td><td><img src="Maps/East Beach 3.png" class = "bookimg2"></td><td><img src="Real/Lots/East Beach.jpg" class = "bookimg2"></td><td>31.2</td><td>10</td><td>$220,882 </td></tr>
+ <tr><td>East End</td><td><img src="Maps/East End.png" class = "bookimg2"></td><td><img src="Maps/East End 2.png" class = "bookimg2"></td><td><img src="Maps/East End 3.png" class = "bookimg2"></td><td><img src="Real/Lots/East End.jpg" class = "bookimg2"></td><td>31.2</td><td>5</td><td>$51,400 </td></tr>
+ <tr><td>East End Revitalized</td><td><img src="Maps/East End Revitalized.png" class = "bookimg2"></td><td><img src="Maps/East End Revitalized 2.png" class = "bookimg2"></td><td><img src="Maps/East End Revitalized 3.png" class = "bookimg2"></td><td><img src="Real/Lots/East End Revitalized.jpg" class = "bookimg2"></td><td>7.8</td><td>65</td><td>$181,601 </td></tr>
+ <tr><td>Eldridge North</td><td><img src="Maps/Eldridge North.png" class = "bookimg2"></td><td><img src="Maps/Eldridge North 2.png" class = "bookimg2"></td><td><img src="Maps/Eldridge North 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Eldridge North.jpg" class = "bookimg2"></td><td>0</td><td>0</td><td>&nbsp;</td></tr>
+ <tr><td>Energy Corridor</td><td><img src="Maps/Energy Corridor.png" class = "bookimg2"></td><td><img src="Maps/Energy Corridor 2.png" class = "bookimg2"></td><td><img src="Maps/Energy Corridor 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Energy Corridor.jpg" class = "bookimg2"></td><td>6</td><td>2</td><td>$167,500 </td></tr>
+ <tr><td>Fall Creek Area</td><td><img src="Maps/Fall Creek Area.png" class = "bookimg2"></td><td><img src="Maps/Fall Creek Area 2.png" class = "bookimg2"></td><td><img src="Maps/Fall Creek Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Fall Creek Area.jpg" class = "bookimg2"></td><td>0</td><td>0</td><td>&nbsp;</td></tr>
+ <tr><td>Five Corners</td><td><img src="Maps/Five Corners.png" class = "bookimg2"></td><td><img src="Maps/Five Corners 2.png" class = "bookimg2"></td><td><img src="Maps/Five Corners 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Five Corners.jpg" class = "bookimg2"></td><td>18</td><td>16</td><td>$100,301 </td></tr>
+ <tr><td>Fort Bend County North.Richmond</td><td><img src="Maps/Fort Bend County North.Richmond.png" class = "bookimg2"></td><td><img src="Maps/Fort Bend County North.Richmond 2.png" class = "bookimg2"></td><td><img src="Maps/Fort Bend County North.Richmond 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Fort Bend County NorthRichmond.jpg" class = "bookimg2"></td><td>20.4</td><td>27</td><td>$148,487 </td></tr>
+ <tr><td>Fort Bend South.Richmond</td><td><img src="Maps/Fort Bend South.Richmond.png" class = "bookimg2"></td><td><img src="Maps/Fort Bend South.Richmond 2.png" class = "bookimg2"></td><td><img src="Maps/Fort Bend South.Richmond 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Fort Bend SouthRichmond.jpg" class = "bookimg2"></td><td>15.7</td><td>23</td><td>$201 ,828</td></tr>
+ <tr><td>Fort Bend Southeast</td><td><img src="Maps/Fort Bend Southeast.png" class = "bookimg2"></td><td><img src="Maps/Fort Bend Southeast 2.png" class = "bookimg2"></td><td><img src="Maps/Fort Bend Southeast 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Fort Bend Southeast.jpg" class = "bookimg2"></td><td>8.7</td><td>22</td><td>$84,966 </td></tr>
+ <tr><td>Friendswood</td><td><img src="Maps/Friendswood.png" class = "bookimg2"></td><td><img src="Maps/Friendswood 2.png" class = "bookimg2"></td><td><img src="Maps/Friendswood 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Friendswood.jpg" class = "bookimg2"></td><td>28.5</td><td>8</td><td>$177,125 </td></tr>
+ <tr><td>Fulshear.South Brookshire.Simonton</td><td><img src="Maps/Fulshear.South Brookshire.Simonton.png" class = "bookimg2"></td><td><img src="Maps/Fulshear.South Brookshire.Simonton 2.png" class = "bookimg2"></td><td><img src="Maps/Fulshear.South Brookshire.Simonton 3.png" class = "bookimg2"></td><td><img src="Real/Lots/FulshearSouth BrookshireSimonton.jpg" class = "bookimg2"></td><td>19.1</td><td>68</td><td>$166,767 </td></tr>
+ <tr><td>Galleria</td><td><img src="Maps/Galleria.png" class = "bookimg2"></td><td><img src="Maps/Galleria 2.png" class = "bookimg2"></td><td><img src="Maps/Galleria 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Galleria.jpg" class = "bookimg2"></td><td>14.4</td><td>5</td><td>$957,000 </td></tr>
+ <tr><td>Garden Oaks</td><td><img src="Maps/Garden Oaks.png" class = "bookimg2"></td><td><img src="Maps/Garden Oaks 2.png" class = "bookimg2"></td><td><img src="Maps/Garden Oaks 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Garden Oaks.jpg" class = "bookimg2"></td><td>0</td><td>1</td><td>$400,000 </td></tr>
+ <tr><td>Gilchrist</td><td><img src="Maps/Gilchrist.png" class = "bookimg2"></td><td><img src="Maps/Gilchrist 2.png" class = "bookimg2"></td><td><img src="Maps/Gilchrist 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Gilchrist.jpg" class = "bookimg2"></td><td>23.4</td><td>19</td><td>$46,711 </td></tr>
+ <tr><td>Greenway Plaza</td><td><img src="Maps/Greenway Plaza.png" class = "bookimg2"></td><td><img src="Maps/Greenway Plaza 2.png" class = "bookimg2"></td><td><img src="Maps/Greenway Plaza 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Greenway Plaza.jpg" class = "bookimg2"></td><td>0</td><td>0</td><td>&nbsp;</td></tr>
+ <tr><td>Gulfton</td><td><img src="Maps/Gulfton.png" class = "bookimg2"></td><td><img src="Maps/Gulfton 2.png" class = "bookimg2"></td><td><img src="Maps/Gulfton 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Gulfton.jpg" class = "bookimg2"></td><td>0</td><td>0</td><td>&nbsp;</td></tr>
+ <tr><td>Harborside</td><td><img src="Maps/Harborside.png" class = "bookimg2"></td><td><img src="Maps/Harborside 2.png" class = "bookimg2"></td><td><img src="Maps/Harborside 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Harborside.jpg" class = "bookimg2"></td><td>25.7</td><td>7</td><td>$101,286 </td></tr>
+ <tr><td>Harborwalk</td><td><img src="Maps/Harborwalk.png" class = "bookimg2"></td><td><img src="Maps/Harborwalk 2.png" class = "bookimg2"></td><td><img src="Maps/Harborwalk 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Harborwalk.jpg" class = "bookimg2"></td><td>104</td><td>9</td><td>$127,767 </td></tr>
+ <tr><td>Heights.Greater Heights</td><td><img src="Maps/Heights.Greater Heights.png" class = "bookimg2"></td><td><img src="Maps/Heights.Greater Heights 2.png" class = "bookimg2"></td><td><img src="Maps/Heights.Greater Heights 3.png" class = "bookimg2"></td><td><img src="Real/Lots/HeightsGreater Heights.jpg" class = "bookimg2"></td><td>15.3</td><td>43</td><td>$415,026 </td></tr>
+ <tr><td>Hempstead</td><td><img src="Maps/Hempstead.png" class = "bookimg2"></td><td><img src="Maps/Hempstead 2.png" class = "bookimg2"></td><td><img src="Maps/Hempstead 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Hempstead.jpg" class = "bookimg2"></td><td>13.4</td><td>25</td><td>$36,976 </td></tr>
+ <tr><td>High Island</td><td><img src="Maps/High Island.png" class = "bookimg2"></td><td><img src="Maps/High Island 2.png" class = "bookimg2"></td><td><img src="Maps/High Island 3.png" class = "bookimg2"></td><td><img src="Real/Lots/High Island.jpg" class = "bookimg2"></td><td>12</td><td>1</td><td>$20,000 </td></tr>
+ <tr><td>Highland Bayou</td><td><img src="Maps/Highland Bayou.png" class = "bookimg2"></td><td><img src="Maps/Highland Bayou 2.png" class = "bookimg2"></td><td><img src="Maps/Highland Bayou 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Highland Bayou.jpg" class = "bookimg2"></td><td>12</td><td>1</td><td>$45,000 </td></tr>
+ <tr><td>Highland Village.Midlane</td><td><img src="Maps/Highland Village.Midlane.png" class = "bookimg2"></td><td><img src="Maps/Highland Village.Midlane 2.png" class = "bookimg2"></td><td><img src="Maps/Highland Village.Midlane 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Highland VillageMidlane.jpg" class = "bookimg2"></td><td>24</td><td>2</td><td>$589,500 </td></tr>
+ <tr><td>Hitchcock</td><td><img src="Maps/Hitchcock.png" class = "bookimg2"></td><td><img src="Maps/Hitchcock 2.png" class = "bookimg2"></td><td><img src="Maps/Hitchcock 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Hitchcock.jpg" class = "bookimg2"></td><td>14.3</td><td>21</td><td>$41,571 </td></tr>
+ <tr><td>Hobby Area</td><td><img src="Maps/Hobby Area.png" class = "bookimg2"></td><td><img src="Maps/Hobby Area 2.png" class = "bookimg2"></td><td><img src="Maps/Hobby Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Hobby Area.jpg" class = "bookimg2"></td><td>12</td><td>23</td><td>$106,665 </td></tr>
+ <tr><td>Hockley</td><td><img src="Maps/Hockley.png" class = "bookimg2"></td><td><img src="Maps/Hockley 2.png" class = "bookimg2"></td><td><img src="Maps/Hockley 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Hockley.jpg" class = "bookimg2"></td><td>5.4</td><td>51</td><td>$79,478 </td></tr>
+ <tr><td>Huffman Area</td><td><img src="Maps/Huffman Area.png" class = "bookimg2"></td><td><img src="Maps/Huffman Area 2.png" class = "bookimg2"></td><td><img src="Maps/Huffman Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Huffman Area.jpg" class = "bookimg2"></td><td>20.2</td><td>66</td><td>$62,276 </td></tr>
+ <tr><td>Humble Area East</td><td><img src="Maps/Humble Area East.png" class = "bookimg2"></td><td><img src="Maps/Humble Area East 2.png" class = "bookimg2"></td><td><img src="Maps/Humble Area East 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Humble Area East.jpg" class = "bookimg2"></td><td>35.1</td><td>13</td><td>$67,269 </td></tr>
+ <tr><td>Humble Area South</td><td><img src="Maps/Humble Area South.png" class = "bookimg2"></td><td><img src="Maps/Humble Area South 2.png" class = "bookimg2"></td><td><img src="Maps/Humble Area South 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Humble Area South.jpg" class = "bookimg2"></td><td>54</td><td>2</td><td>$21,500 </td></tr>
+ <tr><td>Humble Area West</td><td><img src="Maps/Humble Area West.png" class = "bookimg2"></td><td><img src="Maps/Humble Area West 2.png" class = "bookimg2"></td><td><img src="Maps/Humble Area West 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Humble Area West.jpg" class = "bookimg2"></td><td>21.6</td><td>10</td><td>$43,400 </td></tr>
+ <tr><td>Jersey Village</td><td><img src="Maps/Jersey Village.png" class = "bookimg2"></td><td><img src="Maps/Jersey Village 2.png" class = "bookimg2"></td><td><img src="Maps/Jersey Village 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Jersey Village.jpg" class = "bookimg2"></td><td>3</td><td>4</td><td>$131,750 </td></tr>
+ <tr><td>Katy - North</td><td><img src="Maps/Katy - North.png" class = "bookimg2"></td><td><img src="Maps/Katy - North 2.png" class = "bookimg2"></td><td><img src="Maps/Katy - North 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Katy - North.jpg" class = "bookimg2"></td><td>16</td><td>6</td><td>$338,667 </td></tr>
+ <tr><td>Katy - Old Towne</td><td><img src="Maps/Katy - Old Towne.png" class = "bookimg2"></td><td><img src="Maps/Katy - Old Towne 2.png" class = "bookimg2"></td><td><img src="Maps/Katy - Old Towne 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Katy - Old Towne.jpg" class = "bookimg2"></td><td>15</td><td>16</td><td>$131,969 </td></tr>
+ <tr><td>Katy - Southeast</td><td><img src="Maps/Katy - Southeast.png" class = "bookimg2"></td><td><img src="Maps/Katy - Southeast 2.png" class = "bookimg2"></td><td><img src="Maps/Katy - Southeast 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Katy - Southeast.jpg" class = "bookimg2"></td><td>9</td><td>4</td><td>$128,625 </td></tr>
+ <tr><td>Katy - Southwest</td><td><img src="Maps/Katy - Southwest.png" class = "bookimg2"></td><td><img src="Maps/Katy - Southwest 2.png" class = "bookimg2"></td><td><img src="Maps/Katy - Southwest 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Katy - Southwest.jpg" class = "bookimg2"></td><td>26</td><td>6</td><td>$919,250 </td></tr>
+ <tr><td>Kingwood East</td><td><img src="Maps/Kingwood East.png" class = "bookimg2"></td><td><img src="Maps/Kingwood East 2.png" class = "bookimg2"></td><td><img src="Maps/Kingwood East 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Kingwood East.jpg" class = "bookimg2"></td><td>10.3</td><td>7</td><td>$49,429 </td></tr>
+ <tr><td>Kingwood NW.Oakhurst</td><td><img src="Maps/Kingwood NW.Oakhurst.png" class = "bookimg2"></td><td><img src="Maps/Kingwood NW.Oakhurst 2.png" class = "bookimg2"></td><td><img src="Maps/Kingwood NW.Oakhurst 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Kingwood NWOakhurst.jpg" class = "bookimg2"></td><td>9</td><td>4</td><td>$448,875 </td></tr>
+ <tr><td>Kingwood South</td><td><img src="Maps/Kingwood South.png" class = "bookimg2"></td><td><img src="Maps/Kingwood South 2.png" class = "bookimg2"></td><td><img src="Maps/Kingwood South 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Kingwood South.jpg" class = "bookimg2"></td><td>18.9</td><td>7</td><td>$105,214 </td></tr>
+ <tr><td>Kingwood West</td><td><img src="Maps/Kingwood West.png" class = "bookimg2"></td><td><img src="Maps/Kingwood West 2.png" class = "bookimg2"></td><td><img src="Maps/Kingwood West 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Kingwood West.jpg" class = "bookimg2"></td><td>26</td><td>6</td><td>$71,792 </td></tr>
+ <tr><td>Knollwood.Woodside area</td><td><img src="Maps/Knollwood.Woodside area.png" class = "bookimg2"></td><td><img src="Maps/Knollwood.Woodside area 2.png" class = "bookimg2"></td><td><img src="Maps/Knollwood.Woodside area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/KnollwoodWoodside area.jpg" class = "bookimg2"></td><td>54</td><td>2</td><td>$384,000 </td></tr>
+ <tr><td>La Marque</td><td><img src="Maps/La Marque.png" class = "bookimg2"></td><td><img src="Maps/La Marque 2.png" class = "bookimg2"></td><td><img src="Maps/La Marque 3.png" class = "bookimg2"></td><td><img src="Real/Lots/La Marque.jpg" class = "bookimg2"></td><td>26.2</td><td>11</td><td>$17,309 </td></tr>
+ <tr><td>La Porte.Shoreacres</td><td><img src="Maps/La Porte.Shoreacres.png" class = "bookimg2"></td><td><img src="Maps/La Porte.Shoreacres 2.png" class = "bookimg2"></td><td><img src="Maps/La Porte.Shoreacres 3.png" class = "bookimg2"></td><td><img src="Real/Lots/La PorteShoreacres.jpg" class = "bookimg2"></td><td>9.8</td><td>27</td><td>$55,681 </td></tr>
+ <tr><td>Lake Conroe Area</td><td><img src="Maps/Lake Conroe Area.png" class = "bookimg2"></td><td><img src="Maps/Lake Conroe Area 2.png" class = "bookimg2"></td><td><img src="Maps/Lake Conroe Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Lake Conroe Area.jpg" class = "bookimg2"></td><td>17.2</td><td>361</td><td>$70,695 </td></tr>
+ <tr><td>Lake Livingston Area</td><td><img src="Maps/Lake Livingston Area.png" class = "bookimg2"></td><td><img src="Maps/Lake Livingston Area 2.png" class = "bookimg2"></td><td><img src="Maps/Lake Livingston Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Lake Livingston Area.jpg" class = "bookimg2"></td><td>17.2</td><td>361</td><td>$70,695 </td></tr>
+ <tr><td>League City</td><td><img src="Maps/League City.png" class = "bookimg2"></td><td><img src="Maps/League City 2.png" class = "bookimg2"></td><td><img src="Maps/League City 3.png" class = "bookimg2"></td><td><img src="Real/Lots/League City.jpg" class = "bookimg2"></td><td>19.6</td><td>234</td><td>$33,373 </td></tr>
+ <tr><td>Liberty</td><td><img src="Maps/Liberty.png" class = "bookimg2"></td><td><img src="Maps/Liberty 2.png" class = "bookimg2"></td><td><img src="Maps/Liberty 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Liberty.jpg" class = "bookimg2"></td><td>13.1</td><td>43</td><td>$127,788 </td></tr>
+ <tr><td>Liberty County East</td><td><img src="Maps/Liberty County East.png" class = "bookimg2"></td><td><img src="Maps/Liberty County East 2.png" class = "bookimg2"></td><td><img src="Maps/Liberty County East 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Liberty County East.jpg" class = "bookimg2"></td><td>16</td><td>6</td><td>$26,167 </td></tr>
+ <tr><td>Livingston Area</td><td><img src="Maps/Livingston Area.png" class = "bookimg2"></td><td><img src="Maps/Livingston Area 2.png" class = "bookimg2"></td><td><img src="Maps/Livingston Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Livingston Area.jpg" class = "bookimg2"></td><td>19.9</td><td>32</td><td>$53,722 </td></tr>
+ <tr><td>Lomax Area</td><td><img src="Maps/Lomax Area.png" class = "bookimg2"></td><td><img src="Maps/Lomax Area 2.png" class = "bookimg2"></td><td><img src="Maps/Lomax Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Lomax Area.jpg" class = "bookimg2"></td><td>19.3</td><td>38</td><td>$24,354 </td></tr>
+ <tr><td>Magnolia.1488 East</td><td><img src="Maps/Magnolia.1488 East.png" class = "bookimg2"></td><td><img src="Maps/Magnolia.1488 East 2.png" class = "bookimg2"></td><td><img src="Maps/Magnolia.1488 East 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Magnolia1488 East.jpg" class = "bookimg2"></td><td>24</td><td>1</td><td>$27,000 </td></tr>
+ <tr><td>Magnolia.1488 West</td><td><img src="Maps/Magnolia.1488 West.png" class = "bookimg2"></td><td><img src="Maps/Magnolia.1488 West 2.png" class = "bookimg2"></td><td><img src="Maps/Magnolia.1488 West 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Magnolia1488 West.jpg" class = "bookimg2"></td><td>15.6</td><td>54</td><td>$156,086 </td></tr>
+ <tr><td>Medical Center Area</td><td><img src="Maps/Medical Center Area.png" class = "bookimg2"></td><td><img src="Maps/Medical Center Area 2.png" class = "bookimg2"></td><td><img src="Maps/Medical Center Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Medical Center Area.jpg" class = "bookimg2"></td><td>17</td><td>77</td><td>$108,790 </td></tr>
+ <tr><td>Medical Center South</td><td><img src="Maps/Medical Center South.png" class = "bookimg2"></td><td><img src="Maps/Medical Center South 2.png" class = "bookimg2"></td><td><img src="Maps/Medical Center South 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Medical Center South.jpg" class = "bookimg2"></td><td>16</td><td>3</td><td>$170,667 </td></tr>
+ <tr><td>Memorial Close In</td><td><img src="Maps/Memorial Close In.png" class = "bookimg2"></td><td><img src="Maps/Memorial Close In 2.png" class = "bookimg2"></td><td><img src="Maps/Memorial Close In 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Memorial Close In.jpg" class = "bookimg2"></td><td>11.7</td><td>133</td><td>$40,508 </td></tr>
+ <tr><td>Memorial Park</td><td><img src="Maps/Memorial Park.png" class = "bookimg2"></td><td><img src="Maps/Memorial Park 2.png" class = "bookimg2"></td><td><img src="Maps/Memorial Park 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Memorial Park.jpg" class = "bookimg2"></td><td>0</td><td>0</td><td>&nbsp;</td></tr>
+ <tr><td>Memorial Villages</td><td><img src="Maps/Memorial Villages.png" class = "bookimg2"></td><td><img src="Maps/Memorial Villages 2.png" class = "bookimg2"></td><td><img src="Maps/Memorial Villages 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Memorial Villages.jpg" class = "bookimg2"></td><td>0</td><td>0</td><td>&nbsp;</td></tr>
+ <tr><td>Memorial West</td><td><img src="Maps/Memorial West.png" class = "bookimg2"></td><td><img src="Maps/Memorial West 2.png" class = "bookimg2"></td><td><img src="Maps/Memorial West 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Memorial West.jpg" class = "bookimg2"></td><td>8.8</td><td>19</td><td>$1,319,211 </td></tr>
+ <tr><td>Meyerland Area</td><td><img src="Maps/Meyerland Area.png" class = "bookimg2"></td><td><img src="Maps/Meyerland Area 2.png" class = "bookimg2"></td><td><img src="Maps/Meyerland Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Meyerland Area.jpg" class = "bookimg2"></td><td>9.3</td><td>9</td><td>$703,333 </td></tr>
+ <tr><td>Midtown - Galveston</td><td><img src="Maps/Midtown - Galveston.png" class = "bookimg2"></td><td><img src="Maps/Midtown - Galveston 2.png" class = "bookimg2"></td><td><img src="Maps/Midtown - Galveston 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Midtown - Galveston.jpg" class = "bookimg2"></td><td>8.6</td><td>7</td><td>$45,229 </td></tr>
+ <tr><td>Midtown - Houston</td><td><img src="Maps/Midtown - Houston.png" class = "bookimg2"></td><td><img src="Maps/Midtown - Houston 2.png" class = "bookimg2"></td><td><img src="Maps/Midtown - Houston 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Midtown - Houston.jpg" class = "bookimg2"></td><td>8</td><td>6</td><td>$313,333 </td></tr>
+ <tr><td>Mission Bend Area</td><td><img src="Maps/Mission Bend Area.png" class = "bookimg2"></td><td><img src="Maps/Mission Bend Area 2.png" class = "bookimg2"></td><td><img src="Maps/Mission Bend Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Mission Bend Area.jpg" class = "bookimg2"></td><td>9</td><td>4</td><td>$685,000 </td></tr>
+ <tr><td>Missouri City Area</td><td><img src="Maps/Missouri City Area.png" class = "bookimg2"></td><td><img src="Maps/Missouri City Area 2.png" class = "bookimg2"></td><td><img src="Maps/Missouri City Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Missouri City Area.jpg" class = "bookimg2"></td><td>23.3</td><td>34</td><td>$78,720 </td></tr>
+ <tr><td>Montgomery County Northwest</td><td><img src="Maps/Montgomery County Northwest.png" class = "bookimg2"></td><td><img src="Maps/Montgomery County Northwest 2.png" class = "bookimg2"></td><td><img src="Maps/Montgomery County Northwest 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Montgomery County Northwest.jpg" class = "bookimg2"></td><td>15.8</td><td>19</td><td>$92,950 </td></tr>
+ <tr><td>Montrose</td><td><img src="Maps/Montrose.png" class = "bookimg2"></td><td><img src="Maps/Montrose 2.png" class = "bookimg2"></td><td><img src="Maps/Montrose 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Montrose.jpg" class = "bookimg2"></td><td>16.8</td><td>5</td><td>$528,000 </td></tr>
+ <tr><td>Near West End</td><td><img src="Maps/Near West End.png" class = "bookimg2"></td><td><img src="Maps/Near West End 2.png" class = "bookimg2"></td><td><img src="Maps/Near West End 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Near West End.jpg" class = "bookimg2"></td><td>14.5</td><td>24</td><td>$117,054 </td></tr>
+ <tr><td>North Channel</td><td><img src="Maps/North Channel.png" class = "bookimg2"></td><td><img src="Maps/North Channel 2.png" class = "bookimg2"></td><td><img src="Maps/North Channel 3.png" class = "bookimg2"></td><td><img src="Real/Lots/North Channel.jpg" class = "bookimg2"></td><td>10.3</td><td>63</td><td>$70,148 </td></tr>
+ <tr><td>Northeast Houston</td><td><img src="Maps/Northeast Houston.png" class = "bookimg2"></td><td><img src="Maps/Northeast Houston 2.png" class = "bookimg2"></td><td><img src="Maps/Northeast Houston 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Northeast Houston.jpg" class = "bookimg2"></td><td>15.5</td><td>76</td><td>$42,351 </td></tr>
+ <tr><td>Northside</td><td><img src="Maps/Northside.png" class = "bookimg2"></td><td><img src="Maps/Northside 2.png" class = "bookimg2"></td><td><img src="Maps/Northside 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Northside.jpg" class = "bookimg2"></td><td>19.7</td><td>137</td><td>$69,417 </td></tr>
+ <tr><td>Northwest Houston</td><td><img src="Maps/Northwest Houston.png" class = "bookimg2"></td><td><img src="Maps/Northwest Houston 2.png" class = "bookimg2"></td><td><img src="Maps/Northwest Houston 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Northwest Houston.jpg" class = "bookimg2"></td><td>9</td><td>217</td><td>$78,846 </td></tr>
+ <tr><td>Oak Forest East Area</td><td><img src="Maps/Oak Forest East Area.png" class = "bookimg2"></td><td><img src="Maps/Oak Forest East Area 2.png" class = "bookimg2"></td><td><img src="Maps/Oak Forest East Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Oak Forest East Area.jpg" class = "bookimg2"></td><td>6</td><td>16</td><td>$338,594 </td></tr>
+ <tr><td>Oak Forest West Are</td><td><img src="Maps/Oak Forest West Are.png" class = "bookimg2"></td><td><img src="Maps/Oak Forest West Are 2.png" class = "bookimg2"></td><td><img src="Maps/Oak Forest West Are 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Oak Forest West Are.jpg" class = "bookimg2"></td><td>12</td><td>5</td><td>$99,100 </td></tr>
+ <tr><td>Omega Bay</td><td><img src="Maps/Omega Bay.png" class = "bookimg2"></td><td><img src="Maps/Omega Bay 2.png" class = "bookimg2"></td><td><img src="Maps/Omega Bay 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Omega Bay.jpg" class = "bookimg2"></td><td>0</td><td>0</td><td>&nbsp;</td></tr>
+ <tr><td>Other</td><td><img src="Maps/Other.png" class = "bookimg2"></td><td><img src="Maps/Other 2.png" class = "bookimg2"></td><td><img src="Maps/Other 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Other.jpg" class = "bookimg2"></td><td>12.1</td><td>873</td><td>$64,424 </td></tr>
+ <tr><td>Pasadena</td><td><img src="Maps/Pasadena.png" class = "bookimg2"></td><td><img src="Maps/Pasadena 2.png" class = "bookimg2"></td><td><img src="Maps/Pasadena 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Pasadena.jpg" class = "bookimg2"></td><td>10.2</td><td>33</td><td>$94,986 </td></tr>
+ <tr><td>Peadand</td><td><img src="Maps/Peadand.png" class = "bookimg2"></td><td><img src="Maps/Peadand 2.png" class = "bookimg2"></td><td><img src="Maps/Peadand 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Peadand.jpg" class = "bookimg2"></td><td>11.8</td><td>52</td><td>$159,518 </td></tr>
+ <tr><td>Plantersville Area</td><td><img src="Maps/Plantersville Area.png" class = "bookimg2"></td><td><img src="Maps/Plantersville Area 2.png" class = "bookimg2"></td><td><img src="Maps/Plantersville Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Plantersville Area.jpg" class = "bookimg2"></td><td>5.6</td><td>69</td><td>$44,193 </td></tr>
+ <tr><td>Polk County North</td><td><img src="Maps/Polk County North.png" class = "bookimg2"></td><td><img src="Maps/Polk County North 2.png" class = "bookimg2"></td><td><img src="Maps/Polk County North 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Polk County North.jpg" class = "bookimg2"></td><td>20</td><td>3</td><td>$167,667 </td></tr>
+ <tr><td>Port Bolivar</td><td><img src="Maps/Port Bolivar.png" class = "bookimg2"></td><td><img src="Maps/Port Bolivar 2.png" class = "bookimg2"></td><td><img src="Maps/Port Bolivar 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Port Bolivar.jpg" class = "bookimg2"></td><td>44</td><td>15</td><td>$66,970 </td></tr>
+ <tr><td>Porter.New Caney East</td><td><img src="Maps/Porter.New Caney East.png" class = "bookimg2"></td><td><img src="Maps/Porter.New Caney East 2.png" class = "bookimg2"></td><td><img src="Maps/Porter.New Caney East 3.png" class = "bookimg2"></td><td><img src="Real/Lots/PorterNew Caney East.jpg" class = "bookimg2"></td><td>11.8</td><td>75</td><td>$60,163 </td></tr>
+ <tr><td>Porter.New Caney West</td><td><img src="Maps/Porter.New Caney West.png" class = "bookimg2"></td><td><img src="Maps/Porter.New Caney West 2.png" class = "bookimg2"></td><td><img src="Maps/Porter.New Caney West 3.png" class = "bookimg2"></td><td><img src="Real/Lots/PorterNew Caney West.jpg" class = "bookimg2"></td><td>11.7</td><td>76</td><td>$97,732 </td></tr>
+ <tr><td>Realist Other</td><td><img src="Maps/Realist Other.png" class = "bookimg2"></td><td><img src="Maps/Realist Other 2.png" class = "bookimg2"></td><td><img src="Maps/Realist Other 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Realist Other.jpg" class = "bookimg2"></td><td>11.6</td><td>32</td><td>$50,451 </td></tr>
+ <tr><td>Rice Military.Washington Corridor</td><td><img src="Maps/Rice Military.Washington Corridor.png" class = "bookimg2"></td><td><img src="Maps/Rice Military.Washington Corridor 2.png" class = "bookimg2"></td><td><img src="Maps/Rice Military.Washington Corridor 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Rice MilitaryWashington Corridor.jpg" class = "bookimg2"></td><td>12</td><td>20</td><td>$428,475 </td></tr>
+ <tr><td>Rice.Museum District</td><td><img src="Maps/Rice.Museum District.png" class = "bookimg2"></td><td><img src="Maps/Rice.Museum District 2.png" class = "bookimg2"></td><td><img src="Maps/Rice.Museum District 3.png" class = "bookimg2"></td><td><img src="Real/Lots/RiceMuseum District.jpg" class = "bookimg2"></td><td>24</td><td>7</td><td>$537,857 </td></tr>
+ <tr><td>River Oaks Area</td><td><img src="Maps/River Oaks Area.png" class = "bookimg2"></td><td><img src="Maps/River Oaks Area 2.png" class = "bookimg2"></td><td><img src="Maps/River Oaks Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/River Oaks Area.jpg" class = "bookimg2"></td><td>48</td><td>2</td><td>$5,237,500 </td></tr>
+ <tr><td>River Oaks Shopping</td><td><img src="Maps/River Oaks Shopping.png" class = "bookimg2"></td><td><img src="Maps/River Oaks Shopping 2.png" class = "bookimg2"></td><td><img src="Maps/River Oaks Shopping 3.png" class = "bookimg2"></td><td><img src="Real/Lots/River Oaks Shopping.jpg" class = "bookimg2"></td><td>4</td><td>3</td><td>$435,000 </td></tr>
+ <tr><td>Rivercrest</td><td><img src="Maps/Rivercrest.png" class = "bookimg2"></td><td><img src="Maps/Rivercrest 2.png" class = "bookimg2"></td><td><img src="Maps/Rivercrest 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Rivercrest.jpg" class = "bookimg2"></td><td>0</td><td>1</td><td>$1,500,000 </td></tr>
+ <tr><td>Riverside</td><td><img src="Maps/Riverside.png" class = "bookimg2"></td><td><img src="Maps/Riverside 2.png" class = "bookimg2"></td><td><img src="Maps/Riverside 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Riverside.jpg" class = "bookimg2"></td><td>9.8</td><td>11</td><td>$169,773 </td></tr>
+ <tr><td>Royden Oaks.Afton Oaks</td><td><img src="Maps/Royden Oaks.Afton Oaks.png" class = "bookimg2"></td><td><img src="Maps/Royden Oaks.Afton Oaks 2.png" class = "bookimg2"></td><td><img src="Maps/Royden Oaks.Afton Oaks 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Royden OaksAfton Oaks.jpg" class = "bookimg2"></td><td>24</td><td>1</td><td>$745,000 </td></tr>
+ <tr><td>Santa Fe</td><td><img src="Maps/Santa Fe.png" class = "bookimg2"></td><td><img src="Maps/Santa Fe 2.png" class = "bookimg2"></td><td><img src="Maps/Santa Fe 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Santa Fe.jpg" class = "bookimg2"></td><td>6.3</td><td>80</td><td>$104,084 </td></tr>
+ <tr><td>Sharpstown Area</td><td><img src="Maps/Sharpstown Area.png" class = "bookimg2"></td><td><img src="Maps/Sharpstown Area 2.png" class = "bookimg2"></td><td><img src="Maps/Sharpstown Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Sharpstown Area.jpg" class = "bookimg2"></td><td>6</td><td>2</td><td>$139,300 </td></tr>
+ <tr><td>Shepherd Park Plaza Area</td><td><img src="Maps/Shepherd Park Plaza Area.png" class = "bookimg2"></td><td><img src="Maps/Shepherd Park Plaza Area 2.png" class = "bookimg2"></td><td><img src="Maps/Shepherd Park Plaza Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Shepherd Park Plaza Area.jpg" class = "bookimg2"></td><td>32</td><td>3</td><td>$431,710 </td></tr>
+ <tr><td>Shoreacres.La Porte</td><td><img src="Maps/Shoreacres.La Porte.png" class = "bookimg2"></td><td><img src="Maps/Shoreacres.La Porte 2.png" class = "bookimg2"></td><td><img src="Maps/Shoreacres.La Porte 3.png" class = "bookimg2"></td><td><img src="Real/Lots/ShoreacresLa Porte.jpg" class = "bookimg2"></td><td>11.1</td><td>13</td><td>$47,477 </td></tr>
+ <tr><td>Sienna Area</td><td><img src="Maps/Sienna Area.png" class = "bookimg2"></td><td><img src="Maps/Sienna Area 2.png" class = "bookimg2"></td><td><img src="Maps/Sienna Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Sienna Area.jpg" class = "bookimg2"></td><td>30</td><td>12</td><td>$154,763 </td></tr>
+ <tr><td>South Houston</td><td><img src="Maps/South Houston.png" class = "bookimg2"></td><td><img src="Maps/South Houston 2.png" class = "bookimg2"></td><td><img src="Maps/South Houston 3.png" class = "bookimg2"></td><td><img src="Real/Lots/South Houston.jpg" class = "bookimg2"></td><td>0</td><td>1</td><td>$76,500 </td></tr>
+ <tr><td>SouthbeIt.Ellington</td><td><img src="Maps/SouthbeIt.Ellington.png" class = "bookimg2"></td><td><img src="Maps/SouthbeIt.Ellington 2.png" class = "bookimg2"></td><td><img src="Maps/SouthbeIt.Ellington 3.png" class = "bookimg2"></td><td><img src="Real/Lots/SouthbeItEllington.jpg" class = "bookimg2"></td><td>108</td><td>1</td><td>$399,000 </td></tr>
+ <tr><td>Spring Branch</td><td><img src="Maps/Spring Branch.png" class = "bookimg2"></td><td><img src="Maps/Spring Branch 2.png" class = "bookimg2"></td><td><img src="Maps/Spring Branch 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Spring Branch.jpg" class = "bookimg2"></td><td>10.5</td><td>39</td><td>$430,547 </td></tr>
+ <tr><td>Spring East</td><td><img src="Maps/Spring East.png" class = "bookimg2"></td><td><img src="Maps/Spring East 2.png" class = "bookimg2"></td><td><img src="Maps/Spring East 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Spring East.jpg" class = "bookimg2"></td><td>26</td><td>6</td><td>$143,500 </td></tr>
+ <tr><td>Spring Northeast</td><td><img src="Maps/Spring Northeast.png" class = "bookimg2"></td><td><img src="Maps/Spring Northeast 2.png" class = "bookimg2"></td><td><img src="Maps/Spring Northeast 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Spring Northeast.jpg" class = "bookimg2"></td><td>17</td><td>113</td><td>$120,240 </td></tr>
+ <tr><td>Spring.Klein</td><td><img src="Maps/Spring.Klein.png" class = "bookimg2"></td><td><img src="Maps/Spring.Klein 2.png" class = "bookimg2"></td><td><img src="Maps/Spring.Klein 3.png" class = "bookimg2"></td><td><img src="Real/Lots/SpringKlein.jpg" class = "bookimg2"></td><td>35.2</td><td>15</td><td>$209,183 </td></tr>
+ <tr><td>Spring.Klein.Tomball</td><td><img src="Maps/Spring.Klein.Tomball.png" class = "bookimg2"></td><td><img src="Maps/Spring.Klein.Tomball 2.png" class = "bookimg2"></td><td><img src="Maps/Spring.Klein.Tomball 3.png" class = "bookimg2"></td><td><img src="Real/Lots/SpringKleinTomball.jpg" class = "bookimg2"></td><td>15.6</td><td>10</td><td>$166,590 </td></tr>
+ <tr><td>Stafford Area</td><td><img src="Maps/Stafford Area.png" class = "bookimg2"></td><td><img src="Maps/Stafford Area 2.png" class = "bookimg2"></td><td><img src="Maps/Stafford Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Stafford Area.jpg" class = "bookimg2"></td><td>12</td><td>4</td><td>$80,035 </td></tr>
+ <tr><td>Sugar Land East</td><td><img src="Maps/Sugar Land East.png" class = "bookimg2"></td><td><img src="Maps/Sugar Land East 2.png" class = "bookimg2"></td><td><img src="Maps/Sugar Land East 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Sugar Land East.jpg" class = "bookimg2"></td><td>6</td><td>2</td><td>$551,000 </td></tr>
+ <tr><td>Sugar Land North</td><td><img src="Maps/Sugar Land North.png" class = "bookimg2"></td><td><img src="Maps/Sugar Land North 2.png" class = "bookimg2"></td><td><img src="Maps/Sugar Land North 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Sugar Land North.jpg" class = "bookimg2"></td><td>16</td><td>6</td><td>$601,333 </td></tr>
+ <tr><td>Sugar Land South</td><td><img src="Maps/Sugar Land South.png" class = "bookimg2"></td><td><img src="Maps/Sugar Land South 2.png" class = "bookimg2"></td><td><img src="Maps/Sugar Land South 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Sugar Land South.jpg" class = "bookimg2"></td><td>18</td><td>4</td><td>$534,964 </td></tr>
+ <tr><td>Sugar Land West</td><td><img src="Maps/Sugar Land West.png" class = "bookimg2"></td><td><img src="Maps/Sugar Land West 2.png" class = "bookimg2"></td><td><img src="Maps/Sugar Land West 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Sugar Land West.jpg" class = "bookimg2"></td><td>20</td><td>6</td><td>$323,846 </td></tr>
+ <tr><td>Summerwood.Lakeshore</td><td><img src="Maps/Summerwood.Lakeshore.png" class = "bookimg2"></td><td><img src="Maps/Summerwood.Lakeshore 2.png" class = "bookimg2"></td><td><img src="Maps/Summerwood.Lakeshore 3.png" class = "bookimg2"></td><td><img src="Real/Lots/SummerwoodLakeshore.jpg" class = "bookimg2"></td><td>0</td><td>0</td><td>&nbsp;</td></tr>
+ <tr><td>Tanglewood Area</td><td><img src="Maps/Tanglewood Area.png" class = "bookimg2"></td><td><img src="Maps/Tanglewood Area 2.png" class = "bookimg2"></td><td><img src="Maps/Tanglewood Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Tanglewood Area.jpg" class = "bookimg2"></td><td>16</td><td>6</td><td>$1,407,500 </td></tr>
+ <tr><td>Teichman.Channelview Area</td><td><img src="Maps/Teichman.Channelview Area.png" class = "bookimg2"></td><td><img src="Maps/Teichman.Channelview Area 2.png" class = "bookimg2"></td><td><img src="Maps/Teichman.Channelview Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/TeichmanChannelview Area.jpg" class = "bookimg2"></td><td>46.5</td><td>8</td><td>$137,563 </td></tr>
+ <tr><td>Texas City</td><td><img src="Maps/Texas City.png" class = "bookimg2"></td><td><img src="Maps/Texas City 2.png" class = "bookimg2"></td><td><img src="Maps/Texas City 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Texas City.jpg" class = "bookimg2"></td><td>15.4</td><td>25</td><td>$63,846 </td></tr>
+ <tr><td>The Woodlands</td><td><img src="Maps/The Woodlands.png" class = "bookimg2"></td><td><img src="Maps/The Woodlands 2.png" class = "bookimg2"></td><td><img src="Maps/The Woodlands 3.png" class = "bookimg2"></td><td><img src="Real/Lots/The Woodlands.jpg" class = "bookimg2"></td><td>39.5</td><td>17</td><td>$465,868 </td></tr>
+ <tr><td>Tiki Island</td><td><img src="Maps/Tiki Island.png" class = "bookimg2"></td><td><img src="Maps/Tiki Island 2.png" class = "bookimg2"></td><td><img src="Maps/Tiki Island 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Tiki Island.jpg" class = "bookimg2"></td><td>24</td><td>6</td><td>$96,167 </td></tr>
+ <tr><td>Timbergrove.Lazybrook</td><td><img src="Maps/Timbergrove.Lazybrook.png" class = "bookimg2"></td><td><img src="Maps/Timbergrove.Lazybrook 2.png" class = "bookimg2"></td><td><img src="Maps/Timbergrove.Lazybrook 3.png" class = "bookimg2"></td><td><img src="Real/Lots/TimbergroveLazybrook.jpg" class = "bookimg2"></td><td>12</td><td>4</td><td>$380,000 </td></tr>
+ <tr><td>Tomball</td><td><img src="Maps/Tomball.png" class = "bookimg2"></td><td><img src="Maps/Tomball 2.png" class = "bookimg2"></td><td><img src="Maps/Tomball 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Tomball.jpg" class = "bookimg2"></td><td>31.1</td><td>42</td><td>$102,988 </td></tr>
+ <tr><td>Tomball South.Lakewood</td><td><img src="Maps/Tomball South.Lakewood.png" class = "bookimg2"></td><td><img src="Maps/Tomball South.Lakewood 2.png" class = "bookimg2"></td><td><img src="Maps/Tomball South.Lakewood 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Tomball SouthLakewood.jpg" class = "bookimg2"></td><td>12</td><td>3</td><td>$216,667 </td></tr>
+ <tr><td>Tomball Southwest</td><td><img src="Maps/Tomball Southwest.png" class = "bookimg2"></td><td><img src="Maps/Tomball Southwest 2.png" class = "bookimg2"></td><td><img src="Maps/Tomball Southwest 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Tomball Southwest.jpg" class = "bookimg2"></td><td>8</td><td>18</td><td>$288,028 </td></tr>
+ <tr><td>Treasure Island</td><td><img src="Maps/Treasure Island.png" class = "bookimg2"></td><td><img src="Maps/Treasure Island 2.png" class = "bookimg2"></td><td><img src="Maps/Treasure Island 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Treasure Island.jpg" class = "bookimg2"></td><td>32</td><td>6</td><td>$45,398 </td></tr>
+ <tr><td>Trinity Area</td><td><img src="Maps/Trinity Area.png" class = "bookimg2"></td><td><img src="Maps/Trinity Area 2.png" class = "bookimg2"></td><td><img src="Maps/Trinity Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Trinity Area.jpg" class = "bookimg2"></td><td>72</td><td>3</td><td>$19,867 </td></tr>
+ <tr><td>Tyler County</td><td><img src="Maps/Tyler County.png" class = "bookimg2"></td><td><img src="Maps/Tyler County 2.png" class = "bookimg2"></td><td><img src="Maps/Tyler County 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Tyler County.jpg" class = "bookimg2"></td><td>30.5</td><td>11</td><td>$86,150 </td></tr>
+ <tr><td>University Area</td><td><img src="Maps/University Area.png" class = "bookimg2"></td><td><img src="Maps/University Area 2.png" class = "bookimg2"></td><td><img src="Maps/University Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/University Area.jpg" class = "bookimg2"></td><td>21.6</td><td>105</td><td>$96,534 </td></tr>
+ <tr><td>Upper Kirby</td><td><img src="Maps/Upper Kirby.png" class = "bookimg2"></td><td><img src="Maps/Upper Kirby 2.png" class = "bookimg2"></td><td><img src="Maps/Upper Kirby 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Upper Kirby.jpg" class = "bookimg2"></td><td>0</td><td>2</td><td>$552,500 </td></tr>
+ <tr><td>Waller</td><td><img src="Maps/Waller.png" class = "bookimg2"></td><td><img src="Maps/Waller 2.png" class = "bookimg2"></td><td><img src="Maps/Waller 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Waller.jpg" class = "bookimg2"></td><td>10.4</td><td>110</td><td>$62,325 </td></tr>
+ <tr><td>Washington East.Sabine</td><td><img src="Maps/Washington East.Sabine.png" class = "bookimg2"></td><td><img src="Maps/Washington East.Sabine 2.png" class = "bookimg2"></td><td><img src="Maps/Washington East.Sabine 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Washington EastSabine.jpg" class = "bookimg2"></td><td>13.3</td><td>9</td><td>$224,600 </td></tr>
+ <tr><td>Webster</td><td><img src="Maps/Webster.png" class = "bookimg2"></td><td><img src="Maps/Webster 2.png" class = "bookimg2"></td><td><img src="Maps/Webster 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Webster.jpg" class = "bookimg2"></td><td>36</td><td>1</td><td>$91,000 </td></tr>
+ <tr><td>West End</td><td><img src="Maps/West End.png" class = "bookimg2"></td><td><img src="Maps/West End 2.png" class = "bookimg2"></td><td><img src="Maps/West End 3.png" class = "bookimg2"></td><td><img src="Real/Lots/West End.jpg" class = "bookimg2"></td><td>17.9</td><td>166</td><td>$89,729 </td></tr>
+ <tr><td>West University.Southside Area</td><td><img src="Maps/West University.Southside Area.png" class = "bookimg2"></td><td><img src="Maps/West University.Southside Area 2.png" class = "bookimg2"></td><td><img src="Maps/West University.Southside Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/West UniversitySouthside Area.jpg" class = "bookimg2"></td><td>2</td><td>6</td><td>$889,953 </td></tr>
+ <tr><td>Westchase Area</td><td><img src="Maps/Westchase Area.png" class = "bookimg2"></td><td><img src="Maps/Westchase Area 2.png" class = "bookimg2"></td><td><img src="Maps/Westchase Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Westchase Area.jpg" class = "bookimg2"></td><td>&nbsp;</td><td>6</td><td>$889,953 </td></tr>
+ <tr><td>Willis.New Waverly</td><td><img src="Maps/Willis.New Waverly.png" class = "bookimg2"></td><td><img src="Maps/Willis.New Waverly 2.png" class = "bookimg2"></td><td><img src="Maps/Willis.New Waverly 3.png" class = "bookimg2"></td><td><img src="Real/Lots/WillisNew Waverly.jpg" class = "bookimg2"></td><td>24</td><td>2</td><td>$298,250 </td></tr>
+ <tr><td>Willow Meadows Area</td><td><img src="Maps/Willow Meadows Area.png" class = "bookimg2"></td><td><img src="Maps/Willow Meadows Area 2.png" class = "bookimg2"></td><td><img src="Maps/Willow Meadows Area 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Willow Meadows Area.jpg" class = "bookimg2"></td><td>11.1</td><td>82</td><td>$37,268 </td></tr>
+ <tr><td>Willowbrook South</td><td><img src="Maps/Willowbrook South.png" class = "bookimg2"></td><td><img src="Maps/Willowbrook South 2.png" class = "bookimg2"></td><td><img src="Maps/Willowbrook South 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Willowbrook South.jpg" class = "bookimg2"></td><td>36</td><td>1</td><td>$265,000 </td></tr>
+ <tr><td>Winrock</td><td><img src="Maps/Winrock.png" class = "bookimg2"></td><td><img src="Maps/Winrock 2.png" class = "bookimg2"></td><td><img src="Maps/Winrock 3.png" class = "bookimg2"></td><td><img src="Real/Lots/Winrock.jpg" class = "bookimg2"></td><td>30</td><td>2</td><td>55000</td></tr>
+</tbody></table>
+
+  <p class = "About_content"> Source: Major Listing Services from Houston Association of Realtors</p>
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+</style>
+
+  	<br />
+  	<br />
+  	<br />
+  	<br />
+  	<hr style = "border-top: 1px double #00009B;
+	border-bottom: 1px double #00009B;" />
+  	<br />
+ 
+<footer class="footer_end">
+	<a href = "https://www.facebook.com/Pyrobluestar/" target = "_blank"> <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg" style = "width: 3.125rem;height:3.125rem; padding: 2.5rem 2.5rem;"> </a>
+</footer>
+        
+</body> 
+</html>

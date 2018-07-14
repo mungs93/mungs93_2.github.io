@@ -26,7 +26,7 @@ app.controller('MainController', ['$scope', function($scope) {
 	    "url2": "https://www.facebook.com/aplaceforpeanut/",
 	    "url3": "https://www.paypal.me/APFP",
 	    "price": "Learn More" 
-	  }, */
+	  }, 
 
 	  {
 	    "icon": 'images/houston.JPG',
@@ -63,6 +63,44 @@ app.controller('MainController', ['$scope', function($scope) {
 	    "url2": "https://www.facebook.com/textbookconsultants",
 	    "url3": "https://www.paypal.me/TextbookConsultants",
 	    "price": "Learn More" 
+	  }*/
+		  {
+	    "icon": 'images/houston.JPG',
+	    "title": 'Houston',
+	    "developer": '',
+	    "url": "http://textbookconsultants.com/M_Community.html",
+	    "url2": "https://www.facebook.com/textbookconsultants",
+	    "url3": "https://www.paypal.me/TextbookConsultants",
+	    "price": "Learn More" 
+	  },
+	  	  	  {
+	    "icon": 'images/texas.png',
+	    "title": 'Texas',
+	    "developer": '',
+	    "url": "http://textbookconsultants.com/M_Community.html",
+	    "url2": "https://www.facebook.com/textbookconsultants",
+	    "url3": "https://www.paypal.me/TextbookConsultants",
+	    "price": "Learn More" 
+	  },
+	  	  {
+	    "icon": 'images/WhiteFlower.jpg',
+	    "title": 'Preservation and Study of Wildlife Habitat',
+	    "developer": '',
+	    "url": "http://textbookconsultants.com/M_Community.html",
+	    "url2": "https://www.facebook.com/textbookconsultants",
+	    "url3": "https://www.paypal.me/TextbookConsultants",
+	    "price": "Learn More" 
+	  },
+	  	  {
+	    "icon": 'images/habitat.jpg',
+	    "title": 'Volunteering',
+	    "developer": '',
+	    "url": "http://textbookconsultants.com/M_Community.html",
+	    "url2": "https://www.facebook.com/textbookconsultants",
+	    "url3": "https://www.paypal.me/TextbookConsultants",
+	    "price": "Learn More" 
 	  }
+  
+	  
 	];
 }]);
